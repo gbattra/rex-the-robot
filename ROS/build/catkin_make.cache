@@ -1,0 +1,2 @@
+ROS-TCP-Endpoint:roborex:robot2wheel
+-DCATKIN_DEVEL_PREFIX=/home/gattra/Projects/Unity/rex-the-robot/ROS/devel -DCMAKE_INSTALL_PREFIX=/home/gattra/Projects/Unity/rex-the-robot/ROS/install -G Unix Makefiles

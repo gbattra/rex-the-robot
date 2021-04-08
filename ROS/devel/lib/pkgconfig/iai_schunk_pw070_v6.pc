@@ -1,0 +1,8 @@
+prefix=/home/gattra/Projects/Unity/rex-the-robot/ROS/devel
+
+Name: iai_schunk_pw070_v6
+Description: Description of iai_schunk_pw070_v6
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

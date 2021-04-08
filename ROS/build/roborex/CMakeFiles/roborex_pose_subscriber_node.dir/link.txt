@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/roborex_pose_subscriber_node.dir/src/scripts/basePoseSubscriberNode.cpp.o  -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/roborex/roborex_pose_subscriber_node 

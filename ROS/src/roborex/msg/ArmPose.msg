@@ -1,0 +1,8 @@
+JointState world_joint
+JointState base_joint
+JointState shoulder_joint
+JointState elbow_joint
+JointState wrist_joint
+JointState eff_joint
+bool right_gripper_joint
+bool left_gripper_joint

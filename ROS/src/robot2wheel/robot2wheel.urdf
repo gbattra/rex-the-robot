@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+
+<robot name="robot2wheel">
+    <material name="blue">
+        <color rgba="0.2 0.2 0.3 1.0"/>
+    </material>
+
+    <material name="red">
+        <color rgba="0.8 0.12 0.13 1.0"/>
+    </material>
+
+    <gazebo>
+        <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
+            <legacyMode>false</legacyMode>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>20</updateRate>
+            <leftJoint>joint_left_wheel</leftJoint>
+            <rightJoint>joint_right_wheel</rightJoint>
+            <wheelSeparation>0.3</wheelSeparation>
+            <wheelDiameter>0.2</wheelDiameter>
+            <torque>0.1</torque>
+            <commandTopic>cmd_vel</commandTopic>
+            <odometryTopic>odom</odometryTopic>
+            <odometryFrame>odom</odometryFrame>
+            <robotBaseFrame>link_chassis</robotBaseFrame>
+        </plugin>
+    </gazebo>
+
+    <!-- Chassis -->
+    <link name="link_chassis">
+        <pose>0 0 0.1 0 0 0</pose>
+        <inertial>
+            <mass value="5"/>
+            <origin rpy="0 0 0" xyz="0 0 0.1"/>
+            <inertia ixx="0.03954" ixy="0" ixz="0" iyy="0.10628" iyz="0" izz="0.1062"/>
+        </inertial>
+
+        <!-- Body -->
+        <collision name="collision_chassis">
+            <geometry>
+                <box size="0.78 0.3 0.085"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin rpy="0 0 1.5707" xyz="0 0.56 -0.05"/>
+            <geometry>
+                <mesh
+                    filename="package://robot2wheel/meshes/chassis.stl"
+                    scale="0.003 0.003 0.003"
+                />
+            </geometry>
+            <material name="blue"/>
+        </visual>
+    </link>
+
+    <!-- Right Front Wheel -->
+    <link name="link_front_right_wheel">
+        <inertial>
+            <mass value="0.2"/>
+            <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+            <inertia ixx="0.000526" ixy="0" ixz="0" iyy="0.000526" iyz="0" izz="0.001"/>
+        </inertial>
+        <collision name="link_front_right_wheel_collision">
+            <origin rpy="0 1.5707 1.5707" xyz="0 0.03 0"/>
+            <geometry>
+                <cylinder length="0.045" radius="0.1"/>
+            </geometry>
+        </collision>
+        <visual name="link_front_right_wheel_visual">
+            <origin rpy="0 0 1.5707" xyz="0 0 0"/>
+            <geometry>
+                <mesh
+                    filename="package://robot2wheel/meshes/wheel.stl"
+                    scale="0.003 0.003 0.003"
+                />
+            </geometry>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <!-- Chassis / Right Wheel Joint -->
+    <joint name="joint_front_right_wheel" type="continuous">
+        <origin rpy="0 0 0" xyz="0.177 0.17 -0.01"/>
+        <parent link="link_chassis"/>
+        <child link="link_front_right_wheel"/>
+        <axis rpy="0 0 0" xyz="0 1 0"/>
+        <limit effort="10000" velocity="1000"/>
+        <joint_properties damping="1.0" friction="1.0"/>
+    </joint>
+
+    <!-- Left Front Wheel -->
+    <link name="link_front_left_wheel">
+        <inertial>
+            <mass value="0.2"/>
+            <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+            <inertia ixx="0.000526" ixy="0" ixz="0" iyy="0.000526" iyz="0" izz="0.001"/>
+        </inertial>
+        <collision name="link_front_left_wheel_collision">
+            <origin rpy="0 1.5707 1.5707" xyz="0 -0.03 0"/>
+            <geometry>
+                <cylinder length="0.045" radius="0.1"/>
+            </geometry>
+        </collision>
+        <visual name="link_front_left_wheel_visual">
+            <origin rpy="0 0 -1.5707" xyz="0 0 0"/>
+            <geometry>
+                <mesh
+                    filename="package://robot2wheel/meshes/wheel.stl"
+                    scale="0.003 0.003 0.003"
+                />
+            </geometry>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <!-- Chassis / Left Wheel Joint -->
+    <joint name="joint_front_left_wheel" type="continuous">
+        <origin rpy="0 0 0" xyz="0.177 -0.17 -0.01"/>
+        <parent link="link_chassis"/>
+        <child link="link_front_left_wheel"/>
+        <axis rpy="0 0 0" xyz="0 1 0"/>
+        <limit effort="10000" velocity="1000"/>
+        <joint_properties damping="1.0" friction="1.0"/>
+    </joint>
+
+    <!-- Right Back Wheel -->
+    <link name="link_back_right_wheel">
+        <inertial>
+            <mass value="0.2"/>
+            <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+            <inertia ixx="0.000526" ixy="0" ixz="0" iyy="0.000526" iyz="0" izz="0.001"/>
+        </inertial>
+        <collision name="link_back_right_wheel_collision">
+            <origin rpy="0 1.5707 1.5707" xyz="0 0.03 0"/>
+            <geometry>
+                <cylinder length="0.045" radius="0.1"/>
+            </geometry>
+        </collision>
+        <visual name="link_back_right_wheel_visual">
+            <origin rpy="0 0 1.5707" xyz="0 0 0"/>
+            <geometry>
+                <mesh
+                    filename="package://robot2wheel/meshes/wheel.stl"
+                    scale="0.003 0.003 0.003"
+                />
+            </geometry>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <!-- Chassis / Right Back Wheel Joint -->
+    <joint name="joint_back_right_wheel" type="continuous">
+        <origin rpy="0 0 0" xyz="-0.177 0.17 -0.01"/>
+        <parent link="link_chassis"/>
+        <child link="link_back_right_wheel"/>
+        <axis rpy="0 0 0" xyz="0 1 0"/>
+        <limit effort="10000" velocity="1000"/>
+        <joint_properties damping="1.0" friction="1.0"/>
+    </joint>
+
+    <!-- Left Back Wheel -->
+    <link name="link_back_left_wheel">
+        <inertial>
+            <mass value="0.2"/>
+            <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+            <inertia ixx="0.000526" ixy="0" ixz="0" iyy="0.000526" iyz="0" izz="0.001"/>
+        </inertial>
+        <collision name="link_back_left_wheel_collision">
+            <origin rpy="0 1.5707 1.5707" xyz="0 -0.03 0"/>
+            <geometry>
+                <cylinder length="0.045" radius="0.1"/>
+            </geometry>
+        </collision>
+        <visual name="link_back_left_wheel_visual">
+            <origin rpy="0 0 -1.5707" xyz="0 0 0"/>
+            <geometry>
+                <mesh
+                    filename="package://robot2wheel/meshes/wheel.stl"
+                    scale="0.003 0.003 0.003"
+                />
+            </geometry>
+            <material name="red"/>
+        </visual>
+    </link>
+
+    <!-- Chassis / Left Back Wheel Joint -->
+    <joint name="joint_back_left_wheel" type="continuous">
+        <origin rpy="0 0 0" xyz="-0.177 -0.17 -0.01"/>
+        <parent link="link_chassis"/>
+        <child link="link_back_left_wheel"/>
+        <axis rpy="0 0 0" xyz="0 1 0"/>
+        <limit effort="10000" velocity="1000"/>
+        <joint_properties damping="1.0" friction="1.0"/>
+    </joint>
+</robot>

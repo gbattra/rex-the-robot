@@ -1,0 +1,9 @@
+<!-- Greg Attra -->
+<!-- 03/25/2021 -->
+
+<launch>
+    <rosparam file="$(find roborex)/config/params.yaml" command="load"/>
+    <node name="base_pose_subscriber" pkg="roborex" type="roborex_base_pose_subscriber" output="screen"/>
+    <node name="target_pose_subscriber" pkg="roborex" type="roborex_target_pose_subscriber" output="screen"/>
+    <node name="tcp_server" pkg="roborex" type="tcp_endpoint.py" output="screen"/>
+</launch>

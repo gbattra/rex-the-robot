@@ -1,0 +1,8 @@
+<!-- Greg Attra -->
+<!-- 03/25/2021 -->
+
+<launch>
+    <rosparam file="$(find roborex)/config/params.yaml" command="load"/>
+    <node name="gtg_behavior" pkg="roborex" type="roborex_gtg_behavior" output="screen"/>
+    <node name="tcp_server" pkg="roborex" type="tcp_endpoint.py" output="screen"/>
+</launch>

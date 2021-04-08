@@ -1,0 +1,7 @@
+set(roborex_SETUP_PY_SETUP_MODULE "setuptools")
+set(roborex_SETUP_PY_VERSION "0.0.0")
+set(roborex_SETUP_PY_SCRIPTS "")
+set(roborex_SETUP_PY_PACKAGES "roborex")
+set(roborex_SETUP_PY_PACKAGE_DIRS "src/roborex")
+set(roborex_SETUP_PY_MODULES "")
+set(roborex_SETUP_PY_MODULE_DIRS "")

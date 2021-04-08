@@ -1,0 +1,8 @@
+<!-- Greg Attra -->
+<!-- 03/29/2021 -->
+
+<launch>
+    <rosparam file="$(find roborex)/config/params.yaml" command="load"/>
+    <node name="trajectory_planner" pkg="roborex" type="trajectory_planner_service_node.py" output="screen"/>
+    <node name="tcp_server" pkg="roborex" type="tcp_endpoint.py" output="screen"/>
+</launch>

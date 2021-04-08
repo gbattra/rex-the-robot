@@ -1,0 +1,11 @@
+<!-- Greg Attra -->
+<!-- 03/28/2021 -->
+
+<launch>
+    <rosparam file="$(find roborex)/config/params.yaml" command="load"/>
+    <!-- <node name="grasp_behavior" pkg="roborex" type="roborex_grasp_behavior" output="screen"/> -->
+    <node name="trajectory_planner_service" pkg="roborex" type="trajectory_planner_service_node.py" output="screen"/>
+    <node name="forward_kinematics_service" pkg="roborex" type="forward_kinematics_service_node.py" output="screen"/>
+    <node name="inverse_kinematics_service" pkg="roborex" type="inverse_kinematics_service_node.py" output="screen"/>
+    <node name="tcp_server" pkg="roborex" type="tcp_endpoint.py" output="screen"/>
+</launch>

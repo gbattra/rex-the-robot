@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.3/resharper-host/local/Transient/Rider/v203/SolutionCaches/_RexRobotRetriever.-1830506284.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="RobotArmJoints.cs" t="Include" />
+        <e p="Robotic Arm" t="Include">
+          <e p="Document.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Claw.cs" t="Include" />
+          </e>
+        </e>
+        <e p="RosMessages" t="Include">
+          <e p="Roborex" t="Include">
+            <e p="msg" t="Include">
+              <e p="ArmPose.cs" t="Include" />
+              <e p="BasePose.cs" t="Include" />
+              <e p="CmdVel.cs" t="Include" />
+              <e p="JointState.cs" t="Include" />
+              <e p="Trajectory.cs" t="Include" />
+            </e>
+            <e p="srv" t="Include">
+              <e p="ForwardKinematicsRequest.cs" t="Include" />
+              <e p="ForwardKinematicsResponse.cs" t="Include" />
+              <e p="InverseKinematicsRequest.cs" t="Include" />
+              <e p="InverseKinematicsResponse.cs" t="Include" />
+              <e p="TrajectoryPlannerRequest.cs" t="Include" />
+              <e p="TrajectoryPlannerResponse.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="MobileBaseController.cs" t="Include" />
+          <e p="Publishers" t="Include">
+            <e p="ArmPosePublisher.cs" t="Include" />
+            <e p="BasePosePublisher.cs" t="Include" />
+            <e p="GripperGoalPosePublisher.cs" t="Include" />
+            <e p="TargetPosePublisher.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="ForwardKinematicsService.cs" t="Include" />
+            <e p="InverseKinematicsService.cs" t="Include" />
+            <e p="TrajectoryPlannerService.cs" t="Include" />
+          </e>
+          <e p="SimpleCameraController.cs" t="Include" />
+          <e p="Subscribers" t="Include">
+            <e p="CmdVelSubscriber.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="URDF" t="Include">
+          <e p="niryo_one" t="Include">
+            <e p="niryo_one_urdf" t="Include">
+              <e p="CMakeLists.txt" t="Include" />
+              <e p="package.xml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="robot2wheel 1" t="Include">
+          <e p="robot2wheel" t="Include">
+            <e p="CMakeLists.txt" t="Include" />
+            <e p="package.xml" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="RexRobotRetriever.sln" t="IncludeFlat" />
+      <e p="Temp/Bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

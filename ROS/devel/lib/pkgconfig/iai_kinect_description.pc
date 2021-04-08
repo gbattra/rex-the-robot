@@ -1,0 +1,8 @@
+prefix=/home/gattra/Projects/Unity/rex-the-robot/ROS/devel
+
+Name: iai_kinect_description
+Description: Description of iai_kinect_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

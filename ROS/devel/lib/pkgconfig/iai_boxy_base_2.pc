@@ -1,0 +1,8 @@
+prefix=/home/gattra/Projects/Unity/rex-the-robot/ROS/devel
+
+Name: iai_boxy_base_2
+Description: Description of iai_boxy_base_2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

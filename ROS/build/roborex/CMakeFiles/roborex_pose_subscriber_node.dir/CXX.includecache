@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/scripts/basePoseSubscriberNode.cpp
+roborex/subscribers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/scripts/roborex/subscribers.h
+

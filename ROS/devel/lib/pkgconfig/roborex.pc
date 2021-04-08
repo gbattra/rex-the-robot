@@ -1,0 +1,8 @@
+prefix=/home/gattra/Projects/Unity/rex-the-robot/ROS/devel
+
+Name: roborex
+Description: Description of roborex
+Version: 0.0.0
+Cflags: -I/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include -I/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy message_runtime

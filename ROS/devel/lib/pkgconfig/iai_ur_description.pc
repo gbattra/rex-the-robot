@@ -1,0 +1,8 @@
+prefix=/home/gattra/Projects/Unity/rex-the-robot/ROS/devel
+
+Name: iai_ur_description
+Description: Description of iai_ur_description
+Version: 1.1.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
