@@ -55,11 +55,14 @@ include roborex/CMakeFiles/roborex_generate_messages_lisp.dir/progress.make
 
 roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/ArmPose.lisp
 roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/BasePose.lisp
-roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/CmdVel.lisp
+roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Command.lisp
 roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/JointState.lisp
+roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectories.lisp
 roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectory.lisp
+roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/TrajectoryStatus.lisp
 roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp
 roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp
+roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/StartSystem.lisp
 roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp
 
 
@@ -75,10 +78,10 @@ roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/r
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from roborex/BasePose.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/CmdVel.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/CmdVel.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from roborex/CmdVel.msg"
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Command.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Command.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from roborex/Command.msg"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/JointState.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/JointState.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
@@ -86,52 +89,74 @@ roborex/CMakeFiles/roborex_generate_messages_lisp: /home/gattra/Projects/Unity/r
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from roborex/JointState.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg
 
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectories.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectories.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectories.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectories.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectories.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectories.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from roborex/Trajectories.msg"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg
+
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectory.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectory.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectory.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectory.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectory.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from roborex/Trajectory.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from roborex/Trajectory.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/TrajectoryStatus.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/TrajectoryStatus.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from roborex/TrajectoryStatus.msg"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from roborex/ForwardKinematics.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from roborex/ForwardKinematics.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from roborex/InverseKinematics.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from roborex/InverseKinematics.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/StartSystem.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/StartSystem.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from roborex/StartSystem.srv"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from roborex/TrajectoryPlanner.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Lisp code from roborex/TrajectoryPlanner.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv
 
 roborex_generate_messages_lisp: roborex/CMakeFiles/roborex_generate_messages_lisp
 roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/ArmPose.lisp
 roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/BasePose.lisp
-roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/CmdVel.lisp
+roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Command.lisp
 roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/JointState.lisp
+roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectories.lisp
 roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/Trajectory.lisp
+roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/msg/TrajectoryStatus.lisp
 roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/ForwardKinematics.lisp
 roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/InverseKinematics.lisp
+roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/StartSystem.lisp
 roborex_generate_messages_lisp: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/common-lisp/ros/roborex/srv/TrajectoryPlanner.lisp
 roborex_generate_messages_lisp: roborex/CMakeFiles/roborex_generate_messages_lisp.dir/build.make
 

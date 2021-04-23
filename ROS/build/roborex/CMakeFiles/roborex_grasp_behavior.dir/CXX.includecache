@@ -33,6 +33,12 @@ roborex/JointState.h
 -
 roborex/JointState.h
 -
+roborex/JointState.h
+-
+roborex/JointState.h
+-
+roborex/JointState.h
+-
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/BasePose.h
 string
@@ -50,7 +56,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/CmdVel.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Command.h
 string
 -
 vector
@@ -82,6 +88,64 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 geometry_msgs/Point.h
+-
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystem.h
+ros/service_traits.h
+-
+roborex/StartSystemRequest.h
+-
+roborex/StartSystemResponse.h
+-
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystemRequest.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystemResponse.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Trajectories.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+roborex/Trajectory.h
 -
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Trajectory.h
@@ -148,9 +212,23 @@ ros/message_operations.h
 roborex/Trajectory.h
 -
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors.h
-ros/ros.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryStatus.h
+string
 -
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors.h
 subscribers.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
 publishers.h
@@ -159,6 +237,10 @@ pid.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.h
 clients.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients.h
+roborex/StartSystem.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/StartSystem.h
+ros/ros.h
+-
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients.h
 ros/ros.h
@@ -171,7 +253,9 @@ roborex/TrajectoryPlanner.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers.h
 ros/ros.h
 -
-roborex/CmdVel.h
+roborex/Command.h
+-
+roborex/Trajectories.h
 -
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
@@ -181,6 +265,10 @@ roborex/BasePose.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/BasePose.h
 roborex/ArmPose.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/ArmPose.h
+roborex/TrajectoryStatus.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/TrajectoryStatus.h
+geometry_msgs/Pose.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/geometry_msgs/Pose.h
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/graspTargetBehaviorNode.cpp
 behaviors.h

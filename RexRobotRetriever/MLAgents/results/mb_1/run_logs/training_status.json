@@ -1,0 +1,23 @@
+{
+    "MobileBase": {
+        "checkpoints": [
+            {
+                "steps": 167026,
+                "file_path": "results/mb_1/MobileBase/MobileBase-167026.onnx",
+                "reward": null,
+                "creation_time": 1618535405.3517604
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 167026,
+            "file_path": "results/mb_1/MobileBase.onnx",
+            "reward": null,
+            "creation_time": 1618535405.3517604
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.25.1",
+        "torch_version": "1.8.1+cu102"
+    }
+}

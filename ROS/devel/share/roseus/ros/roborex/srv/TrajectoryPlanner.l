@@ -22,21 +22,21 @@
 
 (defclass roborex::TrajectoryPlannerRequest
   :super ros::object
-  :slots (_arm_pose _target _gripper_offset _eff_offset ))
+  :slots (_arm_pose _target _grasp_trajectory _release_trajectory ))
 
 (defmethod roborex::TrajectoryPlannerRequest
   (:init
    (&key
     ((:arm_pose __arm_pose) (instance roborex::ArmPose :init))
     ((:target __target) (instance geometry_msgs::Pose :init))
-    ((:gripper_offset __gripper_offset) 0.0)
-    ((:eff_offset __eff_offset) 0.0)
+    ((:grasp_trajectory __grasp_trajectory) nil)
+    ((:release_trajectory __release_trajectory) nil)
     )
    (send-super :init)
    (setq _arm_pose __arm_pose)
    (setq _target __target)
-   (setq _gripper_offset (float __gripper_offset))
-   (setq _eff_offset (float __eff_offset))
+   (setq _grasp_trajectory __grasp_trajectory)
+   (setq _release_trajectory __release_trajectory)
    self)
   (:arm_pose
    (&rest __arm_pose)
@@ -52,12 +52,12 @@
      (progn
        (if __target (setq _target (car __target)))
        _target)))
-  (:gripper_offset
-   (&optional __gripper_offset)
-   (if __gripper_offset (setq _gripper_offset __gripper_offset)) _gripper_offset)
-  (:eff_offset
-   (&optional __eff_offset)
-   (if __eff_offset (setq _eff_offset __eff_offset)) _eff_offset)
+  (:grasp_trajectory
+   (&optional (__grasp_trajectory :null))
+   (if (not (eq __grasp_trajectory :null)) (setq _grasp_trajectory __grasp_trajectory)) _grasp_trajectory)
+  (:release_trajectory
+   (&optional (__release_trajectory :null))
+   (if (not (eq __release_trajectory :null)) (setq _release_trajectory __release_trajectory)) _release_trajectory)
   (:serialization-length
    ()
    (+
@@ -65,10 +65,10 @@
     (send _arm_pose :serialization-length)
     ;; geometry_msgs/Pose _target
     (send _target :serialization-length)
-    ;; float32 _gripper_offset
-    4
-    ;; float32 _eff_offset
-    4
+    ;; bool _grasp_trajectory
+    1
+    ;; bool _release_trajectory
+    1
     ))
   (:serialize
    (&optional strm)
@@ -78,10 +78,10 @@
        (send _arm_pose :serialize s)
      ;; geometry_msgs/Pose _target
        (send _target :serialize s)
-     ;; float32 _gripper_offset
-       (sys::poke _gripper_offset (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
-     ;; float32 _eff_offset
-       (sys::poke _eff_offset (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
+     ;; bool _grasp_trajectory
+       (if _grasp_trajectory (write-byte -1 s) (write-byte 0 s))
+     ;; bool _release_trajectory
+       (if _release_trajectory (write-byte -1 s) (write-byte 0 s))
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -90,10 +90,10 @@
      (send _arm_pose :deserialize buf ptr-) (incf ptr- (send _arm_pose :serialization-length))
    ;; geometry_msgs/Pose _target
      (send _target :deserialize buf ptr-) (incf ptr- (send _target :serialization-length))
-   ;; float32 _gripper_offset
-     (setq _gripper_offset (sys::peek buf ptr- :float)) (incf ptr- 4)
-   ;; float32 _eff_offset
-     (setq _eff_offset (sys::peek buf ptr- :float)) (incf ptr- 4)
+   ;; bool _grasp_trajectory
+     (setq _grasp_trajectory (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
+   ;; bool _release_trajectory
+     (setq _release_trajectory (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
    ;;
    self)
   )
@@ -151,7 +151,7 @@
   :super ros::object
   :slots ())
 
-(setf (get roborex::TrajectoryPlanner :md5sum-) "4aa618f0a078989468a6ecb720f101da")
+(setf (get roborex::TrajectoryPlanner :md5sum-) "367c998270ed8c4c22d2346f6cade297")
 (setf (get roborex::TrajectoryPlanner :datatype-) "roborex/TrajectoryPlanner")
 (setf (get roborex::TrajectoryPlanner :request) roborex::TrajectoryPlannerRequest)
 (setf (get roborex::TrajectoryPlanner :response) roborex::TrajectoryPlannerResponse)
@@ -159,13 +159,13 @@
 (defmethod roborex::TrajectoryPlannerRequest
   (:response () (instance roborex::TrajectoryPlannerResponse :init)))
 
-(setf (get roborex::TrajectoryPlannerRequest :md5sum-) "4aa618f0a078989468a6ecb720f101da")
+(setf (get roborex::TrajectoryPlannerRequest :md5sum-) "367c998270ed8c4c22d2346f6cade297")
 (setf (get roborex::TrajectoryPlannerRequest :datatype-) "roborex/TrajectoryPlannerRequest")
 (setf (get roborex::TrajectoryPlannerRequest :definition-)
       "ArmPose arm_pose
 geometry_msgs/Pose target
-float32 gripper_offset
-float32 eff_offset
+bool grasp_trajectory
+bool release_trajectory
 
 ================================================================================
 MSG: roborex/ArmPose
@@ -175,8 +175,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -212,6 +213,8 @@ Trajectory[] trajectories
 ================================================================================
 MSG: roborex/Trajectory
 ArmPose[] poses
+int32 id
+
 ================================================================================
 MSG: roborex/ArmPose
 JointState world_joint
@@ -220,8 +223,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -238,13 +242,13 @@ float64 y
 float64 z
 ")
 
-(setf (get roborex::TrajectoryPlannerResponse :md5sum-) "4aa618f0a078989468a6ecb720f101da")
+(setf (get roborex::TrajectoryPlannerResponse :md5sum-) "367c998270ed8c4c22d2346f6cade297")
 (setf (get roborex::TrajectoryPlannerResponse :datatype-) "roborex/TrajectoryPlannerResponse")
 (setf (get roborex::TrajectoryPlannerResponse :definition-)
       "ArmPose arm_pose
 geometry_msgs/Pose target
-float32 gripper_offset
-float32 eff_offset
+bool grasp_trajectory
+bool release_trajectory
 
 ================================================================================
 MSG: roborex/ArmPose
@@ -254,8 +258,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -291,6 +296,8 @@ Trajectory[] trajectories
 ================================================================================
 MSG: roborex/Trajectory
 ArmPose[] poses
+int32 id
+
 ================================================================================
 MSG: roborex/ArmPose
 JointState world_joint
@@ -299,8 +306,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -319,6 +327,6 @@ float64 z
 
 
 
-(provide :roborex/TrajectoryPlanner "4aa618f0a078989468a6ecb720f101da")
+(provide :roborex/TrajectoryPlanner "367c998270ed8c4c22d2346f6cade297")
 
 

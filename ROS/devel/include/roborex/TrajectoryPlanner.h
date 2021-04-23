@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::roborex::TrajectoryPlanner > {
   static const char* value()
   {
-    return "4aa618f0a078989468a6ecb720f101da";
+    return "367c998270ed8c4c22d2346f6cade297";
   }
 
   static const char* value(const ::roborex::TrajectoryPlanner&) { return value(); }

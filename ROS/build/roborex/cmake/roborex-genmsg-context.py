@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
-services_str = "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv"
+messages_str = "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg"
+services_str = "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv"
 pkg_name = "roborex"
 dependencies_str = "std_msgs;geometry_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

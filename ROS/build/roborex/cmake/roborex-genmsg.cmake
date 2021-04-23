@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "roborex: 5 messages, 3 services")
+message(STATUS "roborex: 7 messages, 4 services")
 
 set(MSG_I_FLAGS "-Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
@@ -27,9 +27,9 @@ add_custom_target(_roborex_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg" ""
 )
 
-get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg" NAME_WE)
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg" NAME_WE)
 add_custom_target(_roborex_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg" ""
 )
 
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg" NAME_WE)
@@ -37,24 +37,39 @@ add_custom_target(_roborex_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg" "geometry_msgs/Point"
 )
 
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg" NAME_WE)
+add_custom_target(_roborex_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg" "roborex/JointState:roborex/ArmPose:roborex/Trajectory:geometry_msgs/Point"
+)
+
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg" NAME_WE)
 add_custom_target(_roborex_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg" "roborex/JointState:roborex/ArmPose:geometry_msgs/Point"
 )
 
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg" NAME_WE)
+add_custom_target(_roborex_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg" ""
+)
+
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv" NAME_WE)
 add_custom_target(_roborex_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv" "geometry_msgs/Pose:roborex/JointState:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv" "roborex/JointState:geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv" NAME_WE)
 add_custom_target(_roborex_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:roborex/JointState:roborex/ArmPose:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv" "geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Point:roborex/JointState:roborex/ArmPose"
+)
+
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv" NAME_WE)
+add_custom_target(_roborex_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv" ""
 )
 
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv" NAME_WE)
 add_custom_target(_roborex_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:roborex/JointState:roborex/ArmPose:geometry_msgs/Point:roborex/Trajectory"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roborex" "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv" "geometry_msgs/Quaternion:geometry_msgs/Pose:roborex/Trajectory:geometry_msgs/Point:roborex/JointState:roborex/ArmPose"
 )
 
 #
@@ -76,7 +91,7 @@ _generate_msg_cpp(roborex
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
 )
 _generate_msg_cpp(roborex
-  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
@@ -88,9 +103,21 @@ _generate_msg_cpp(roborex
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
 )
 _generate_msg_cpp(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
+)
+_generate_msg_cpp(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
   "${MSG_I_FLAGS}"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
+)
+_generate_msg_cpp(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
 )
 
@@ -98,19 +125,25 @@ _generate_msg_cpp(roborex
 _generate_srv_cpp(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
 )
 _generate_srv_cpp(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
+)
+_generate_srv_cpp(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
 )
 _generate_srv_cpp(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roborex
 )
 
@@ -130,15 +163,21 @@ get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/
 add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg" NAME_WE)
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv" NAME_WE)
+add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_cpp _roborex_generate_messages_check_deps_${_filename})
@@ -165,7 +204,7 @@ _generate_msg_eus(roborex
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
 )
 _generate_msg_eus(roborex
-  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
@@ -177,9 +216,21 @@ _generate_msg_eus(roborex
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
 )
 _generate_msg_eus(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
+)
+_generate_msg_eus(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
   "${MSG_I_FLAGS}"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
+)
+_generate_msg_eus(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
 )
 
@@ -187,19 +238,25 @@ _generate_msg_eus(roborex
 _generate_srv_eus(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
 )
 _generate_srv_eus(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
+)
+_generate_srv_eus(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
 )
 _generate_srv_eus(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roborex
 )
 
@@ -219,15 +276,21 @@ get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/
 add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg" NAME_WE)
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv" NAME_WE)
+add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_eus _roborex_generate_messages_check_deps_${_filename})
@@ -254,7 +317,7 @@ _generate_msg_lisp(roborex
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
 )
 _generate_msg_lisp(roborex
-  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
@@ -266,9 +329,21 @@ _generate_msg_lisp(roborex
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
 )
 _generate_msg_lisp(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
+)
+_generate_msg_lisp(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
   "${MSG_I_FLAGS}"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
+)
+_generate_msg_lisp(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
 )
 
@@ -276,19 +351,25 @@ _generate_msg_lisp(roborex
 _generate_srv_lisp(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
 )
 _generate_srv_lisp(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
+)
+_generate_srv_lisp(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
 )
 _generate_srv_lisp(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roborex
 )
 
@@ -308,15 +389,21 @@ get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/
 add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg" NAME_WE)
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv" NAME_WE)
+add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_lisp _roborex_generate_messages_check_deps_${_filename})
@@ -343,7 +430,7 @@ _generate_msg_nodejs(roborex
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
 )
 _generate_msg_nodejs(roborex
-  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
@@ -355,9 +442,21 @@ _generate_msg_nodejs(roborex
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
 )
 _generate_msg_nodejs(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
+)
+_generate_msg_nodejs(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
   "${MSG_I_FLAGS}"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
+)
+_generate_msg_nodejs(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
 )
 
@@ -365,19 +464,25 @@ _generate_msg_nodejs(roborex
 _generate_srv_nodejs(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
 )
 _generate_srv_nodejs(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
+)
+_generate_srv_nodejs(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
 )
 _generate_srv_nodejs(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roborex
 )
 
@@ -397,15 +502,21 @@ get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/
 add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg" NAME_WE)
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv" NAME_WE)
+add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_nodejs _roborex_generate_messages_check_deps_${_filename})
@@ -432,7 +543,7 @@ _generate_msg_py(roborex
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
 )
 _generate_msg_py(roborex
-  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
@@ -444,9 +555,21 @@ _generate_msg_py(roborex
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
 )
 _generate_msg_py(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
+)
+_generate_msg_py(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
   "${MSG_I_FLAGS}"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
+)
+_generate_msg_py(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
 )
 
@@ -454,19 +577,25 @@ _generate_msg_py(roborex
 _generate_srv_py(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
 )
 _generate_srv_py(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
+)
+_generate_srv_py(roborex
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
 )
 _generate_srv_py(roborex
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg;/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roborex
 )
 
@@ -486,15 +615,21 @@ get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/
 add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg" NAME_WE)
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg" NAME_WE)
+add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg" NAME_WE)
 add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv" NAME_WE)
+add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv" NAME_WE)
 add_dependencies(roborex_generate_messages_py _roborex_generate_messages_check_deps_${_filename})

@@ -137,12 +137,12 @@ struct MD5Sum< ::roborex::InverseKinematicsRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "df8d37975b15fc1fe23c73b15bf813b5";
+    return "4140866b5a3a83d68264f18d4f2f7c78";
   }
 
   static const char* value(const ::roborex::InverseKinematicsRequest_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xdf8d37975b15fc1fULL;
-  static const uint64_t static_value2 = 0xe23c73b15bf813b5ULL;
+  static const uint64_t static_value1 = 0x4140866b5a3a83d6ULL;
+  static const uint64_t static_value2 = 0x8264f18d4f2f7c78ULL;
 };
 
 template<class ContainerAllocator>
@@ -173,8 +173,9 @@ struct Definition< ::roborex::InverseKinematicsRequest_<ContainerAllocator> >
 "JointState elbow_joint\n"
 "JointState wrist_joint\n"
 "JointState eff_joint\n"
-"bool right_gripper_joint\n"
-"bool left_gripper_joint\n"
+"JointState gripper_offset_joint\n"
+"JointState right_gripper_joint\n"
+"JointState left_gripper_joint\n"
 "================================================================================\n"
 "MSG: roborex/JointState\n"
 "geometry_msgs/Point translation\n"

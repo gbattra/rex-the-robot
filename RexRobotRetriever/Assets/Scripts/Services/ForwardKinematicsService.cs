@@ -28,7 +28,8 @@ public class ForwardKinematicsService : MonoBehaviour
             pose.shoulder_joint,
             pose.elbow_joint,
             pose.wrist_joint,
-            pose.eff_joint
+            pose.eff_joint,
+            pose.gripper_offset_joint
         };
         ForwardKinematicsRequest req = new ForwardKinematicsRequest(joints);
         ros.SendServiceMessage<ForwardKinematicsResponse>("forward_kinematics", req, Callback);

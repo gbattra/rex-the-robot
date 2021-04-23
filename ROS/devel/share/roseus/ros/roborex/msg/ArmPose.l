@@ -14,7 +14,7 @@
 
 (defclass roborex::ArmPose
   :super ros::object
-  :slots (_world_joint _base_joint _shoulder_joint _elbow_joint _wrist_joint _eff_joint _right_gripper_joint _left_gripper_joint ))
+  :slots (_world_joint _base_joint _shoulder_joint _elbow_joint _wrist_joint _eff_joint _gripper_offset_joint _right_gripper_joint _left_gripper_joint ))
 
 (defmethod roborex::ArmPose
   (:init
@@ -25,8 +25,9 @@
     ((:elbow_joint __elbow_joint) (instance roborex::JointState :init))
     ((:wrist_joint __wrist_joint) (instance roborex::JointState :init))
     ((:eff_joint __eff_joint) (instance roborex::JointState :init))
-    ((:right_gripper_joint __right_gripper_joint) nil)
-    ((:left_gripper_joint __left_gripper_joint) nil)
+    ((:gripper_offset_joint __gripper_offset_joint) (instance roborex::JointState :init))
+    ((:right_gripper_joint __right_gripper_joint) (instance roborex::JointState :init))
+    ((:left_gripper_joint __left_gripper_joint) (instance roborex::JointState :init))
     )
    (send-super :init)
    (setq _world_joint __world_joint)
@@ -35,6 +36,7 @@
    (setq _elbow_joint __elbow_joint)
    (setq _wrist_joint __wrist_joint)
    (setq _eff_joint __eff_joint)
+   (setq _gripper_offset_joint __gripper_offset_joint)
    (setq _right_gripper_joint __right_gripper_joint)
    (setq _left_gripper_joint __left_gripper_joint)
    self)
@@ -80,12 +82,27 @@
      (progn
        (if __eff_joint (setq _eff_joint (car __eff_joint)))
        _eff_joint)))
+  (:gripper_offset_joint
+   (&rest __gripper_offset_joint)
+   (if (keywordp (car __gripper_offset_joint))
+       (send* _gripper_offset_joint __gripper_offset_joint)
+     (progn
+       (if __gripper_offset_joint (setq _gripper_offset_joint (car __gripper_offset_joint)))
+       _gripper_offset_joint)))
   (:right_gripper_joint
-   (&optional (__right_gripper_joint :null))
-   (if (not (eq __right_gripper_joint :null)) (setq _right_gripper_joint __right_gripper_joint)) _right_gripper_joint)
+   (&rest __right_gripper_joint)
+   (if (keywordp (car __right_gripper_joint))
+       (send* _right_gripper_joint __right_gripper_joint)
+     (progn
+       (if __right_gripper_joint (setq _right_gripper_joint (car __right_gripper_joint)))
+       _right_gripper_joint)))
   (:left_gripper_joint
-   (&optional (__left_gripper_joint :null))
-   (if (not (eq __left_gripper_joint :null)) (setq _left_gripper_joint __left_gripper_joint)) _left_gripper_joint)
+   (&rest __left_gripper_joint)
+   (if (keywordp (car __left_gripper_joint))
+       (send* _left_gripper_joint __left_gripper_joint)
+     (progn
+       (if __left_gripper_joint (setq _left_gripper_joint (car __left_gripper_joint)))
+       _left_gripper_joint)))
   (:serialization-length
    ()
    (+
@@ -101,10 +118,12 @@
     (send _wrist_joint :serialization-length)
     ;; roborex/JointState _eff_joint
     (send _eff_joint :serialization-length)
-    ;; bool _right_gripper_joint
-    1
-    ;; bool _left_gripper_joint
-    1
+    ;; roborex/JointState _gripper_offset_joint
+    (send _gripper_offset_joint :serialization-length)
+    ;; roborex/JointState _right_gripper_joint
+    (send _right_gripper_joint :serialization-length)
+    ;; roborex/JointState _left_gripper_joint
+    (send _left_gripper_joint :serialization-length)
     ))
   (:serialize
    (&optional strm)
@@ -122,10 +141,12 @@
        (send _wrist_joint :serialize s)
      ;; roborex/JointState _eff_joint
        (send _eff_joint :serialize s)
-     ;; bool _right_gripper_joint
-       (if _right_gripper_joint (write-byte -1 s) (write-byte 0 s))
-     ;; bool _left_gripper_joint
-       (if _left_gripper_joint (write-byte -1 s) (write-byte 0 s))
+     ;; roborex/JointState _gripper_offset_joint
+       (send _gripper_offset_joint :serialize s)
+     ;; roborex/JointState _right_gripper_joint
+       (send _right_gripper_joint :serialize s)
+     ;; roborex/JointState _left_gripper_joint
+       (send _left_gripper_joint :serialize s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -142,15 +163,17 @@
      (send _wrist_joint :deserialize buf ptr-) (incf ptr- (send _wrist_joint :serialization-length))
    ;; roborex/JointState _eff_joint
      (send _eff_joint :deserialize buf ptr-) (incf ptr- (send _eff_joint :serialization-length))
-   ;; bool _right_gripper_joint
-     (setq _right_gripper_joint (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
-   ;; bool _left_gripper_joint
-     (setq _left_gripper_joint (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
+   ;; roborex/JointState _gripper_offset_joint
+     (send _gripper_offset_joint :deserialize buf ptr-) (incf ptr- (send _gripper_offset_joint :serialization-length))
+   ;; roborex/JointState _right_gripper_joint
+     (send _right_gripper_joint :deserialize buf ptr-) (incf ptr- (send _right_gripper_joint :serialization-length))
+   ;; roborex/JointState _left_gripper_joint
+     (send _left_gripper_joint :deserialize buf ptr-) (incf ptr- (send _left_gripper_joint :serialization-length))
    ;;
    self)
   )
 
-(setf (get roborex::ArmPose :md5sum-) "55be2a66674559ab0f6efa20a2ea72ed")
+(setf (get roborex::ArmPose :md5sum-) "a5e1af2ff95ce9860148ff20620f2dd0")
 (setf (get roborex::ArmPose :datatype-) "roborex/ArmPose")
 (setf (get roborex::ArmPose :definition-)
       "JointState world_joint
@@ -159,8 +182,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -180,6 +204,6 @@ float64 z
 
 
 
-(provide :roborex/ArmPose "55be2a66674559ab0f6efa20a2ea72ed")
+(provide :roborex/ArmPose "a5e1af2ff95ce9860148ff20620f2dd0")
 
 

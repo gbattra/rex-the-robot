@@ -29,7 +29,8 @@ class InverseKinematicsService():
             req.eff_target.position.y,
             req.eff_target.position.z
         ])
-        traj = self.ik_engine.compute_body_ik(req.init_arm_pose, wrist_target, eff_target)
+        traj = self.ik_engine.compute_ik(req.init_arm_pose, eff_target)
+        # traj = self.ik_engine.compute_body_ik(req.init_arm_pose, wrist_target, eff_target)
         res = InverseKinematicsResponse()
         res.arm_pose = traj
         return res

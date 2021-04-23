@@ -6,13 +6,18 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/armPoseSubscriber.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/armPoseSubscriber.cpp.o"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/basePoseSubscriber.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/basePoseSubscriber.cpp.o"
-  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/cmdVelPublisher.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/cmdVelPublisher.cpp.o"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/commandPublisher.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/commandPublisher.cpp.o"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/goToGoalBehavior.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/goToGoalBehavior.cpp.o"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/graspTargetBehavior.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/graspTargetBehavior.cpp.o"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/gripperGoalPoseSubscriber.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/gripperGoalPoseSubscriber.cpp.o"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.o"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/releasePoseSubscriber.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/releasePoseSubscriber.cpp.o"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/releaseTargetBehavior.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/releaseTargetBehavior.cpp.o"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/systemBehavior.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/systemBehavior.cpp.o"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/targetPoseSubscriber.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/targetPoseSubscriber.cpp.o"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/trajectoryPlannerClient.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPlannerClient.cpp.o"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/trajectoryPublisher.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPublisher.cpp.o"
+  "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/trajectoryStatusSubscriber.cpp" "/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryStatusSubscriber.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

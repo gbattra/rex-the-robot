@@ -25,6 +25,7 @@ class ArmPose {
       this.elbow_joint = null;
       this.wrist_joint = null;
       this.eff_joint = null;
+      this.gripper_offset_joint = null;
       this.right_gripper_joint = null;
       this.left_gripper_joint = null;
     }
@@ -65,17 +66,23 @@ class ArmPose {
       else {
         this.eff_joint = new JointState();
       }
+      if (initObj.hasOwnProperty('gripper_offset_joint')) {
+        this.gripper_offset_joint = initObj.gripper_offset_joint
+      }
+      else {
+        this.gripper_offset_joint = new JointState();
+      }
       if (initObj.hasOwnProperty('right_gripper_joint')) {
         this.right_gripper_joint = initObj.right_gripper_joint
       }
       else {
-        this.right_gripper_joint = false;
+        this.right_gripper_joint = new JointState();
       }
       if (initObj.hasOwnProperty('left_gripper_joint')) {
         this.left_gripper_joint = initObj.left_gripper_joint
       }
       else {
-        this.left_gripper_joint = false;
+        this.left_gripper_joint = new JointState();
       }
     }
   }
@@ -94,10 +101,12 @@ class ArmPose {
     bufferOffset = JointState.serialize(obj.wrist_joint, buffer, bufferOffset);
     // Serialize message field [eff_joint]
     bufferOffset = JointState.serialize(obj.eff_joint, buffer, bufferOffset);
+    // Serialize message field [gripper_offset_joint]
+    bufferOffset = JointState.serialize(obj.gripper_offset_joint, buffer, bufferOffset);
     // Serialize message field [right_gripper_joint]
-    bufferOffset = _serializer.bool(obj.right_gripper_joint, buffer, bufferOffset);
+    bufferOffset = JointState.serialize(obj.right_gripper_joint, buffer, bufferOffset);
     // Serialize message field [left_gripper_joint]
-    bufferOffset = _serializer.bool(obj.left_gripper_joint, buffer, bufferOffset);
+    bufferOffset = JointState.serialize(obj.left_gripper_joint, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -117,15 +126,17 @@ class ArmPose {
     data.wrist_joint = JointState.deserialize(buffer, bufferOffset);
     // Deserialize message field [eff_joint]
     data.eff_joint = JointState.deserialize(buffer, bufferOffset);
+    // Deserialize message field [gripper_offset_joint]
+    data.gripper_offset_joint = JointState.deserialize(buffer, bufferOffset);
     // Deserialize message field [right_gripper_joint]
-    data.right_gripper_joint = _deserializer.bool(buffer, bufferOffset);
+    data.right_gripper_joint = JointState.deserialize(buffer, bufferOffset);
     // Deserialize message field [left_gripper_joint]
-    data.left_gripper_joint = _deserializer.bool(buffer, bufferOffset);
+    data.left_gripper_joint = JointState.deserialize(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 242;
+    return 360;
   }
 
   static datatype() {
@@ -135,7 +146,7 @@ class ArmPose {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '55be2a66674559ab0f6efa20a2ea72ed';
+    return 'a5e1af2ff95ce9860148ff20620f2dd0';
   }
 
   static messageDefinition() {
@@ -147,8 +158,9 @@ class ArmPose {
     JointState elbow_joint
     JointState wrist_joint
     JointState eff_joint
-    bool right_gripper_joint
-    bool left_gripper_joint
+    JointState gripper_offset_joint
+    JointState right_gripper_joint
+    JointState left_gripper_joint
     ================================================================================
     MSG: roborex/JointState
     geometry_msgs/Point translation
@@ -215,18 +227,25 @@ class ArmPose {
       resolved.eff_joint = new JointState()
     }
 
-    if (msg.right_gripper_joint !== undefined) {
-      resolved.right_gripper_joint = msg.right_gripper_joint;
+    if (msg.gripper_offset_joint !== undefined) {
+      resolved.gripper_offset_joint = JointState.Resolve(msg.gripper_offset_joint)
     }
     else {
-      resolved.right_gripper_joint = false
+      resolved.gripper_offset_joint = new JointState()
+    }
+
+    if (msg.right_gripper_joint !== undefined) {
+      resolved.right_gripper_joint = JointState.Resolve(msg.right_gripper_joint)
+    }
+    else {
+      resolved.right_gripper_joint = new JointState()
     }
 
     if (msg.left_gripper_joint !== undefined) {
-      resolved.left_gripper_joint = msg.left_gripper_joint;
+      resolved.left_gripper_joint = JointState.Resolve(msg.left_gripper_joint)
     }
     else {
-      resolved.left_gripper_joint = false
+      resolved.left_gripper_joint = new JointState()
     }
 
     return resolved;

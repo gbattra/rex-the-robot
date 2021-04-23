@@ -45,9 +45,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roborex/msg" TYPE FILE FILES
     "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg"
     "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg"
-    "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg"
+    "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg"
     "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg"
+    "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg"
     "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg"
+    "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg"
     )
 endif()
 
@@ -55,6 +57,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roborex/srv" TYPE FILE FILES
     "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv"
     "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv"
+    "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv"
     "/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv"
     )
 endif()

@@ -55,11 +55,14 @@ include roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/progress.make
 
 roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/ArmPose.js
 roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/BasePose.js
-roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/CmdVel.js
+roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Command.js
 roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/JointState.js
+roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectories.js
 roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectory.js
+roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/TrajectoryStatus.js
 roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js
 roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js
+roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/StartSystem.js
 roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js
 
 
@@ -75,10 +78,10 @@ roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from roborex/BasePose.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/BasePose.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/CmdVel.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/CmdVel.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from roborex/CmdVel.msg"
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/CmdVel.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Command.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Command.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from roborex/Command.msg"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Command.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/JointState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/JointState.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
@@ -86,52 +89,74 @@ roborex/CMakeFiles/roborex_generate_messages_nodejs: /home/gattra/Projects/Unity
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from roborex/JointState.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg
 
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectories.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectories.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectories.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectories.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectories.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectories.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from roborex/Trajectories.msg"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg
+
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectory.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectory.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectory.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectory.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectory.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from roborex/Trajectory.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from roborex/Trajectory.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/TrajectoryStatus.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/TrajectoryStatus.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from roborex/TrajectoryStatus.msg"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/TrajectoryStatus.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from roborex/ForwardKinematics.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from roborex/ForwardKinematics.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from roborex/InverseKinematics.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from roborex/InverseKinematics.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv
+
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/StartSystem.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/StartSystem.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Javascript code from roborex/StartSystem.srv"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/StartSystem.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from roborex/TrajectoryPlanner.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Javascript code from roborex/TrajectoryPlanner.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv
 
 roborex_generate_messages_nodejs: roborex/CMakeFiles/roborex_generate_messages_nodejs
 roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/ArmPose.js
 roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/BasePose.js
-roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/CmdVel.js
+roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Command.js
 roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/JointState.js
+roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectories.js
 roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/Trajectory.js
+roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/msg/TrajectoryStatus.js
 roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/ForwardKinematics.js
 roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/InverseKinematics.js
+roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/StartSystem.js
 roborex_generate_messages_nodejs: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/gennodejs/ros/roborex/srv/TrajectoryPlanner.js
 roborex_generate_messages_nodejs: roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build.make
 

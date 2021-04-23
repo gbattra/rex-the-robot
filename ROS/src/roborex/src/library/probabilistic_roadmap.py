@@ -44,11 +44,7 @@ class ProbabilisticRoadmap():
             # arm_pose.eff_joint.angle
         ])[1]
 
-        goal = self.eff_pose_tree.query([
-            target.position.x,
-            target.position.y,
-            target.position.z
-        ])[1]
+        goal = self.eff_pose_tree.query(target)[1]
 
         if start == goal:
             return traj
@@ -75,9 +71,6 @@ class ProbabilisticRoadmap():
 
         for joints_index in shortest_path:
             traj.append(self.joints_to_arm_pose(joints_index, arm_pose))
-
-        final_pose = self.ik_engine.compute_body_ik(traj[-1], target)
-        # traj.append(final_pose)
 
         return traj
 
@@ -167,7 +160,8 @@ class ProbabilisticRoadmap():
             pose.shoulder_joint,
             pose.elbow_joint,
             pose.wrist_joint,
-            pose.eff_joint
+            pose.eff_joint,
+            pose.gripper_offset_joint
         ]
 
         return self.fk_engine.get_pose(req)

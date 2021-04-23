@@ -5,23 +5,25 @@ import rospy
 
 from library.probabilistic_roadmap import ProbabilisticRoadmap
 from library.grasp_trajectory_planner import GraspTrajectoryPlanner
+from library.release_trajectory_planner import ReleaseTrajectoryPlanner
 from roborex.srv import TrajectoryPlanner, TrajectoryPlannerRequest, TrajectoryPlannerResponse
 
 
 class TrajectoryPlannerService():
 
     def __init__(self):
-        self.prm = ProbabilisticRoadmap()
         self.grasp_planner = GraspTrajectoryPlanner()
+        self.release_planner = ReleaseTrajectoryPlanner()
         self.serivice = rospy.Service("trajectory_planner", TrajectoryPlanner, self.callback)
 
     
     def callback(self, req):
-        if not self.prm.built:
-            self.prm.build_graph(2000, 5, req.arm_pose)
-        
-        # trajectories = self.prm.plan(req.arm_pose, req.target)
-        trajectories = self.grasp_planner.plan_trajectory(req.arm_pose, req.target, req.eff_offset, req.gripper_offset)
+        trajectories = []
+        if (req.grasp_trajectory):
+            trajectories = self.grasp_planner.plan_trajectory(req.arm_pose, req.target)
+        if (req.release_trajectory):
+            trajectories = self.release_planner.plan_trajectory(req.arm_pose, req.target)
+
         res = TrajectoryPlannerResponse()
         res.trajectories = trajectories
         return res

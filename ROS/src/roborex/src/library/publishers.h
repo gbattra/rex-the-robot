@@ -5,7 +5,8 @@
 #define ROBOREX_PUBLISHERS
 
 #include <ros/ros.h>
-#include <roborex/CmdVel.h>
+#include <roborex/Command.h>
+#include <roborex/Trajectories.h>
 
 namespace roborex
 {
@@ -16,14 +17,24 @@ namespace roborex
             virtual void publish(T msg) { throw; }
     };
 
-    class CmdVelPublisher: roborex::Publisher<roborex::CmdVel>
+    class CommandPublisher: roborex::Publisher<roborex::Command>
     {
         private:
             ros::Publisher cmd_vel_publisher;
         
         public:
-            CmdVelPublisher(ros::NodeHandle *nh);
-            void publish(roborex::CmdVel msg) override;
+            CommandPublisher(ros::NodeHandle *nh);
+            void publish(roborex::Command msg) override;
+    };
+
+    class TrajectoryPublisher: roborex::Publisher<roborex::Trajectories>
+    {
+        private:
+            ros::Publisher trajectory_publisher;
+
+        public:
+            TrajectoryPublisher(ros::NodeHandle *nh);
+            void publish(roborex::Trajectories msg) override;
     };
 }
 

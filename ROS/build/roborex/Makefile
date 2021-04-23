@@ -288,6 +288,51 @@ roborex_generate_messages_cpp/fast:
 .PHONY : roborex_generate_messages_cpp/fast
 
 # Convenience name for target.
+roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/rule
+.PHONY : roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roborex_generate_messages_nodejs: roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/rule
+
+.PHONY : roborex_generate_messages_nodejs
+
+# fast build rule for target.
+roborex_generate_messages_nodejs/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build
+.PHONY : roborex_generate_messages_nodejs/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/roborex_genlisp.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_genlisp.dir/rule
+.PHONY : roborex/CMakeFiles/roborex_genlisp.dir/rule
+
+# Convenience name for target.
+roborex_genlisp: roborex/CMakeFiles/roborex_genlisp.dir/rule
+
+.PHONY : roborex_genlisp
+
+# fast build rule for target.
+roborex_genlisp/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_genlisp.dir/build.make roborex/CMakeFiles/roborex_genlisp.dir/build
+.PHONY : roborex_genlisp/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/rule
+.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/rule
+
+# Convenience name for target.
+_roborex_generate_messages_check_deps_InverseKinematics: roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/rule
+
+.PHONY : _roborex_generate_messages_check_deps_InverseKinematics
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_InverseKinematics/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/build
+.PHONY : _roborex_generate_messages_check_deps_InverseKinematics/fast
+
+# Convenience name for target.
 roborex/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : roborex/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
@@ -301,36 +346,6 @@ rosgraph_msgs_generate_messages_py: roborex/CMakeFiles/rosgraph_msgs_generate_me
 rosgraph_msgs_generate_messages_py/fast:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make roborex/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-roborex/CMakeFiles/roborex_generate_messages_eus.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_generate_messages_eus.dir/rule
-.PHONY : roborex/CMakeFiles/roborex_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roborex_generate_messages_eus: roborex/CMakeFiles/roborex_generate_messages_eus.dir/rule
-
-.PHONY : roborex_generate_messages_eus
-
-# fast build rule for target.
-roborex_generate_messages_eus/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_generate_messages_eus.dir/build.make roborex/CMakeFiles/roborex_generate_messages_eus.dir/build
-.PHONY : roborex_generate_messages_eus/fast
-
-# Convenience name for target.
-roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 roborex/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
@@ -348,21 +363,6 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 roborex/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : roborex/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
@@ -376,6 +376,21 @@ rosgraph_msgs_generate_messages_lisp: roborex/CMakeFiles/rosgraph_msgs_generate_
 rosgraph_msgs_generate_messages_lisp/fast:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make roborex/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/_roborex_generate_messages_check_deps_StartSystem.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_StartSystem.dir/rule
+.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_StartSystem.dir/rule
+
+# Convenience name for target.
+_roborex_generate_messages_check_deps_StartSystem: roborex/CMakeFiles/_roborex_generate_messages_check_deps_StartSystem.dir/rule
+
+.PHONY : _roborex_generate_messages_check_deps_StartSystem
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_StartSystem/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_StartSystem.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_StartSystem.dir/build
+.PHONY : _roborex_generate_messages_check_deps_StartSystem/fast
 
 # Convenience name for target.
 roborex/CMakeFiles/roborex_generate_messages.dir/rule:
@@ -543,6 +558,21 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+roborex/CMakeFiles/roborex_system_behavior.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_system_behavior.dir/rule
+.PHONY : roborex/CMakeFiles/roborex_system_behavior.dir/rule
+
+# Convenience name for target.
+roborex_system_behavior: roborex/CMakeFiles/roborex_system_behavior.dir/rule
+
+.PHONY : roborex_system_behavior
+
+# fast build rule for target.
+roborex_system_behavior/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_system_behavior.dir/build.make roborex/CMakeFiles/roborex_system_behavior.dir/build
+.PHONY : roborex_system_behavior/fast
+
+# Convenience name for target.
 roborex/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : roborex/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
@@ -556,6 +586,21 @@ roscpp_generate_messages_nodejs: roborex/CMakeFiles/roscpp_generate_messages_nod
 roscpp_generate_messages_nodejs/fast:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryStatus.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryStatus.dir/rule
+.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryStatus.dir/rule
+
+# Convenience name for target.
+_roborex_generate_messages_check_deps_TrajectoryStatus: roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryStatus.dir/rule
+
+.PHONY : _roborex_generate_messages_check_deps_TrajectoryStatus
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_TrajectoryStatus/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryStatus.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryStatus.dir/build
+.PHONY : _roborex_generate_messages_check_deps_TrajectoryStatus/fast
 
 # Convenience name for target.
 roborex/CMakeFiles/_roborex_generate_messages_check_deps_JointState.dir/rule:
@@ -573,6 +618,51 @@ _roborex_generate_messages_check_deps_JointState/fast:
 .PHONY : _roborex_generate_messages_check_deps_JointState/fast
 
 # Convenience name for target.
+roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/rule
+.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/rule
+
+# Convenience name for target.
+_roborex_generate_messages_check_deps_TrajectoryPlanner: roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/rule
+
+.PHONY : _roborex_generate_messages_check_deps_TrajectoryPlanner
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_TrajectoryPlanner/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/build
+.PHONY : _roborex_generate_messages_check_deps_TrajectoryPlanner/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : roborex/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: roborex/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_eus.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
 roborex/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : roborex/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
@@ -586,51 +676,6 @@ geometry_msgs_generate_messages_py: roborex/CMakeFiles/geometry_msgs_generate_me
 geometry_msgs_generate_messages_py/fast:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make roborex/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/rule
-.PHONY : roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roborex_generate_messages_nodejs: roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/rule
-
-.PHONY : roborex_generate_messages_nodejs
-
-# fast build rule for target.
-roborex_generate_messages_nodejs/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build
-.PHONY : roborex_generate_messages_nodejs/fast
-
-# Convenience name for target.
-roborex/CMakeFiles/roborex_genlisp.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_genlisp.dir/rule
-.PHONY : roborex/CMakeFiles/roborex_genlisp.dir/rule
-
-# Convenience name for target.
-roborex_genlisp: roborex/CMakeFiles/roborex_genlisp.dir/rule
-
-.PHONY : roborex_genlisp
-
-# fast build rule for target.
-roborex_genlisp/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_genlisp.dir/build.make roborex/CMakeFiles/roborex_genlisp.dir/build
-.PHONY : roborex_genlisp/fast
-
-# Convenience name for target.
-roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/rule
-.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/rule
-
-# Convenience name for target.
-_roborex_generate_messages_check_deps_InverseKinematics: roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/rule
-
-.PHONY : _roborex_generate_messages_check_deps_InverseKinematics
-
-# fast build rule for target.
-_roborex_generate_messages_check_deps_InverseKinematics/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/build
-.PHONY : _roborex_generate_messages_check_deps_InverseKinematics/fast
 
 # Convenience name for target.
 roborex/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
@@ -708,34 +753,79 @@ _roborex_generate_messages_check_deps_BasePose/fast:
 .PHONY : _roborex_generate_messages_check_deps_BasePose/fast
 
 # Convenience name for target.
-roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roborex/CMakeFiles/roborex_generate_messages_eus.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_generate_messages_eus.dir/rule
+.PHONY : roborex/CMakeFiles/roborex_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roborex_generate_messages_eus: roborex/CMakeFiles/roborex_generate_messages_eus.dir/rule
 
-.PHONY : roscpp_generate_messages_cpp
+.PHONY : roborex_generate_messages_eus
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+roborex_generate_messages_eus/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_generate_messages_eus.dir/build.make roborex/CMakeFiles/roborex_generate_messages_eus.dir/build
+.PHONY : roborex_generate_messages_eus/fast
 
 # Convenience name for target.
-roborex/CMakeFiles/_roborex_generate_messages_check_deps_CmdVel.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_CmdVel.dir/rule
-.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_CmdVel.dir/rule
+roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-_roborex_generate_messages_check_deps_CmdVel: roborex/CMakeFiles/_roborex_generate_messages_check_deps_CmdVel.dir/rule
+roscpp_generate_messages_lisp: roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
-.PHONY : _roborex_generate_messages_check_deps_CmdVel
+.PHONY : roscpp_generate_messages_lisp
 
 # fast build rule for target.
-_roborex_generate_messages_check_deps_CmdVel/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_CmdVel.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_CmdVel.dir/build
-.PHONY : _roborex_generate_messages_check_deps_CmdVel/fast
+roscpp_generate_messages_lisp/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/_roborex_generate_messages_check_deps_Command.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_Command.dir/rule
+.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_Command.dir/rule
+
+# Convenience name for target.
+_roborex_generate_messages_check_deps_Command: roborex/CMakeFiles/_roborex_generate_messages_check_deps_Command.dir/rule
+
+.PHONY : _roborex_generate_messages_check_deps_Command
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_Command/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_Command.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_Command.dir/build
+.PHONY : _roborex_generate_messages_check_deps_Command/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/rule
+.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/rule
+
+# Convenience name for target.
+_roborex_generate_messages_check_deps_Trajectories: roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/rule
+
+.PHONY : _roborex_generate_messages_check_deps_Trajectories
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_Trajectories/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/build
+.PHONY : _roborex_generate_messages_check_deps_Trajectories/fast
 
 # Convenience name for target.
 roborex/CMakeFiles/roborex_gtg_behavior.dir/rule:
@@ -797,36 +887,6 @@ _roborex_generate_messages_check_deps_ForwardKinematics/fast:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_ForwardKinematics.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_ForwardKinematics.dir/build
 .PHONY : _roborex_generate_messages_check_deps_ForwardKinematics/fast
 
-# Convenience name for target.
-roborex/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : roborex/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: roborex/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_eus.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/rule:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/rule
-.PHONY : roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/rule
-
-# Convenience name for target.
-_roborex_generate_messages_check_deps_TrajectoryPlanner: roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/rule
-
-.PHONY : _roborex_generate_messages_check_deps_TrajectoryPlanner
-
-# fast build rule for target.
-_roborex_generate_messages_check_deps_TrajectoryPlanner/fast:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/build
-.PHONY : _roborex_generate_messages_check_deps_TrajectoryPlanner/fast
-
 src/library/armPoseSubscriber.o: src/library/armPoseSubscriber.cpp.o
 
 .PHONY : src/library/armPoseSubscriber.o
@@ -881,32 +941,32 @@ src/library/basePoseSubscriber.cpp.s:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/basePoseSubscriber.cpp.s
 .PHONY : src/library/basePoseSubscriber.cpp.s
 
-src/library/cmdVelPublisher.o: src/library/cmdVelPublisher.cpp.o
+src/library/commandPublisher.o: src/library/commandPublisher.cpp.o
 
-.PHONY : src/library/cmdVelPublisher.o
+.PHONY : src/library/commandPublisher.o
 
 # target to build an object file
-src/library/cmdVelPublisher.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/cmdVelPublisher.cpp.o
-.PHONY : src/library/cmdVelPublisher.cpp.o
+src/library/commandPublisher.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/commandPublisher.cpp.o
+.PHONY : src/library/commandPublisher.cpp.o
 
-src/library/cmdVelPublisher.i: src/library/cmdVelPublisher.cpp.i
+src/library/commandPublisher.i: src/library/commandPublisher.cpp.i
 
-.PHONY : src/library/cmdVelPublisher.i
+.PHONY : src/library/commandPublisher.i
 
 # target to preprocess a source file
-src/library/cmdVelPublisher.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/cmdVelPublisher.cpp.i
-.PHONY : src/library/cmdVelPublisher.cpp.i
+src/library/commandPublisher.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/commandPublisher.cpp.i
+.PHONY : src/library/commandPublisher.cpp.i
 
-src/library/cmdVelPublisher.s: src/library/cmdVelPublisher.cpp.s
+src/library/commandPublisher.s: src/library/commandPublisher.cpp.s
 
-.PHONY : src/library/cmdVelPublisher.s
+.PHONY : src/library/commandPublisher.s
 
 # target to generate assembly for a file
-src/library/cmdVelPublisher.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/cmdVelPublisher.cpp.s
-.PHONY : src/library/cmdVelPublisher.cpp.s
+src/library/commandPublisher.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/commandPublisher.cpp.s
+.PHONY : src/library/commandPublisher.cpp.s
 
 src/library/goToGoalBehavior.o: src/library/goToGoalBehavior.cpp.o
 
@@ -1016,6 +1076,87 @@ src/library/pid.cpp.s:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.s
 .PHONY : src/library/pid.cpp.s
 
+src/library/releasePoseSubscriber.o: src/library/releasePoseSubscriber.cpp.o
+
+.PHONY : src/library/releasePoseSubscriber.o
+
+# target to build an object file
+src/library/releasePoseSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releasePoseSubscriber.cpp.o
+.PHONY : src/library/releasePoseSubscriber.cpp.o
+
+src/library/releasePoseSubscriber.i: src/library/releasePoseSubscriber.cpp.i
+
+.PHONY : src/library/releasePoseSubscriber.i
+
+# target to preprocess a source file
+src/library/releasePoseSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releasePoseSubscriber.cpp.i
+.PHONY : src/library/releasePoseSubscriber.cpp.i
+
+src/library/releasePoseSubscriber.s: src/library/releasePoseSubscriber.cpp.s
+
+.PHONY : src/library/releasePoseSubscriber.s
+
+# target to generate assembly for a file
+src/library/releasePoseSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releasePoseSubscriber.cpp.s
+.PHONY : src/library/releasePoseSubscriber.cpp.s
+
+src/library/releaseTargetBehavior.o: src/library/releaseTargetBehavior.cpp.o
+
+.PHONY : src/library/releaseTargetBehavior.o
+
+# target to build an object file
+src/library/releaseTargetBehavior.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releaseTargetBehavior.cpp.o
+.PHONY : src/library/releaseTargetBehavior.cpp.o
+
+src/library/releaseTargetBehavior.i: src/library/releaseTargetBehavior.cpp.i
+
+.PHONY : src/library/releaseTargetBehavior.i
+
+# target to preprocess a source file
+src/library/releaseTargetBehavior.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releaseTargetBehavior.cpp.i
+.PHONY : src/library/releaseTargetBehavior.cpp.i
+
+src/library/releaseTargetBehavior.s: src/library/releaseTargetBehavior.cpp.s
+
+.PHONY : src/library/releaseTargetBehavior.s
+
+# target to generate assembly for a file
+src/library/releaseTargetBehavior.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releaseTargetBehavior.cpp.s
+.PHONY : src/library/releaseTargetBehavior.cpp.s
+
+src/library/systemBehavior.o: src/library/systemBehavior.cpp.o
+
+.PHONY : src/library/systemBehavior.o
+
+# target to build an object file
+src/library/systemBehavior.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/systemBehavior.cpp.o
+.PHONY : src/library/systemBehavior.cpp.o
+
+src/library/systemBehavior.i: src/library/systemBehavior.cpp.i
+
+.PHONY : src/library/systemBehavior.i
+
+# target to preprocess a source file
+src/library/systemBehavior.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/systemBehavior.cpp.i
+.PHONY : src/library/systemBehavior.cpp.i
+
+src/library/systemBehavior.s: src/library/systemBehavior.cpp.s
+
+.PHONY : src/library/systemBehavior.s
+
+# target to generate assembly for a file
+src/library/systemBehavior.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/systemBehavior.cpp.s
+.PHONY : src/library/systemBehavior.cpp.s
+
 src/library/targetPoseSubscriber.o: src/library/targetPoseSubscriber.cpp.o
 
 .PHONY : src/library/targetPoseSubscriber.o
@@ -1069,6 +1210,60 @@ src/library/trajectoryPlannerClient.s: src/library/trajectoryPlannerClient.cpp.s
 src/library/trajectoryPlannerClient.cpp.s:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPlannerClient.cpp.s
 .PHONY : src/library/trajectoryPlannerClient.cpp.s
+
+src/library/trajectoryPublisher.o: src/library/trajectoryPublisher.cpp.o
+
+.PHONY : src/library/trajectoryPublisher.o
+
+# target to build an object file
+src/library/trajectoryPublisher.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPublisher.cpp.o
+.PHONY : src/library/trajectoryPublisher.cpp.o
+
+src/library/trajectoryPublisher.i: src/library/trajectoryPublisher.cpp.i
+
+.PHONY : src/library/trajectoryPublisher.i
+
+# target to preprocess a source file
+src/library/trajectoryPublisher.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPublisher.cpp.i
+.PHONY : src/library/trajectoryPublisher.cpp.i
+
+src/library/trajectoryPublisher.s: src/library/trajectoryPublisher.cpp.s
+
+.PHONY : src/library/trajectoryPublisher.s
+
+# target to generate assembly for a file
+src/library/trajectoryPublisher.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPublisher.cpp.s
+.PHONY : src/library/trajectoryPublisher.cpp.s
+
+src/library/trajectoryStatusSubscriber.o: src/library/trajectoryStatusSubscriber.cpp.o
+
+.PHONY : src/library/trajectoryStatusSubscriber.o
+
+# target to build an object file
+src/library/trajectoryStatusSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryStatusSubscriber.cpp.o
+.PHONY : src/library/trajectoryStatusSubscriber.cpp.o
+
+src/library/trajectoryStatusSubscriber.i: src/library/trajectoryStatusSubscriber.cpp.i
+
+.PHONY : src/library/trajectoryStatusSubscriber.i
+
+# target to preprocess a source file
+src/library/trajectoryStatusSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryStatusSubscriber.cpp.i
+.PHONY : src/library/trajectoryStatusSubscriber.cpp.i
+
+src/library/trajectoryStatusSubscriber.s: src/library/trajectoryStatusSubscriber.cpp.s
+
+.PHONY : src/library/trajectoryStatusSubscriber.s
+
+# target to generate assembly for a file
+src/library/trajectoryStatusSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryStatusSubscriber.cpp.s
+.PHONY : src/library/trajectoryStatusSubscriber.cpp.s
 
 src/nodes/basePoseSubscriberNode.o: src/nodes/basePoseSubscriberNode.cpp.o
 
@@ -1151,6 +1346,33 @@ src/nodes/graspTargetBehaviorNode.cpp.s:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_grasp_behavior.dir/build.make roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.s
 .PHONY : src/nodes/graspTargetBehaviorNode.cpp.s
 
+src/nodes/systemBehaviorNode.o: src/nodes/systemBehaviorNode.cpp.o
+
+.PHONY : src/nodes/systemBehaviorNode.o
+
+# target to build an object file
+src/nodes/systemBehaviorNode.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_system_behavior.dir/build.make roborex/CMakeFiles/roborex_system_behavior.dir/src/nodes/systemBehaviorNode.cpp.o
+.PHONY : src/nodes/systemBehaviorNode.cpp.o
+
+src/nodes/systemBehaviorNode.i: src/nodes/systemBehaviorNode.cpp.i
+
+.PHONY : src/nodes/systemBehaviorNode.i
+
+# target to preprocess a source file
+src/nodes/systemBehaviorNode.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_system_behavior.dir/build.make roborex/CMakeFiles/roborex_system_behavior.dir/src/nodes/systemBehaviorNode.cpp.i
+.PHONY : src/nodes/systemBehaviorNode.cpp.i
+
+src/nodes/systemBehaviorNode.s: src/nodes/systemBehaviorNode.cpp.s
+
+.PHONY : src/nodes/systemBehaviorNode.s
+
+# target to generate assembly for a file
+src/nodes/systemBehaviorNode.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_system_behavior.dir/build.make roborex/CMakeFiles/roborex_system_behavior.dir/src/nodes/systemBehaviorNode.cpp.s
+.PHONY : src/nodes/systemBehaviorNode.cpp.s
+
 src/nodes/targetPoseSubscriberNode.o: src/nodes/targetPoseSubscriberNode.cpp.o
 
 .PHONY : src/nodes/targetPoseSubscriberNode.o
@@ -1196,13 +1418,14 @@ help:
 	@echo "... roborex_geneus"
 	@echo "... roborex_gencpp"
 	@echo "... roborex_generate_messages_cpp"
+	@echo "... roborex_generate_messages_nodejs"
+	@echo "... roborex_genlisp"
+	@echo "... _roborex_generate_messages_check_deps_InverseKinematics"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... roborex_generate_messages_eus"
-	@echo "... roscpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... install/local"
+	@echo "... _roborex_generate_messages_check_deps_StartSystem"
 	@echo "... roborex_generate_messages"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -1215,35 +1438,38 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roborex_base_pose_subscriber"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... roborex_system_behavior"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... _roborex_generate_messages_check_deps_TrajectoryStatus"
 	@echo "... _roborex_generate_messages_check_deps_JointState"
+	@echo "... rebuild_cache"
+	@echo "... _roborex_generate_messages_check_deps_TrajectoryPlanner"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... roborex_generate_messages_nodejs"
-	@echo "... roborex_genlisp"
-	@echo "... _roborex_generate_messages_check_deps_InverseKinematics"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... _roborex_generate_messages_check_deps_ArmPose"
 	@echo "... _roborex_generate_messages_check_deps_BasePose"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... _roborex_generate_messages_check_deps_CmdVel"
+	@echo "... roborex_generate_messages_eus"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... _roborex_generate_messages_check_deps_Command"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... _roborex_generate_messages_check_deps_Trajectories"
 	@echo "... roborex_gtg_behavior"
 	@echo "... roborex_target_pose_subscriber"
 	@echo "... _roborex_generate_messages_check_deps_Trajectory"
 	@echo "... _roborex_generate_messages_check_deps_ForwardKinematics"
-	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... _roborex_generate_messages_check_deps_TrajectoryPlanner"
 	@echo "... src/library/armPoseSubscriber.o"
 	@echo "... src/library/armPoseSubscriber.i"
 	@echo "... src/library/armPoseSubscriber.s"
 	@echo "... src/library/basePoseSubscriber.o"
 	@echo "... src/library/basePoseSubscriber.i"
 	@echo "... src/library/basePoseSubscriber.s"
-	@echo "... src/library/cmdVelPublisher.o"
-	@echo "... src/library/cmdVelPublisher.i"
-	@echo "... src/library/cmdVelPublisher.s"
+	@echo "... src/library/commandPublisher.o"
+	@echo "... src/library/commandPublisher.i"
+	@echo "... src/library/commandPublisher.s"
 	@echo "... src/library/goToGoalBehavior.o"
 	@echo "... src/library/goToGoalBehavior.i"
 	@echo "... src/library/goToGoalBehavior.s"
@@ -1256,12 +1482,27 @@ help:
 	@echo "... src/library/pid.o"
 	@echo "... src/library/pid.i"
 	@echo "... src/library/pid.s"
+	@echo "... src/library/releasePoseSubscriber.o"
+	@echo "... src/library/releasePoseSubscriber.i"
+	@echo "... src/library/releasePoseSubscriber.s"
+	@echo "... src/library/releaseTargetBehavior.o"
+	@echo "... src/library/releaseTargetBehavior.i"
+	@echo "... src/library/releaseTargetBehavior.s"
+	@echo "... src/library/systemBehavior.o"
+	@echo "... src/library/systemBehavior.i"
+	@echo "... src/library/systemBehavior.s"
 	@echo "... src/library/targetPoseSubscriber.o"
 	@echo "... src/library/targetPoseSubscriber.i"
 	@echo "... src/library/targetPoseSubscriber.s"
 	@echo "... src/library/trajectoryPlannerClient.o"
 	@echo "... src/library/trajectoryPlannerClient.i"
 	@echo "... src/library/trajectoryPlannerClient.s"
+	@echo "... src/library/trajectoryPublisher.o"
+	@echo "... src/library/trajectoryPublisher.i"
+	@echo "... src/library/trajectoryPublisher.s"
+	@echo "... src/library/trajectoryStatusSubscriber.o"
+	@echo "... src/library/trajectoryStatusSubscriber.i"
+	@echo "... src/library/trajectoryStatusSubscriber.s"
 	@echo "... src/nodes/basePoseSubscriberNode.o"
 	@echo "... src/nodes/basePoseSubscriberNode.i"
 	@echo "... src/nodes/basePoseSubscriberNode.s"
@@ -1271,6 +1512,9 @@ help:
 	@echo "... src/nodes/graspTargetBehaviorNode.o"
 	@echo "... src/nodes/graspTargetBehaviorNode.i"
 	@echo "... src/nodes/graspTargetBehaviorNode.s"
+	@echo "... src/nodes/systemBehaviorNode.o"
+	@echo "... src/nodes/systemBehaviorNode.i"
+	@echo "... src/nodes/systemBehaviorNode.s"
 	@echo "... src/nodes/targetPoseSubscriberNode.o"
 	@echo "... src/nodes/targetPoseSubscriberNode.i"
 	@echo "... src/nodes/targetPoseSubscriberNode.s"

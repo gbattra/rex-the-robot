@@ -13,31 +13,31 @@ namespace RosMessageTypes.Roborex
 
         public ArmPose arm_pose;
         public Geometry.Pose target;
-        public float gripper_offset;
-        public float eff_offset;
+        public bool grasp_trajectory;
+        public bool release_trajectory;
 
         public TrajectoryPlannerRequest()
         {
             this.arm_pose = new ArmPose();
             this.target = new Geometry.Pose();
-            this.gripper_offset = 0.0f;
-            this.eff_offset = 0.0f;
+            this.grasp_trajectory = false;
+            this.release_trajectory = false;
         }
 
-        public TrajectoryPlannerRequest(ArmPose arm_pose, Geometry.Pose target, float gripper_offset, float eff_offset)
+        public TrajectoryPlannerRequest(ArmPose arm_pose, Geometry.Pose target, bool grasp_trajectory, bool release_trajectory)
         {
             this.arm_pose = arm_pose;
             this.target = target;
-            this.gripper_offset = gripper_offset;
-            this.eff_offset = eff_offset;
+            this.grasp_trajectory = grasp_trajectory;
+            this.release_trajectory = release_trajectory;
         }
         public override List<byte[]> SerializationStatements()
         {
             var listOfSerializations = new List<byte[]>();
             listOfSerializations.AddRange(arm_pose.SerializationStatements());
             listOfSerializations.AddRange(target.SerializationStatements());
-            listOfSerializations.Add(BitConverter.GetBytes(this.gripper_offset));
-            listOfSerializations.Add(BitConverter.GetBytes(this.eff_offset));
+            listOfSerializations.Add(BitConverter.GetBytes(this.grasp_trajectory));
+            listOfSerializations.Add(BitConverter.GetBytes(this.release_trajectory));
 
             return listOfSerializations;
         }
@@ -46,10 +46,10 @@ namespace RosMessageTypes.Roborex
         {
             offset = this.arm_pose.Deserialize(data, offset);
             offset = this.target.Deserialize(data, offset);
-            this.gripper_offset = BitConverter.ToSingle(data, offset);
-            offset += 4;
-            this.eff_offset = BitConverter.ToSingle(data, offset);
-            offset += 4;
+            this.grasp_trajectory = BitConverter.ToBoolean(data, offset);
+            offset += 1;
+            this.release_trajectory = BitConverter.ToBoolean(data, offset);
+            offset += 1;
 
             return offset;
         }
@@ -59,8 +59,8 @@ namespace RosMessageTypes.Roborex
             return "TrajectoryPlannerRequest: " +
             "\narm_pose: " + arm_pose.ToString() +
             "\ntarget: " + target.ToString() +
-            "\ngripper_offset: " + gripper_offset.ToString() +
-            "\neff_offset: " + eff_offset.ToString();
+            "\ngrasp_trajectory: " + grasp_trajectory.ToString() +
+            "\nrelease_trajectory: " + release_trajectory.ToString();
         }
     }
 }

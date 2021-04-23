@@ -10,6 +10,8 @@
     (:file "_package_ForwardKinematics" :depends-on ("_package"))
     (:file "InverseKinematics" :depends-on ("_package_InverseKinematics"))
     (:file "_package_InverseKinematics" :depends-on ("_package"))
+    (:file "StartSystem" :depends-on ("_package_StartSystem"))
+    (:file "_package_StartSystem" :depends-on ("_package"))
     (:file "TrajectoryPlanner" :depends-on ("_package_TrajectoryPlanner"))
     (:file "_package_TrajectoryPlanner" :depends-on ("_package"))
   ))

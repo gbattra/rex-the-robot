@@ -47,8 +47,8 @@ MonoBehaviour:
   rosPort: 10000
   overrideUnityIP: 
   unityPort: 5005
-  awaitDataMaxRetries: 1000
+  awaitDataMaxRetries: 10
   awaitDataSleepSeconds: 1
   readChunkSize: 2048
-  awaitDataReadRetry: 10000
+  awaitDataReadRetry: 10
   showHUD: 1

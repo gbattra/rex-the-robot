@@ -1,6 +1,6 @@
 ArmPose arm_pose
 geometry_msgs/Pose target
-float32 gripper_offset
-float32 eff_offset
+bool grasp_trajectory
+bool release_trajectory
 ---
 Trajectory[] trajectories

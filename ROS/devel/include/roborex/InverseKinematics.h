@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::roborex::InverseKinematics > {
   static const char* value()
   {
-    return "a5747170d3fd6b372503a24bb90131c0";
+    return "c44e167c0184aca769254292f802c4b0";
   }
 
   static const char* value(const ::roborex::InverseKinematics&) { return value(); }

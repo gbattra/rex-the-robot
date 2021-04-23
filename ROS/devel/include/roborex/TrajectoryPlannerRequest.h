@@ -28,14 +28,14 @@ struct TrajectoryPlannerRequest_
   TrajectoryPlannerRequest_()
     : arm_pose()
     , target()
-    , gripper_offset(0.0)
-    , eff_offset(0.0)  {
+    , grasp_trajectory(false)
+    , release_trajectory(false)  {
     }
   TrajectoryPlannerRequest_(const ContainerAllocator& _alloc)
     : arm_pose(_alloc)
     , target(_alloc)
-    , gripper_offset(0.0)
-    , eff_offset(0.0)  {
+    , grasp_trajectory(false)
+    , release_trajectory(false)  {
   (void)_alloc;
     }
 
@@ -47,11 +47,11 @@ struct TrajectoryPlannerRequest_
    typedef  ::geometry_msgs::Pose_<ContainerAllocator>  _target_type;
   _target_type target;
 
-   typedef float _gripper_offset_type;
-  _gripper_offset_type gripper_offset;
+   typedef uint8_t _grasp_trajectory_type;
+  _grasp_trajectory_type grasp_trajectory;
 
-   typedef float _eff_offset_type;
-  _eff_offset_type eff_offset;
+   typedef uint8_t _release_trajectory_type;
+  _release_trajectory_type release_trajectory;
 
 
 
@@ -84,8 +84,8 @@ bool operator==(const ::roborex::TrajectoryPlannerRequest_<ContainerAllocator1> 
 {
   return lhs.arm_pose == rhs.arm_pose &&
     lhs.target == rhs.target &&
-    lhs.gripper_offset == rhs.gripper_offset &&
-    lhs.eff_offset == rhs.eff_offset;
+    lhs.grasp_trajectory == rhs.grasp_trajectory &&
+    lhs.release_trajectory == rhs.release_trajectory;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -142,12 +142,12 @@ struct MD5Sum< ::roborex::TrajectoryPlannerRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "11abd7ff07e1b32ddf4046f6d912966a";
+    return "2bac259c1bc1ea5c349be865d7f376a1";
   }
 
   static const char* value(const ::roborex::TrajectoryPlannerRequest_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x11abd7ff07e1b32dULL;
-  static const uint64_t static_value2 = 0xdf4046f6d912966aULL;
+  static const uint64_t static_value1 = 0x2bac259c1bc1ea5cULL;
+  static const uint64_t static_value2 = 0x349be865d7f376a1ULL;
 };
 
 template<class ContainerAllocator>
@@ -168,8 +168,8 @@ struct Definition< ::roborex::TrajectoryPlannerRequest_<ContainerAllocator> >
   {
     return "ArmPose arm_pose\n"
 "geometry_msgs/Pose target\n"
-"float32 gripper_offset\n"
-"float32 eff_offset\n"
+"bool grasp_trajectory\n"
+"bool release_trajectory\n"
 "\n"
 "================================================================================\n"
 "MSG: roborex/ArmPose\n"
@@ -179,8 +179,9 @@ struct Definition< ::roborex::TrajectoryPlannerRequest_<ContainerAllocator> >
 "JointState elbow_joint\n"
 "JointState wrist_joint\n"
 "JointState eff_joint\n"
-"bool right_gripper_joint\n"
-"bool left_gripper_joint\n"
+"JointState gripper_offset_joint\n"
+"JointState right_gripper_joint\n"
+"JointState left_gripper_joint\n"
 "================================================================================\n"
 "MSG: roborex/JointState\n"
 "geometry_msgs/Point translation\n"
@@ -230,8 +231,8 @@ namespace serialization
     {
       stream.next(m.arm_pose);
       stream.next(m.target);
-      stream.next(m.gripper_offset);
-      stream.next(m.eff_offset);
+      stream.next(m.grasp_trajectory);
+      stream.next(m.release_trajectory);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -256,10 +257,10 @@ struct Printer< ::roborex::TrajectoryPlannerRequest_<ContainerAllocator> >
     s << indent << "target: ";
     s << std::endl;
     Printer< ::geometry_msgs::Pose_<ContainerAllocator> >::stream(s, indent + "  ", v.target);
-    s << indent << "gripper_offset: ";
-    Printer<float>::stream(s, indent + "  ", v.gripper_offset);
-    s << indent << "eff_offset: ";
-    Printer<float>::stream(s, indent + "  ", v.eff_offset);
+    s << indent << "grasp_trajectory: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.grasp_trajectory);
+    s << indent << "release_trajectory: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.release_trajectory);
   }
 };
 

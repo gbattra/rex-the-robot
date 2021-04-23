@@ -17,8 +17,9 @@ namespace RosMessageTypes.Roborex
         public JointState elbow_joint;
         public JointState wrist_joint;
         public JointState eff_joint;
-        public bool right_gripper_joint;
-        public bool left_gripper_joint;
+        public JointState gripper_offset_joint;
+        public JointState right_gripper_joint;
+        public JointState left_gripper_joint;
 
         public ArmPose()
         {
@@ -28,11 +29,12 @@ namespace RosMessageTypes.Roborex
             this.elbow_joint = new JointState();
             this.wrist_joint = new JointState();
             this.eff_joint = new JointState();
-            this.right_gripper_joint = false;
-            this.left_gripper_joint = false;
+            this.gripper_offset_joint = new JointState();
+            this.right_gripper_joint = new JointState();
+            this.left_gripper_joint = new JointState();
         }
 
-        public ArmPose(JointState world_joint, JointState base_joint, JointState shoulder_joint, JointState elbow_joint, JointState wrist_joint, JointState eff_joint, bool right_gripper_joint, bool left_gripper_joint)
+        public ArmPose(JointState world_joint, JointState base_joint, JointState shoulder_joint, JointState elbow_joint, JointState wrist_joint, JointState eff_joint, JointState gripper_offset_joint, JointState right_gripper_joint, JointState left_gripper_joint)
         {
             this.world_joint = world_joint;
             this.base_joint = base_joint;
@@ -40,6 +42,7 @@ namespace RosMessageTypes.Roborex
             this.elbow_joint = elbow_joint;
             this.wrist_joint = wrist_joint;
             this.eff_joint = eff_joint;
+            this.gripper_offset_joint = gripper_offset_joint;
             this.right_gripper_joint = right_gripper_joint;
             this.left_gripper_joint = left_gripper_joint;
         }
@@ -52,8 +55,9 @@ namespace RosMessageTypes.Roborex
             listOfSerializations.AddRange(elbow_joint.SerializationStatements());
             listOfSerializations.AddRange(wrist_joint.SerializationStatements());
             listOfSerializations.AddRange(eff_joint.SerializationStatements());
-            listOfSerializations.Add(BitConverter.GetBytes(this.right_gripper_joint));
-            listOfSerializations.Add(BitConverter.GetBytes(this.left_gripper_joint));
+            listOfSerializations.AddRange(gripper_offset_joint.SerializationStatements());
+            listOfSerializations.AddRange(right_gripper_joint.SerializationStatements());
+            listOfSerializations.AddRange(left_gripper_joint.SerializationStatements());
 
             return listOfSerializations;
         }
@@ -66,10 +70,9 @@ namespace RosMessageTypes.Roborex
             offset = this.elbow_joint.Deserialize(data, offset);
             offset = this.wrist_joint.Deserialize(data, offset);
             offset = this.eff_joint.Deserialize(data, offset);
-            this.right_gripper_joint = BitConverter.ToBoolean(data, offset);
-            offset += 1;
-            this.left_gripper_joint = BitConverter.ToBoolean(data, offset);
-            offset += 1;
+            offset = this.gripper_offset_joint.Deserialize(data, offset);
+            offset = this.right_gripper_joint.Deserialize(data, offset);
+            offset = this.left_gripper_joint.Deserialize(data, offset);
 
             return offset;
         }
@@ -83,6 +86,7 @@ namespace RosMessageTypes.Roborex
             "\nelbow_joint: " + elbow_joint.ToString() +
             "\nwrist_joint: " + wrist_joint.ToString() +
             "\neff_joint: " + eff_joint.ToString() +
+            "\ngripper_offset_joint: " + gripper_offset_joint.ToString() +
             "\nright_gripper_joint: " + right_gripper_joint.ToString() +
             "\nleft_gripper_joint: " + left_gripper_joint.ToString();
         }

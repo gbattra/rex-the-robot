@@ -389,6 +389,45 @@ roborex_generate_messages_cpp/fast:
 .PHONY : roborex_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named roborex_generate_messages_nodejs
+
+# Build rule for target.
+roborex_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roborex_generate_messages_nodejs
+.PHONY : roborex_generate_messages_nodejs
+
+# fast build rule for target.
+roborex_generate_messages_nodejs/fast:
+	$(MAKE) -f roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build
+.PHONY : roborex_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named roborex_genlisp
+
+# Build rule for target.
+roborex_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roborex_genlisp
+.PHONY : roborex_genlisp
+
+# fast build rule for target.
+roborex_genlisp/fast:
+	$(MAKE) -f roborex/CMakeFiles/roborex_genlisp.dir/build.make roborex/CMakeFiles/roborex_genlisp.dir/build
+.PHONY : roborex_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named _roborex_generate_messages_check_deps_InverseKinematics
+
+# Build rule for target.
+_roborex_generate_messages_check_deps_InverseKinematics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_InverseKinematics
+.PHONY : _roborex_generate_messages_check_deps_InverseKinematics
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_InverseKinematics/fast:
+	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/build
+.PHONY : _roborex_generate_messages_check_deps_InverseKinematics/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_py
 
 # Build rule for target.
@@ -400,32 +439,6 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 rosgraph_msgs_generate_messages_py/fast:
 	$(MAKE) -f roborex/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make roborex/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named roborex_generate_messages_eus
-
-# Build rule for target.
-roborex_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roborex_generate_messages_eus
-.PHONY : roborex_generate_messages_eus
-
-# fast build rule for target.
-roborex_generate_messages_eus/fast:
-	$(MAKE) -f roborex/CMakeFiles/roborex_generate_messages_eus.dir/build.make roborex/CMakeFiles/roborex_generate_messages_eus.dir/build
-.PHONY : roborex_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
-
-# Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
@@ -441,19 +454,6 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_nodejs
-
-# Build rule for target.
-geometry_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -465,6 +465,19 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 rosgraph_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f roborex/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make roborex/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _roborex_generate_messages_check_deps_StartSystem
+
+# Build rule for target.
+_roborex_generate_messages_check_deps_StartSystem: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_StartSystem
+.PHONY : _roborex_generate_messages_check_deps_StartSystem
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_StartSystem/fast:
+	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_StartSystem.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_StartSystem.dir/build
+.PHONY : _roborex_generate_messages_check_deps_StartSystem/fast
 
 #=============================================================================
 # Target rules for targets named roborex_generate_messages
@@ -610,6 +623,19 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named roborex_system_behavior
+
+# Build rule for target.
+roborex_system_behavior: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roborex_system_behavior
+.PHONY : roborex_system_behavior
+
+# fast build rule for target.
+roborex_system_behavior/fast:
+	$(MAKE) -f roborex/CMakeFiles/roborex_system_behavior.dir/build.make roborex/CMakeFiles/roborex_system_behavior.dir/build
+.PHONY : roborex_system_behavior/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
@@ -621,6 +647,19 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 roscpp_generate_messages_nodejs/fast:
 	$(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _roborex_generate_messages_check_deps_TrajectoryStatus
+
+# Build rule for target.
+_roborex_generate_messages_check_deps_TrajectoryStatus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_TrajectoryStatus
+.PHONY : _roborex_generate_messages_check_deps_TrajectoryStatus
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_TrajectoryStatus/fast:
+	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryStatus.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryStatus.dir/build
+.PHONY : _roborex_generate_messages_check_deps_TrajectoryStatus/fast
 
 #=============================================================================
 # Target rules for targets named _roborex_generate_messages_check_deps_JointState
@@ -636,6 +675,45 @@ _roborex_generate_messages_check_deps_JointState/fast:
 .PHONY : _roborex_generate_messages_check_deps_JointState/fast
 
 #=============================================================================
+# Target rules for targets named _roborex_generate_messages_check_deps_TrajectoryPlanner
+
+# Build rule for target.
+_roborex_generate_messages_check_deps_TrajectoryPlanner: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_TrajectoryPlanner
+.PHONY : _roborex_generate_messages_check_deps_TrajectoryPlanner
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_TrajectoryPlanner/fast:
+	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/build
+.PHONY : _roborex_generate_messages_check_deps_TrajectoryPlanner/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_eus.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -647,45 +725,6 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 geometry_msgs_generate_messages_py/fast:
 	$(MAKE) -f roborex/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make roborex/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named roborex_generate_messages_nodejs
-
-# Build rule for target.
-roborex_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roborex_generate_messages_nodejs
-.PHONY : roborex_generate_messages_nodejs
-
-# fast build rule for target.
-roborex_generate_messages_nodejs/fast:
-	$(MAKE) -f roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/roborex_generate_messages_nodejs.dir/build
-.PHONY : roborex_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named roborex_genlisp
-
-# Build rule for target.
-roborex_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roborex_genlisp
-.PHONY : roborex_genlisp
-
-# fast build rule for target.
-roborex_genlisp/fast:
-	$(MAKE) -f roborex/CMakeFiles/roborex_genlisp.dir/build.make roborex/CMakeFiles/roborex_genlisp.dir/build
-.PHONY : roborex_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named _roborex_generate_messages_check_deps_InverseKinematics
-
-# Build rule for target.
-_roborex_generate_messages_check_deps_InverseKinematics: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_InverseKinematics
-.PHONY : _roborex_generate_messages_check_deps_InverseKinematics
-
-# fast build rule for target.
-_roborex_generate_messages_check_deps_InverseKinematics/fast:
-	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_InverseKinematics.dir/build
-.PHONY : _roborex_generate_messages_check_deps_InverseKinematics/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
@@ -753,30 +792,69 @@ _roborex_generate_messages_check_deps_BasePose/fast:
 .PHONY : _roborex_generate_messages_check_deps_BasePose/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
+# Target rules for targets named roborex_generate_messages_eus
 
 # Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
+roborex_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roborex_generate_messages_eus
+.PHONY : roborex_generate_messages_eus
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+roborex_generate_messages_eus/fast:
+	$(MAKE) -f roborex/CMakeFiles/roborex_generate_messages_eus.dir/build.make roborex/CMakeFiles/roborex_generate_messages_eus.dir/build
+.PHONY : roborex_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named _roborex_generate_messages_check_deps_CmdVel
+# Target rules for targets named roscpp_generate_messages_lisp
 
 # Build rule for target.
-_roborex_generate_messages_check_deps_CmdVel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_CmdVel
-.PHONY : _roborex_generate_messages_check_deps_CmdVel
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
 
 # fast build rule for target.
-_roborex_generate_messages_check_deps_CmdVel/fast:
-	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_CmdVel.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_CmdVel.dir/build
-.PHONY : _roborex_generate_messages_check_deps_CmdVel/fast
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _roborex_generate_messages_check_deps_Command
+
+# Build rule for target.
+_roborex_generate_messages_check_deps_Command: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_Command
+.PHONY : _roborex_generate_messages_check_deps_Command
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_Command/fast:
+	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_Command.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_Command.dir/build
+.PHONY : _roborex_generate_messages_check_deps_Command/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make roborex/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _roborex_generate_messages_check_deps_Trajectories
+
+# Build rule for target.
+_roborex_generate_messages_check_deps_Trajectories: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_Trajectories
+.PHONY : _roborex_generate_messages_check_deps_Trajectories
+
+# fast build rule for target.
+_roborex_generate_messages_check_deps_Trajectories/fast:
+	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/build
+.PHONY : _roborex_generate_messages_check_deps_Trajectories/fast
 
 #=============================================================================
 # Target rules for targets named roborex_gtg_behavior
@@ -829,32 +907,6 @@ _roborex_generate_messages_check_deps_ForwardKinematics: cmake_check_build_syste
 _roborex_generate_messages_check_deps_ForwardKinematics/fast:
 	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_ForwardKinematics.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_ForwardKinematics.dir/build
 .PHONY : _roborex_generate_messages_check_deps_ForwardKinematics/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_eus
-
-# Build rule for target.
-roscpp_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	$(MAKE) -f roborex/CMakeFiles/roscpp_generate_messages_eus.dir/build.make roborex/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named _roborex_generate_messages_check_deps_TrajectoryPlanner
-
-# Build rule for target.
-_roborex_generate_messages_check_deps_TrajectoryPlanner: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _roborex_generate_messages_check_deps_TrajectoryPlanner
-.PHONY : _roborex_generate_messages_check_deps_TrajectoryPlanner
-
-# fast build rule for target.
-_roborex_generate_messages_check_deps_TrajectoryPlanner/fast:
-	$(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_TrajectoryPlanner.dir/build
-.PHONY : _roborex_generate_messages_check_deps_TrajectoryPlanner/fast
 
 #=============================================================================
 # Target rules for targets named ros_tcp_endpoint_genpy
@@ -1731,12 +1783,13 @@ help:
 	@echo "... roborex_geneus"
 	@echo "... roborex_gencpp"
 	@echo "... roborex_generate_messages_cpp"
+	@echo "... roborex_generate_messages_nodejs"
+	@echo "... roborex_genlisp"
+	@echo "... _roborex_generate_messages_check_deps_InverseKinematics"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... roborex_generate_messages_eus"
-	@echo "... roscpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... _roborex_generate_messages_check_deps_StartSystem"
 	@echo "... roborex_generate_messages"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -1748,25 +1801,28 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roborex_base_pose_subscriber"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... roborex_system_behavior"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... _roborex_generate_messages_check_deps_TrajectoryStatus"
 	@echo "... _roborex_generate_messages_check_deps_JointState"
+	@echo "... _roborex_generate_messages_check_deps_TrajectoryPlanner"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... roborex_generate_messages_nodejs"
-	@echo "... roborex_genlisp"
-	@echo "... _roborex_generate_messages_check_deps_InverseKinematics"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... _roborex_generate_messages_check_deps_ArmPose"
 	@echo "... _roborex_generate_messages_check_deps_BasePose"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... _roborex_generate_messages_check_deps_CmdVel"
+	@echo "... roborex_generate_messages_eus"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... _roborex_generate_messages_check_deps_Command"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... _roborex_generate_messages_check_deps_Trajectories"
 	@echo "... roborex_gtg_behavior"
 	@echo "... roborex_target_pose_subscriber"
 	@echo "... _roborex_generate_messages_check_deps_Trajectory"
 	@echo "... _roborex_generate_messages_check_deps_ForwardKinematics"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... _roborex_generate_messages_check_deps_TrajectoryPlanner"
 	@echo "... ros_tcp_endpoint_genpy"
 	@echo "... ros_tcp_endpoint_generate_messages"
 	@echo "... _ros_tcp_endpoint_generate_messages_check_deps_RosUnityError"

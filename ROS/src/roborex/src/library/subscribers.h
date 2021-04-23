@@ -7,6 +7,8 @@
 #include <ros/ros.h>
 #include "roborex/BasePose.h"
 #include "roborex/ArmPose.h"
+#include "roborex/TrajectoryStatus.h"
+#include "geometry_msgs/Pose.h"
 
 namespace roborex
 {
@@ -25,10 +27,10 @@ namespace roborex
     {
         private:
             ros::Subscriber pose_subscriber;
-            void callback(const roborex::BasePose::ConstPtr &pose);
+            void callback(const geometry_msgs::Pose::ConstPtr &pose);
 
         public:
-            roborex::BasePose latest_pose;
+            geometry_msgs::Pose latest_pose;
             GripperGoalPoseSubscriber(ros::NodeHandle *nh);
     };
 
@@ -40,7 +42,7 @@ namespace roborex
 
         public:
             roborex::BasePose latest_pose;
-            TargetPoseSubscriber(ros::NodeHandle *nh);
+            TargetPoseSubscriber(ros::NodeHandle *nh, std::string topic_name);
     };
 
     class ArmPoseSubscriber
@@ -52,6 +54,28 @@ namespace roborex
         public:
             roborex::ArmPose latest_pose;
             ArmPoseSubscriber(ros::NodeHandle *nh);
+    };
+
+    class TrajectoryStatusSubscriber
+    {
+        private:
+            ros::Subscriber status_subscriber;
+            void callback(const roborex::TrajectoryStatus::ConstPtr &status);
+
+        public:
+            roborex::TrajectoryStatus latest_status;
+            TrajectoryStatusSubscriber(ros::NodeHandle *nh);
+    };
+
+    class ReleasePoseSubscriber
+    {
+        private:
+            ros::Subscriber pose_subscriber;
+            void callback(const geometry_msgs::Pose::ConstPtr &pose);
+
+        public:
+            geometry_msgs::Pose latest_pose;
+            ReleasePoseSubscriber(ros::NodeHandle *nh);
     };
 }
 

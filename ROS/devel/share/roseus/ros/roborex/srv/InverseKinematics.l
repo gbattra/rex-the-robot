@@ -136,7 +136,7 @@
   :super ros::object
   :slots ())
 
-(setf (get roborex::InverseKinematics :md5sum-) "a5747170d3fd6b372503a24bb90131c0")
+(setf (get roborex::InverseKinematics :md5sum-) "c44e167c0184aca769254292f802c4b0")
 (setf (get roborex::InverseKinematics :datatype-) "roborex/InverseKinematics")
 (setf (get roborex::InverseKinematics :request) roborex::InverseKinematicsRequest)
 (setf (get roborex::InverseKinematics :response) roborex::InverseKinematicsResponse)
@@ -144,7 +144,7 @@
 (defmethod roborex::InverseKinematicsRequest
   (:response () (instance roborex::InverseKinematicsResponse :init)))
 
-(setf (get roborex::InverseKinematicsRequest :md5sum-) "a5747170d3fd6b372503a24bb90131c0")
+(setf (get roborex::InverseKinematicsRequest :md5sum-) "c44e167c0184aca769254292f802c4b0")
 (setf (get roborex::InverseKinematicsRequest :datatype-) "roborex/InverseKinematicsRequest")
 (setf (get roborex::InverseKinematicsRequest :definition-)
       "ArmPose init_arm_pose
@@ -159,8 +159,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -201,8 +202,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -219,7 +221,7 @@ float64 y
 float64 z
 ")
 
-(setf (get roborex::InverseKinematicsResponse :md5sum-) "a5747170d3fd6b372503a24bb90131c0")
+(setf (get roborex::InverseKinematicsResponse :md5sum-) "c44e167c0184aca769254292f802c4b0")
 (setf (get roborex::InverseKinematicsResponse :datatype-) "roborex/InverseKinematicsResponse")
 (setf (get roborex::InverseKinematicsResponse :definition-)
       "ArmPose init_arm_pose
@@ -234,8 +236,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -276,8 +279,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -296,6 +300,6 @@ float64 z
 
 
 
-(provide :roborex/InverseKinematics "a5747170d3fd6b372503a24bb90131c0")
+(provide :roborex/InverseKinematics "c44e167c0184aca769254292f802c4b0")
 
 

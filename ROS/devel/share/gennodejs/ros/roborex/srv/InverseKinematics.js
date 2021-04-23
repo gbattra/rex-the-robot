@@ -74,7 +74,7 @@ class InverseKinematicsRequest {
   }
 
   static getMessageSize(object) {
-    return 354;
+    return 472;
   }
 
   static datatype() {
@@ -84,7 +84,7 @@ class InverseKinematicsRequest {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'df8d37975b15fc1fe23c73b15bf813b5';
+    return '4140866b5a3a83d68264f18d4f2f7c78';
   }
 
   static messageDefinition() {
@@ -102,8 +102,9 @@ class InverseKinematicsRequest {
     JointState elbow_joint
     JointState wrist_joint
     JointState eff_joint
-    bool right_gripper_joint
-    bool left_gripper_joint
+    JointState gripper_offset_joint
+    JointState right_gripper_joint
+    JointState left_gripper_joint
     ================================================================================
     MSG: roborex/JointState
     geometry_msgs/Point translation
@@ -201,7 +202,7 @@ class InverseKinematicsResponse {
   }
 
   static getMessageSize(object) {
-    return 242;
+    return 360;
   }
 
   static datatype() {
@@ -211,7 +212,7 @@ class InverseKinematicsResponse {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'abd3bdfb5df27b7635dddcbee1cd88ad';
+    return '422537529a33b8efa70e31bd2c9b1dcf';
   }
 
   static messageDefinition() {
@@ -227,8 +228,9 @@ class InverseKinematicsResponse {
     JointState elbow_joint
     JointState wrist_joint
     JointState eff_joint
-    bool right_gripper_joint
-    bool left_gripper_joint
+    JointState gripper_offset_joint
+    JointState right_gripper_joint
+    JointState left_gripper_joint
     ================================================================================
     MSG: roborex/JointState
     geometry_msgs/Point translation
@@ -267,6 +269,6 @@ class InverseKinematicsResponse {
 module.exports = {
   Request: InverseKinematicsRequest,
   Response: InverseKinematicsResponse,
-  md5sum() { return 'a5747170d3fd6b372503a24bb90131c0'; },
+  md5sum() { return 'c44e167c0184aca769254292f802c4b0'; },
   datatype() { return 'roborex/InverseKinematics'; }
 };

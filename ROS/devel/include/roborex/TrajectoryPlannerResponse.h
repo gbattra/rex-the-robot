@@ -123,12 +123,12 @@ struct MD5Sum< ::roborex::TrajectoryPlannerResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "6925e298eddcfe19023891d0737531cc";
+    return "8815e9c3c7e5428d6d83e942eb0b7216";
   }
 
   static const char* value(const ::roborex::TrajectoryPlannerResponse_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x6925e298eddcfe19ULL;
-  static const uint64_t static_value2 = 0x023891d0737531ccULL;
+  static const uint64_t static_value1 = 0x8815e9c3c7e5428dULL;
+  static const uint64_t static_value2 = 0x6d83e942eb0b7216ULL;
 };
 
 template<class ContainerAllocator>
@@ -152,6 +152,8 @@ struct Definition< ::roborex::TrajectoryPlannerResponse_<ContainerAllocator> >
 "================================================================================\n"
 "MSG: roborex/Trajectory\n"
 "ArmPose[] poses\n"
+"int32 id\n"
+"\n"
 "================================================================================\n"
 "MSG: roborex/ArmPose\n"
 "JointState world_joint\n"
@@ -160,8 +162,9 @@ struct Definition< ::roborex::TrajectoryPlannerResponse_<ContainerAllocator> >
 "JointState elbow_joint\n"
 "JointState wrist_joint\n"
 "JointState eff_joint\n"
-"bool right_gripper_joint\n"
-"bool left_gripper_joint\n"
+"JointState gripper_offset_joint\n"
+"JointState right_gripper_joint\n"
+"JointState left_gripper_joint\n"
 "================================================================================\n"
 "MSG: roborex/JointState\n"
 "geometry_msgs/Point translation\n"

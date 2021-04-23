@@ -25,10 +25,11 @@ public class GripperGoalPosePublisher : MonoBehaviour
         
         if (timeElapsed < publishMessageFrequency) return;
 
-        Quaternion orientation = Quaternion.FromToRotation(arm.transform.forward, target.transform.forward);
-        Vector3 position = target.transform.position - arm.transform.position;
-        BasePose gripperGoalPose = new BasePose(position.x, position.y, position.z, orientation.eulerAngles.y);
-        ros.Send(topicName, gripperGoalPose);
+        var pos = arm.worldJoint.transform.InverseTransformPoint(target.transform.position);
+        var pose = new RosMessageTypes.Geometry.Pose(
+            new RosMessageTypes.Geometry.Point(pos.x, pos.y, pos.z),
+            new RosMessageTypes.Geometry.Quaternion());
+        ros.Send(topicName, pose);
         
         timeElapsed = 0;
     }

@@ -4,12 +4,17 @@
 roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/ArmPose.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/BasePose.h
- /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/CmdVel.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Command.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/JointState.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystem.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystemRequest.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystemResponse.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Trajectories.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Trajectory.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlanner.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlannerRequest.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlannerResponse.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryStatus.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.h

@@ -21,6 +21,9 @@
 #include <roborex/JointState.h>
 #include <roborex/JointState.h>
 #include <roborex/JointState.h>
+#include <roborex/JointState.h>
+#include <roborex/JointState.h>
+#include <roborex/JointState.h>
 
 namespace roborex
 {
@@ -36,8 +39,9 @@ struct ArmPose_
     , elbow_joint()
     , wrist_joint()
     , eff_joint()
-    , right_gripper_joint(false)
-    , left_gripper_joint(false)  {
+    , gripper_offset_joint()
+    , right_gripper_joint()
+    , left_gripper_joint()  {
     }
   ArmPose_(const ContainerAllocator& _alloc)
     : world_joint(_alloc)
@@ -46,8 +50,9 @@ struct ArmPose_
     , elbow_joint(_alloc)
     , wrist_joint(_alloc)
     , eff_joint(_alloc)
-    , right_gripper_joint(false)
-    , left_gripper_joint(false)  {
+    , gripper_offset_joint(_alloc)
+    , right_gripper_joint(_alloc)
+    , left_gripper_joint(_alloc)  {
   (void)_alloc;
     }
 
@@ -71,10 +76,13 @@ struct ArmPose_
    typedef  ::roborex::JointState_<ContainerAllocator>  _eff_joint_type;
   _eff_joint_type eff_joint;
 
-   typedef uint8_t _right_gripper_joint_type;
+   typedef  ::roborex::JointState_<ContainerAllocator>  _gripper_offset_joint_type;
+  _gripper_offset_joint_type gripper_offset_joint;
+
+   typedef  ::roborex::JointState_<ContainerAllocator>  _right_gripper_joint_type;
   _right_gripper_joint_type right_gripper_joint;
 
-   typedef uint8_t _left_gripper_joint_type;
+   typedef  ::roborex::JointState_<ContainerAllocator>  _left_gripper_joint_type;
   _left_gripper_joint_type left_gripper_joint;
 
 
@@ -112,6 +120,7 @@ bool operator==(const ::roborex::ArmPose_<ContainerAllocator1> & lhs, const ::ro
     lhs.elbow_joint == rhs.elbow_joint &&
     lhs.wrist_joint == rhs.wrist_joint &&
     lhs.eff_joint == rhs.eff_joint &&
+    lhs.gripper_offset_joint == rhs.gripper_offset_joint &&
     lhs.right_gripper_joint == rhs.right_gripper_joint &&
     lhs.left_gripper_joint == rhs.left_gripper_joint;
 }
@@ -170,12 +179,12 @@ struct MD5Sum< ::roborex::ArmPose_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "55be2a66674559ab0f6efa20a2ea72ed";
+    return "a5e1af2ff95ce9860148ff20620f2dd0";
   }
 
   static const char* value(const ::roborex::ArmPose_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x55be2a66674559abULL;
-  static const uint64_t static_value2 = 0x0f6efa20a2ea72edULL;
+  static const uint64_t static_value1 = 0xa5e1af2ff95ce986ULL;
+  static const uint64_t static_value2 = 0x0148ff20620f2dd0ULL;
 };
 
 template<class ContainerAllocator>
@@ -200,8 +209,9 @@ struct Definition< ::roborex::ArmPose_<ContainerAllocator> >
 "JointState elbow_joint\n"
 "JointState wrist_joint\n"
 "JointState eff_joint\n"
-"bool right_gripper_joint\n"
-"bool left_gripper_joint\n"
+"JointState gripper_offset_joint\n"
+"JointState right_gripper_joint\n"
+"JointState left_gripper_joint\n"
 "================================================================================\n"
 "MSG: roborex/JointState\n"
 "geometry_msgs/Point translation\n"
@@ -240,6 +250,7 @@ namespace serialization
       stream.next(m.elbow_joint);
       stream.next(m.wrist_joint);
       stream.next(m.eff_joint);
+      stream.next(m.gripper_offset_joint);
       stream.next(m.right_gripper_joint);
       stream.next(m.left_gripper_joint);
     }
@@ -278,10 +289,15 @@ struct Printer< ::roborex::ArmPose_<ContainerAllocator> >
     s << indent << "eff_joint: ";
     s << std::endl;
     Printer< ::roborex::JointState_<ContainerAllocator> >::stream(s, indent + "  ", v.eff_joint);
+    s << indent << "gripper_offset_joint: ";
+    s << std::endl;
+    Printer< ::roborex::JointState_<ContainerAllocator> >::stream(s, indent + "  ", v.gripper_offset_joint);
     s << indent << "right_gripper_joint: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.right_gripper_joint);
+    s << std::endl;
+    Printer< ::roborex::JointState_<ContainerAllocator> >::stream(s, indent + "  ", v.right_gripper_joint);
     s << indent << "left_gripper_joint: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.left_gripper_joint);
+    s << std::endl;
+    Printer< ::roborex::JointState_<ContainerAllocator> >::stream(s, indent + "  ", v.left_gripper_joint);
   }
 };
 

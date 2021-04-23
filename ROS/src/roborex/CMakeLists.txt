@@ -41,9 +41,14 @@ add_library(${PROJECT_NAME}_lib
   src/library/targetPoseSubscriber.cpp
   src/library/gripperGoalPoseSubscriber.cpp
   src/library/armPoseSubscriber.cpp
-  src/library/cmdVelPublisher.cpp
+  src/library/trajectoryStatusSubscriber.cpp
+  src/library/releasePoseSubscriber.cpp
+  src/library/commandPublisher.cpp
+  src/library/trajectoryPublisher.cpp
+  src/library/systemBehavior.cpp
   src/library/goToGoalBehavior.cpp
   src/library/graspTargetBehavior.cpp
+  src/library/releaseTargetBehavior.cpp
   src/library/trajectoryPlannerClient.cpp
   src/library/pid.cpp
 )
@@ -79,3 +84,12 @@ target_link_libraries(${PROJECT_NAME}_grasp_behavior
 )
 add_dependencies(${PROJECT_NAME}_grasp_behavior ${PROJECT_NAME}_generate_messages_cpp)
 add_dependencies(${PROJECT_NAME}_grasp_behavior ${PROJECT_NAME}_generate_messages_py)
+
+add_executable(${PROJECT_NAME}_system_behavior src/nodes/systemBehaviorNode.cpp)
+target_link_libraries(${PROJECT_NAME}_system_behavior
+  ${catkin_LIBRARIES}
+  ${PROJECT_NAME}_lib
+)
+add_dependencies(${PROJECT_NAME}_system_behavior ${PROJECT_NAME}_generate_messages_cpp)
+add_dependencies(${PROJECT_NAME}_system_behavior ${PROJECT_NAME}_generate_messages_py)
+

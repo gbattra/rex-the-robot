@@ -3,12 +3,17 @@
 
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/ArmPose.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/BasePose.h
-roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/CmdVel.h
+roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Command.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/JointState.h
+roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystem.h
+roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystemRequest.h
+roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/StartSystemResponse.h
+roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Trajectories.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/Trajectory.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlanner.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlannerRequest.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlannerResponse.h
+roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryStatus.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients.h
 roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.h

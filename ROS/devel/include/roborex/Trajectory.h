@@ -25,10 +25,12 @@ struct Trajectory_
   typedef Trajectory_<ContainerAllocator> Type;
 
   Trajectory_()
-    : poses()  {
+    : poses()
+    , id(0)  {
     }
   Trajectory_(const ContainerAllocator& _alloc)
-    : poses(_alloc)  {
+    : poses(_alloc)
+    , id(0)  {
   (void)_alloc;
     }
 
@@ -36,6 +38,9 @@ struct Trajectory_
 
    typedef std::vector< ::roborex::ArmPose_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::roborex::ArmPose_<ContainerAllocator> >::other >  _poses_type;
   _poses_type poses;
+
+   typedef int32_t _id_type;
+  _id_type id;
 
 
 
@@ -66,7 +71,8 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::roborex::Trajectory_<ContainerAllocator1> & lhs, const ::roborex::Trajectory_<ContainerAllocator2> & rhs)
 {
-  return lhs.poses == rhs.poses;
+  return lhs.poses == rhs.poses &&
+    lhs.id == rhs.id;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -123,12 +129,12 @@ struct MD5Sum< ::roborex::Trajectory_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "02bb950f0189c1fcde68ce66b9c7942a";
+    return "abdfb552f83f3cbf2a80002bb852135a";
   }
 
   static const char* value(const ::roborex::Trajectory_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x02bb950f0189c1fcULL;
-  static const uint64_t static_value2 = 0xde68ce66b9c7942aULL;
+  static const uint64_t static_value1 = 0xabdfb552f83f3cbfULL;
+  static const uint64_t static_value2 = 0x2a80002bb852135aULL;
 };
 
 template<class ContainerAllocator>
@@ -148,6 +154,8 @@ struct Definition< ::roborex::Trajectory_<ContainerAllocator> >
   static const char* value()
   {
     return "ArmPose[] poses\n"
+"int32 id\n"
+"\n"
 "================================================================================\n"
 "MSG: roborex/ArmPose\n"
 "JointState world_joint\n"
@@ -156,8 +164,9 @@ struct Definition< ::roborex::Trajectory_<ContainerAllocator> >
 "JointState elbow_joint\n"
 "JointState wrist_joint\n"
 "JointState eff_joint\n"
-"bool right_gripper_joint\n"
-"bool left_gripper_joint\n"
+"JointState gripper_offset_joint\n"
+"JointState right_gripper_joint\n"
+"JointState left_gripper_joint\n"
 "================================================================================\n"
 "MSG: roborex/JointState\n"
 "geometry_msgs/Point translation\n"
@@ -191,6 +200,7 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.poses);
+      stream.next(m.id);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -217,6 +227,8 @@ struct Printer< ::roborex::Trajectory_<ContainerAllocator> >
       s << indent;
       Printer< ::roborex::ArmPose_<ContainerAllocator> >::stream(s, indent + "    ", v.poses[i]);
     }
+    s << indent << "id: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.id);
   }
 };
 

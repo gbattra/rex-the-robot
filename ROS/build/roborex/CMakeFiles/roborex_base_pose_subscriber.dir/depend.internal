@@ -5,9 +5,12 @@ roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriber
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/ArmPose.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/BasePose.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/JointState.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryStatus.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/basePoseSubscriberNode.cpp
  /opt/ros/noetic/include/geometry_msgs/Point.h
+ /opt/ros/noetic/include/geometry_msgs/Pose.h
+ /opt/ros/noetic/include/geometry_msgs/Quaternion.h
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
  /opt/ros/noetic/include/ros/assert.h

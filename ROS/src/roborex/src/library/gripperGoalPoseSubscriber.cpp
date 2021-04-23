@@ -8,7 +8,7 @@ roborex::GripperGoalPoseSubscriber::GripperGoalPoseSubscriber(ros::NodeHandle *n
     pose_subscriber = nh->subscribe("/grip_goal_pose", 1, &roborex::GripperGoalPoseSubscriber::callback, this);
 }
 
-void roborex::GripperGoalPoseSubscriber::callback(const roborex::BasePose::ConstPtr &pose)
+void roborex::GripperGoalPoseSubscriber::callback(const geometry_msgs::Pose::ConstPtr &pose)
 {
     latest_pose = *pose;
 }

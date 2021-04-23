@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class TrajectoryPlannerService : MonoBehaviour
 {
-    [SerializeField] private float gripperOffset;
+    [SerializeField] private float verticalOffset;
     [SerializeField] private float effOffset;
     [SerializeField] private RobotArmJoints arm;
     [SerializeField] private GameObject target;
@@ -24,6 +24,7 @@ public class TrajectoryPlannerService : MonoBehaviour
     {
         ArmPose pose = arm.GetArmPose();
         var pos = arm.worldJoint.transform.InverseTransformPoint(target.transform.position);
+        Debug.Log(pos);
         TrajectoryPlannerRequest req = new TrajectoryPlannerRequest(
             pose,
             new RosMessageTypes.Geometry.Pose(
@@ -32,14 +33,13 @@ public class TrajectoryPlannerService : MonoBehaviour
                     pos.y,
                     pos.z),
                  new RosMessageTypes.Geometry.Quaternion(0, 0, 0, 0)),
-            gripperOffset,
-            effOffset);
+            true,
+            false);
         ros.SendServiceMessage<TrajectoryPlannerResponse>("trajectory_planner", req, Callback);
     }
 
     public void Callback(TrajectoryPlannerResponse res)
     {
-        Debug.Log("started coroutine");
         StartCoroutine(arm.ExecuteTrajectories(res.trajectories));
     }
 }

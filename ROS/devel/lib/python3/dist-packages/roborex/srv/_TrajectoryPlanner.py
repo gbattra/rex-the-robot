@@ -10,13 +10,13 @@ import geometry_msgs.msg
 import roborex.msg
 
 class TrajectoryPlannerRequest(genpy.Message):
-  _md5sum = "11abd7ff07e1b32ddf4046f6d912966a"
+  _md5sum = "2bac259c1bc1ea5c349be865d7f376a1"
   _type = "roborex/TrajectoryPlannerRequest"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """ArmPose arm_pose
 geometry_msgs/Pose target
-float32 gripper_offset
-float32 eff_offset
+bool grasp_trajectory
+bool release_trajectory
 
 ================================================================================
 MSG: roborex/ArmPose
@@ -26,8 +26,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -58,8 +59,8 @@ float64 y
 float64 z
 float64 w
 """
-  __slots__ = ['arm_pose','target','gripper_offset','eff_offset']
-  _slot_types = ['roborex/ArmPose','geometry_msgs/Pose','float32','float32']
+  __slots__ = ['arm_pose','target','grasp_trajectory','release_trajectory']
+  _slot_types = ['roborex/ArmPose','geometry_msgs/Pose','bool','bool']
 
   def __init__(self, *args, **kwds):
     """
@@ -69,7 +70,7 @@ float64 w
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       arm_pose,target,gripper_offset,eff_offset
+       arm_pose,target,grasp_trajectory,release_trajectory
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -82,15 +83,15 @@ float64 w
         self.arm_pose = roborex.msg.ArmPose()
       if self.target is None:
         self.target = geometry_msgs.msg.Pose()
-      if self.gripper_offset is None:
-        self.gripper_offset = 0.
-      if self.eff_offset is None:
-        self.eff_offset = 0.
+      if self.grasp_trajectory is None:
+        self.grasp_trajectory = False
+      if self.release_trajectory is None:
+        self.release_trajectory = False
     else:
       self.arm_pose = roborex.msg.ArmPose()
       self.target = geometry_msgs.msg.Pose()
-      self.gripper_offset = 0.
-      self.eff_offset = 0.
+      self.grasp_trajectory = False
+      self.release_trajectory = False
 
   def _get_types(self):
     """
@@ -105,7 +106,7 @@ float64 w
     """
     try:
       _x = self
-      buff.write(_get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f().pack(_x.arm_pose.world_joint.translation.x, _x.arm_pose.world_joint.translation.y, _x.arm_pose.world_joint.translation.z, _x.arm_pose.world_joint.angle, _x.arm_pose.world_joint.upper_bound, _x.arm_pose.world_joint.lower_bound, _x.arm_pose.world_joint.axis, _x.arm_pose.base_joint.translation.x, _x.arm_pose.base_joint.translation.y, _x.arm_pose.base_joint.translation.z, _x.arm_pose.base_joint.angle, _x.arm_pose.base_joint.upper_bound, _x.arm_pose.base_joint.lower_bound, _x.arm_pose.base_joint.axis, _x.arm_pose.shoulder_joint.translation.x, _x.arm_pose.shoulder_joint.translation.y, _x.arm_pose.shoulder_joint.translation.z, _x.arm_pose.shoulder_joint.angle, _x.arm_pose.shoulder_joint.upper_bound, _x.arm_pose.shoulder_joint.lower_bound, _x.arm_pose.shoulder_joint.axis, _x.arm_pose.elbow_joint.translation.x, _x.arm_pose.elbow_joint.translation.y, _x.arm_pose.elbow_joint.translation.z, _x.arm_pose.elbow_joint.angle, _x.arm_pose.elbow_joint.upper_bound, _x.arm_pose.elbow_joint.lower_bound, _x.arm_pose.elbow_joint.axis, _x.arm_pose.wrist_joint.translation.x, _x.arm_pose.wrist_joint.translation.y, _x.arm_pose.wrist_joint.translation.z, _x.arm_pose.wrist_joint.angle, _x.arm_pose.wrist_joint.upper_bound, _x.arm_pose.wrist_joint.lower_bound, _x.arm_pose.wrist_joint.axis, _x.arm_pose.eff_joint.translation.x, _x.arm_pose.eff_joint.translation.y, _x.arm_pose.eff_joint.translation.z, _x.arm_pose.eff_joint.angle, _x.arm_pose.eff_joint.upper_bound, _x.arm_pose.eff_joint.lower_bound, _x.arm_pose.eff_joint.axis, _x.arm_pose.right_gripper_joint, _x.arm_pose.left_gripper_joint, _x.target.position.x, _x.target.position.y, _x.target.position.z, _x.target.orientation.x, _x.target.orientation.y, _x.target.orientation.z, _x.target.orientation.w, _x.gripper_offset, _x.eff_offset))
+      buff.write(_get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B().pack(_x.arm_pose.world_joint.translation.x, _x.arm_pose.world_joint.translation.y, _x.arm_pose.world_joint.translation.z, _x.arm_pose.world_joint.angle, _x.arm_pose.world_joint.upper_bound, _x.arm_pose.world_joint.lower_bound, _x.arm_pose.world_joint.axis, _x.arm_pose.base_joint.translation.x, _x.arm_pose.base_joint.translation.y, _x.arm_pose.base_joint.translation.z, _x.arm_pose.base_joint.angle, _x.arm_pose.base_joint.upper_bound, _x.arm_pose.base_joint.lower_bound, _x.arm_pose.base_joint.axis, _x.arm_pose.shoulder_joint.translation.x, _x.arm_pose.shoulder_joint.translation.y, _x.arm_pose.shoulder_joint.translation.z, _x.arm_pose.shoulder_joint.angle, _x.arm_pose.shoulder_joint.upper_bound, _x.arm_pose.shoulder_joint.lower_bound, _x.arm_pose.shoulder_joint.axis, _x.arm_pose.elbow_joint.translation.x, _x.arm_pose.elbow_joint.translation.y, _x.arm_pose.elbow_joint.translation.z, _x.arm_pose.elbow_joint.angle, _x.arm_pose.elbow_joint.upper_bound, _x.arm_pose.elbow_joint.lower_bound, _x.arm_pose.elbow_joint.axis, _x.arm_pose.wrist_joint.translation.x, _x.arm_pose.wrist_joint.translation.y, _x.arm_pose.wrist_joint.translation.z, _x.arm_pose.wrist_joint.angle, _x.arm_pose.wrist_joint.upper_bound, _x.arm_pose.wrist_joint.lower_bound, _x.arm_pose.wrist_joint.axis, _x.arm_pose.eff_joint.translation.x, _x.arm_pose.eff_joint.translation.y, _x.arm_pose.eff_joint.translation.z, _x.arm_pose.eff_joint.angle, _x.arm_pose.eff_joint.upper_bound, _x.arm_pose.eff_joint.lower_bound, _x.arm_pose.eff_joint.axis, _x.arm_pose.gripper_offset_joint.translation.x, _x.arm_pose.gripper_offset_joint.translation.y, _x.arm_pose.gripper_offset_joint.translation.z, _x.arm_pose.gripper_offset_joint.angle, _x.arm_pose.gripper_offset_joint.upper_bound, _x.arm_pose.gripper_offset_joint.lower_bound, _x.arm_pose.gripper_offset_joint.axis, _x.arm_pose.right_gripper_joint.translation.x, _x.arm_pose.right_gripper_joint.translation.y, _x.arm_pose.right_gripper_joint.translation.z, _x.arm_pose.right_gripper_joint.angle, _x.arm_pose.right_gripper_joint.upper_bound, _x.arm_pose.right_gripper_joint.lower_bound, _x.arm_pose.right_gripper_joint.axis, _x.arm_pose.left_gripper_joint.translation.x, _x.arm_pose.left_gripper_joint.translation.y, _x.arm_pose.left_gripper_joint.translation.z, _x.arm_pose.left_gripper_joint.angle, _x.arm_pose.left_gripper_joint.upper_bound, _x.arm_pose.left_gripper_joint.lower_bound, _x.arm_pose.left_gripper_joint.axis, _x.target.position.x, _x.target.position.y, _x.target.position.z, _x.target.orientation.x, _x.target.orientation.y, _x.target.orientation.z, _x.target.orientation.w, _x.grasp_trajectory, _x.release_trajectory))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -123,10 +124,10 @@ float64 w
       end = 0
       _x = self
       start = end
-      end += 306
-      (_x.arm_pose.world_joint.translation.x, _x.arm_pose.world_joint.translation.y, _x.arm_pose.world_joint.translation.z, _x.arm_pose.world_joint.angle, _x.arm_pose.world_joint.upper_bound, _x.arm_pose.world_joint.lower_bound, _x.arm_pose.world_joint.axis, _x.arm_pose.base_joint.translation.x, _x.arm_pose.base_joint.translation.y, _x.arm_pose.base_joint.translation.z, _x.arm_pose.base_joint.angle, _x.arm_pose.base_joint.upper_bound, _x.arm_pose.base_joint.lower_bound, _x.arm_pose.base_joint.axis, _x.arm_pose.shoulder_joint.translation.x, _x.arm_pose.shoulder_joint.translation.y, _x.arm_pose.shoulder_joint.translation.z, _x.arm_pose.shoulder_joint.angle, _x.arm_pose.shoulder_joint.upper_bound, _x.arm_pose.shoulder_joint.lower_bound, _x.arm_pose.shoulder_joint.axis, _x.arm_pose.elbow_joint.translation.x, _x.arm_pose.elbow_joint.translation.y, _x.arm_pose.elbow_joint.translation.z, _x.arm_pose.elbow_joint.angle, _x.arm_pose.elbow_joint.upper_bound, _x.arm_pose.elbow_joint.lower_bound, _x.arm_pose.elbow_joint.axis, _x.arm_pose.wrist_joint.translation.x, _x.arm_pose.wrist_joint.translation.y, _x.arm_pose.wrist_joint.translation.z, _x.arm_pose.wrist_joint.angle, _x.arm_pose.wrist_joint.upper_bound, _x.arm_pose.wrist_joint.lower_bound, _x.arm_pose.wrist_joint.axis, _x.arm_pose.eff_joint.translation.x, _x.arm_pose.eff_joint.translation.y, _x.arm_pose.eff_joint.translation.z, _x.arm_pose.eff_joint.angle, _x.arm_pose.eff_joint.upper_bound, _x.arm_pose.eff_joint.lower_bound, _x.arm_pose.eff_joint.axis, _x.arm_pose.right_gripper_joint, _x.arm_pose.left_gripper_joint, _x.target.position.x, _x.target.position.y, _x.target.position.z, _x.target.orientation.x, _x.target.orientation.y, _x.target.orientation.z, _x.target.orientation.w, _x.gripper_offset, _x.eff_offset,) = _get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f().unpack(str[start:end])
-      self.arm_pose.right_gripper_joint = bool(self.arm_pose.right_gripper_joint)
-      self.arm_pose.left_gripper_joint = bool(self.arm_pose.left_gripper_joint)
+      end += 418
+      (_x.arm_pose.world_joint.translation.x, _x.arm_pose.world_joint.translation.y, _x.arm_pose.world_joint.translation.z, _x.arm_pose.world_joint.angle, _x.arm_pose.world_joint.upper_bound, _x.arm_pose.world_joint.lower_bound, _x.arm_pose.world_joint.axis, _x.arm_pose.base_joint.translation.x, _x.arm_pose.base_joint.translation.y, _x.arm_pose.base_joint.translation.z, _x.arm_pose.base_joint.angle, _x.arm_pose.base_joint.upper_bound, _x.arm_pose.base_joint.lower_bound, _x.arm_pose.base_joint.axis, _x.arm_pose.shoulder_joint.translation.x, _x.arm_pose.shoulder_joint.translation.y, _x.arm_pose.shoulder_joint.translation.z, _x.arm_pose.shoulder_joint.angle, _x.arm_pose.shoulder_joint.upper_bound, _x.arm_pose.shoulder_joint.lower_bound, _x.arm_pose.shoulder_joint.axis, _x.arm_pose.elbow_joint.translation.x, _x.arm_pose.elbow_joint.translation.y, _x.arm_pose.elbow_joint.translation.z, _x.arm_pose.elbow_joint.angle, _x.arm_pose.elbow_joint.upper_bound, _x.arm_pose.elbow_joint.lower_bound, _x.arm_pose.elbow_joint.axis, _x.arm_pose.wrist_joint.translation.x, _x.arm_pose.wrist_joint.translation.y, _x.arm_pose.wrist_joint.translation.z, _x.arm_pose.wrist_joint.angle, _x.arm_pose.wrist_joint.upper_bound, _x.arm_pose.wrist_joint.lower_bound, _x.arm_pose.wrist_joint.axis, _x.arm_pose.eff_joint.translation.x, _x.arm_pose.eff_joint.translation.y, _x.arm_pose.eff_joint.translation.z, _x.arm_pose.eff_joint.angle, _x.arm_pose.eff_joint.upper_bound, _x.arm_pose.eff_joint.lower_bound, _x.arm_pose.eff_joint.axis, _x.arm_pose.gripper_offset_joint.translation.x, _x.arm_pose.gripper_offset_joint.translation.y, _x.arm_pose.gripper_offset_joint.translation.z, _x.arm_pose.gripper_offset_joint.angle, _x.arm_pose.gripper_offset_joint.upper_bound, _x.arm_pose.gripper_offset_joint.lower_bound, _x.arm_pose.gripper_offset_joint.axis, _x.arm_pose.right_gripper_joint.translation.x, _x.arm_pose.right_gripper_joint.translation.y, _x.arm_pose.right_gripper_joint.translation.z, _x.arm_pose.right_gripper_joint.angle, _x.arm_pose.right_gripper_joint.upper_bound, _x.arm_pose.right_gripper_joint.lower_bound, _x.arm_pose.right_gripper_joint.axis, _x.arm_pose.left_gripper_joint.translation.x, _x.arm_pose.left_gripper_joint.translation.y, _x.arm_pose.left_gripper_joint.translation.z, _x.arm_pose.left_gripper_joint.angle, _x.arm_pose.left_gripper_joint.upper_bound, _x.arm_pose.left_gripper_joint.lower_bound, _x.arm_pose.left_gripper_joint.axis, _x.target.position.x, _x.target.position.y, _x.target.position.z, _x.target.orientation.x, _x.target.orientation.y, _x.target.orientation.z, _x.target.orientation.w, _x.grasp_trajectory, _x.release_trajectory,) = _get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B().unpack(str[start:end])
+      self.grasp_trajectory = bool(self.grasp_trajectory)
+      self.release_trajectory = bool(self.release_trajectory)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -140,7 +141,7 @@ float64 w
     """
     try:
       _x = self
-      buff.write(_get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f().pack(_x.arm_pose.world_joint.translation.x, _x.arm_pose.world_joint.translation.y, _x.arm_pose.world_joint.translation.z, _x.arm_pose.world_joint.angle, _x.arm_pose.world_joint.upper_bound, _x.arm_pose.world_joint.lower_bound, _x.arm_pose.world_joint.axis, _x.arm_pose.base_joint.translation.x, _x.arm_pose.base_joint.translation.y, _x.arm_pose.base_joint.translation.z, _x.arm_pose.base_joint.angle, _x.arm_pose.base_joint.upper_bound, _x.arm_pose.base_joint.lower_bound, _x.arm_pose.base_joint.axis, _x.arm_pose.shoulder_joint.translation.x, _x.arm_pose.shoulder_joint.translation.y, _x.arm_pose.shoulder_joint.translation.z, _x.arm_pose.shoulder_joint.angle, _x.arm_pose.shoulder_joint.upper_bound, _x.arm_pose.shoulder_joint.lower_bound, _x.arm_pose.shoulder_joint.axis, _x.arm_pose.elbow_joint.translation.x, _x.arm_pose.elbow_joint.translation.y, _x.arm_pose.elbow_joint.translation.z, _x.arm_pose.elbow_joint.angle, _x.arm_pose.elbow_joint.upper_bound, _x.arm_pose.elbow_joint.lower_bound, _x.arm_pose.elbow_joint.axis, _x.arm_pose.wrist_joint.translation.x, _x.arm_pose.wrist_joint.translation.y, _x.arm_pose.wrist_joint.translation.z, _x.arm_pose.wrist_joint.angle, _x.arm_pose.wrist_joint.upper_bound, _x.arm_pose.wrist_joint.lower_bound, _x.arm_pose.wrist_joint.axis, _x.arm_pose.eff_joint.translation.x, _x.arm_pose.eff_joint.translation.y, _x.arm_pose.eff_joint.translation.z, _x.arm_pose.eff_joint.angle, _x.arm_pose.eff_joint.upper_bound, _x.arm_pose.eff_joint.lower_bound, _x.arm_pose.eff_joint.axis, _x.arm_pose.right_gripper_joint, _x.arm_pose.left_gripper_joint, _x.target.position.x, _x.target.position.y, _x.target.position.z, _x.target.orientation.x, _x.target.orientation.y, _x.target.orientation.z, _x.target.orientation.w, _x.gripper_offset, _x.eff_offset))
+      buff.write(_get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B().pack(_x.arm_pose.world_joint.translation.x, _x.arm_pose.world_joint.translation.y, _x.arm_pose.world_joint.translation.z, _x.arm_pose.world_joint.angle, _x.arm_pose.world_joint.upper_bound, _x.arm_pose.world_joint.lower_bound, _x.arm_pose.world_joint.axis, _x.arm_pose.base_joint.translation.x, _x.arm_pose.base_joint.translation.y, _x.arm_pose.base_joint.translation.z, _x.arm_pose.base_joint.angle, _x.arm_pose.base_joint.upper_bound, _x.arm_pose.base_joint.lower_bound, _x.arm_pose.base_joint.axis, _x.arm_pose.shoulder_joint.translation.x, _x.arm_pose.shoulder_joint.translation.y, _x.arm_pose.shoulder_joint.translation.z, _x.arm_pose.shoulder_joint.angle, _x.arm_pose.shoulder_joint.upper_bound, _x.arm_pose.shoulder_joint.lower_bound, _x.arm_pose.shoulder_joint.axis, _x.arm_pose.elbow_joint.translation.x, _x.arm_pose.elbow_joint.translation.y, _x.arm_pose.elbow_joint.translation.z, _x.arm_pose.elbow_joint.angle, _x.arm_pose.elbow_joint.upper_bound, _x.arm_pose.elbow_joint.lower_bound, _x.arm_pose.elbow_joint.axis, _x.arm_pose.wrist_joint.translation.x, _x.arm_pose.wrist_joint.translation.y, _x.arm_pose.wrist_joint.translation.z, _x.arm_pose.wrist_joint.angle, _x.arm_pose.wrist_joint.upper_bound, _x.arm_pose.wrist_joint.lower_bound, _x.arm_pose.wrist_joint.axis, _x.arm_pose.eff_joint.translation.x, _x.arm_pose.eff_joint.translation.y, _x.arm_pose.eff_joint.translation.z, _x.arm_pose.eff_joint.angle, _x.arm_pose.eff_joint.upper_bound, _x.arm_pose.eff_joint.lower_bound, _x.arm_pose.eff_joint.axis, _x.arm_pose.gripper_offset_joint.translation.x, _x.arm_pose.gripper_offset_joint.translation.y, _x.arm_pose.gripper_offset_joint.translation.z, _x.arm_pose.gripper_offset_joint.angle, _x.arm_pose.gripper_offset_joint.upper_bound, _x.arm_pose.gripper_offset_joint.lower_bound, _x.arm_pose.gripper_offset_joint.axis, _x.arm_pose.right_gripper_joint.translation.x, _x.arm_pose.right_gripper_joint.translation.y, _x.arm_pose.right_gripper_joint.translation.z, _x.arm_pose.right_gripper_joint.angle, _x.arm_pose.right_gripper_joint.upper_bound, _x.arm_pose.right_gripper_joint.lower_bound, _x.arm_pose.right_gripper_joint.axis, _x.arm_pose.left_gripper_joint.translation.x, _x.arm_pose.left_gripper_joint.translation.y, _x.arm_pose.left_gripper_joint.translation.z, _x.arm_pose.left_gripper_joint.angle, _x.arm_pose.left_gripper_joint.upper_bound, _x.arm_pose.left_gripper_joint.lower_bound, _x.arm_pose.left_gripper_joint.axis, _x.target.position.x, _x.target.position.y, _x.target.position.z, _x.target.orientation.x, _x.target.orientation.y, _x.target.orientation.z, _x.target.orientation.w, _x.grasp_trajectory, _x.release_trajectory))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -159,10 +160,10 @@ float64 w
       end = 0
       _x = self
       start = end
-      end += 306
-      (_x.arm_pose.world_joint.translation.x, _x.arm_pose.world_joint.translation.y, _x.arm_pose.world_joint.translation.z, _x.arm_pose.world_joint.angle, _x.arm_pose.world_joint.upper_bound, _x.arm_pose.world_joint.lower_bound, _x.arm_pose.world_joint.axis, _x.arm_pose.base_joint.translation.x, _x.arm_pose.base_joint.translation.y, _x.arm_pose.base_joint.translation.z, _x.arm_pose.base_joint.angle, _x.arm_pose.base_joint.upper_bound, _x.arm_pose.base_joint.lower_bound, _x.arm_pose.base_joint.axis, _x.arm_pose.shoulder_joint.translation.x, _x.arm_pose.shoulder_joint.translation.y, _x.arm_pose.shoulder_joint.translation.z, _x.arm_pose.shoulder_joint.angle, _x.arm_pose.shoulder_joint.upper_bound, _x.arm_pose.shoulder_joint.lower_bound, _x.arm_pose.shoulder_joint.axis, _x.arm_pose.elbow_joint.translation.x, _x.arm_pose.elbow_joint.translation.y, _x.arm_pose.elbow_joint.translation.z, _x.arm_pose.elbow_joint.angle, _x.arm_pose.elbow_joint.upper_bound, _x.arm_pose.elbow_joint.lower_bound, _x.arm_pose.elbow_joint.axis, _x.arm_pose.wrist_joint.translation.x, _x.arm_pose.wrist_joint.translation.y, _x.arm_pose.wrist_joint.translation.z, _x.arm_pose.wrist_joint.angle, _x.arm_pose.wrist_joint.upper_bound, _x.arm_pose.wrist_joint.lower_bound, _x.arm_pose.wrist_joint.axis, _x.arm_pose.eff_joint.translation.x, _x.arm_pose.eff_joint.translation.y, _x.arm_pose.eff_joint.translation.z, _x.arm_pose.eff_joint.angle, _x.arm_pose.eff_joint.upper_bound, _x.arm_pose.eff_joint.lower_bound, _x.arm_pose.eff_joint.axis, _x.arm_pose.right_gripper_joint, _x.arm_pose.left_gripper_joint, _x.target.position.x, _x.target.position.y, _x.target.position.z, _x.target.orientation.x, _x.target.orientation.y, _x.target.orientation.z, _x.target.orientation.w, _x.gripper_offset, _x.eff_offset,) = _get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f().unpack(str[start:end])
-      self.arm_pose.right_gripper_joint = bool(self.arm_pose.right_gripper_joint)
-      self.arm_pose.left_gripper_joint = bool(self.arm_pose.left_gripper_joint)
+      end += 418
+      (_x.arm_pose.world_joint.translation.x, _x.arm_pose.world_joint.translation.y, _x.arm_pose.world_joint.translation.z, _x.arm_pose.world_joint.angle, _x.arm_pose.world_joint.upper_bound, _x.arm_pose.world_joint.lower_bound, _x.arm_pose.world_joint.axis, _x.arm_pose.base_joint.translation.x, _x.arm_pose.base_joint.translation.y, _x.arm_pose.base_joint.translation.z, _x.arm_pose.base_joint.angle, _x.arm_pose.base_joint.upper_bound, _x.arm_pose.base_joint.lower_bound, _x.arm_pose.base_joint.axis, _x.arm_pose.shoulder_joint.translation.x, _x.arm_pose.shoulder_joint.translation.y, _x.arm_pose.shoulder_joint.translation.z, _x.arm_pose.shoulder_joint.angle, _x.arm_pose.shoulder_joint.upper_bound, _x.arm_pose.shoulder_joint.lower_bound, _x.arm_pose.shoulder_joint.axis, _x.arm_pose.elbow_joint.translation.x, _x.arm_pose.elbow_joint.translation.y, _x.arm_pose.elbow_joint.translation.z, _x.arm_pose.elbow_joint.angle, _x.arm_pose.elbow_joint.upper_bound, _x.arm_pose.elbow_joint.lower_bound, _x.arm_pose.elbow_joint.axis, _x.arm_pose.wrist_joint.translation.x, _x.arm_pose.wrist_joint.translation.y, _x.arm_pose.wrist_joint.translation.z, _x.arm_pose.wrist_joint.angle, _x.arm_pose.wrist_joint.upper_bound, _x.arm_pose.wrist_joint.lower_bound, _x.arm_pose.wrist_joint.axis, _x.arm_pose.eff_joint.translation.x, _x.arm_pose.eff_joint.translation.y, _x.arm_pose.eff_joint.translation.z, _x.arm_pose.eff_joint.angle, _x.arm_pose.eff_joint.upper_bound, _x.arm_pose.eff_joint.lower_bound, _x.arm_pose.eff_joint.axis, _x.arm_pose.gripper_offset_joint.translation.x, _x.arm_pose.gripper_offset_joint.translation.y, _x.arm_pose.gripper_offset_joint.translation.z, _x.arm_pose.gripper_offset_joint.angle, _x.arm_pose.gripper_offset_joint.upper_bound, _x.arm_pose.gripper_offset_joint.lower_bound, _x.arm_pose.gripper_offset_joint.axis, _x.arm_pose.right_gripper_joint.translation.x, _x.arm_pose.right_gripper_joint.translation.y, _x.arm_pose.right_gripper_joint.translation.z, _x.arm_pose.right_gripper_joint.angle, _x.arm_pose.right_gripper_joint.upper_bound, _x.arm_pose.right_gripper_joint.lower_bound, _x.arm_pose.right_gripper_joint.axis, _x.arm_pose.left_gripper_joint.translation.x, _x.arm_pose.left_gripper_joint.translation.y, _x.arm_pose.left_gripper_joint.translation.z, _x.arm_pose.left_gripper_joint.angle, _x.arm_pose.left_gripper_joint.upper_bound, _x.arm_pose.left_gripper_joint.lower_bound, _x.arm_pose.left_gripper_joint.axis, _x.target.position.x, _x.target.position.y, _x.target.position.z, _x.target.orientation.x, _x.target.orientation.y, _x.target.orientation.z, _x.target.orientation.w, _x.grasp_trajectory, _x.release_trajectory,) = _get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B().unpack(str[start:end])
+      self.grasp_trajectory = bool(self.grasp_trajectory)
+      self.release_trajectory = bool(self.release_trajectory)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -171,12 +172,12 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f = None
-def _get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f():
-    global _struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f
-    if _struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f is None:
-        _struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f = struct.Struct("<3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f")
-    return _struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi2B7d2f
+_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B = None
+def _get_struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B():
+    global _struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B
+    if _struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B is None:
+        _struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B = struct.Struct("<3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B")
+    return _struct_3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi3d3fi7d2B
 # This Python file uses the following encoding: utf-8
 """autogenerated by genpy from roborex/TrajectoryPlannerResponse.msg. Do not edit."""
 import codecs
@@ -189,7 +190,7 @@ import geometry_msgs.msg
 import roborex.msg
 
 class TrajectoryPlannerResponse(genpy.Message):
-  _md5sum = "6925e298eddcfe19023891d0737531cc"
+  _md5sum = "8815e9c3c7e5428d6d83e942eb0b7216"
   _type = "roborex/TrajectoryPlannerResponse"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """Trajectory[] trajectories
@@ -197,6 +198,8 @@ class TrajectoryPlannerResponse(genpy.Message):
 ================================================================================
 MSG: roborex/Trajectory
 ArmPose[] poses
+int32 id
+
 ================================================================================
 MSG: roborex/ArmPose
 JointState world_joint
@@ -205,8 +208,9 @@ JointState shoulder_joint
 JointState elbow_joint
 JointState wrist_joint
 JointState eff_joint
-bool right_gripper_joint
-bool left_gripper_joint
+JointState gripper_offset_joint
+JointState right_gripper_joint
+JointState left_gripper_joint
 ================================================================================
 MSG: roborex/JointState
 geometry_msgs/Point translation
@@ -301,8 +305,26 @@ float64 z
           buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
           _x = _v11
           buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
-          _x = val2
-          buff.write(_get_struct_2B().pack(_x.right_gripper_joint, _x.left_gripper_joint))
+          _v13 = val2.gripper_offset_joint
+          _v14 = _v13.translation
+          _x = _v14
+          buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+          _x = _v13
+          buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
+          _v15 = val2.right_gripper_joint
+          _v16 = _v15.translation
+          _x = _v16
+          buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+          _x = _v15
+          buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
+          _v17 = val2.left_gripper_joint
+          _v18 = _v17.translation
+          _x = _v18
+          buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+          _x = _v17
+          buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
+        _x = val1.id
+        buff.write(_get_struct_i().pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -328,37 +350,7 @@ float64 z
         val1.poses = []
         for i in range(0, length):
           val2 = roborex.msg.ArmPose()
-          _v13 = val2.world_joint
-          _v14 = _v13.translation
-          _x = _v14
-          start = end
-          end += 24
-          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v13
-          start = end
-          end += 16
-          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v15 = val2.base_joint
-          _v16 = _v15.translation
-          _x = _v16
-          start = end
-          end += 24
-          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v15
-          start = end
-          end += 16
-          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v17 = val2.shoulder_joint
-          _v18 = _v17.translation
-          _x = _v18
-          start = end
-          end += 24
-          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v17
-          start = end
-          end += 16
-          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v19 = val2.elbow_joint
+          _v19 = val2.world_joint
           _v20 = _v19.translation
           _x = _v20
           start = end
@@ -368,7 +360,7 @@ float64 z
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v21 = val2.wrist_joint
+          _v21 = val2.base_joint
           _v22 = _v21.translation
           _x = _v22
           start = end
@@ -378,7 +370,7 @@ float64 z
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v23 = val2.eff_joint
+          _v23 = val2.shoulder_joint
           _v24 = _v23.translation
           _x = _v24
           start = end
@@ -388,13 +380,70 @@ float64 z
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _x = val2
+          _v25 = val2.elbow_joint
+          _v26 = _v25.translation
+          _x = _v26
           start = end
-          end += 2
-          (_x.right_gripper_joint, _x.left_gripper_joint,) = _get_struct_2B().unpack(str[start:end])
-          val2.right_gripper_joint = bool(val2.right_gripper_joint)
-          val2.left_gripper_joint = bool(val2.left_gripper_joint)
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v25
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
+          _v27 = val2.wrist_joint
+          _v28 = _v27.translation
+          _x = _v28
+          start = end
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v27
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
+          _v29 = val2.eff_joint
+          _v30 = _v29.translation
+          _x = _v30
+          start = end
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v29
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
+          _v31 = val2.gripper_offset_joint
+          _v32 = _v31.translation
+          _x = _v32
+          start = end
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v31
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
+          _v33 = val2.right_gripper_joint
+          _v34 = _v33.translation
+          _x = _v34
+          start = end
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v33
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
+          _v35 = val2.left_gripper_joint
+          _v36 = _v35.translation
+          _x = _v36
+          start = end
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v35
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
           val1.poses.append(val2)
+        start = end
+        end += 4
+        (val1.id,) = _get_struct_i().unpack(str[start:end])
         self.trajectories.append(val1)
       return self
     except struct.error as e:
@@ -414,44 +463,62 @@ float64 z
         length = len(val1.poses)
         buff.write(_struct_I.pack(length))
         for val2 in val1.poses:
-          _v25 = val2.world_joint
-          _v26 = _v25.translation
-          _x = _v26
+          _v37 = val2.world_joint
+          _v38 = _v37.translation
+          _x = _v38
           buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-          _x = _v25
+          _x = _v37
           buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
-          _v27 = val2.base_joint
-          _v28 = _v27.translation
-          _x = _v28
+          _v39 = val2.base_joint
+          _v40 = _v39.translation
+          _x = _v40
           buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-          _x = _v27
+          _x = _v39
           buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
-          _v29 = val2.shoulder_joint
-          _v30 = _v29.translation
-          _x = _v30
+          _v41 = val2.shoulder_joint
+          _v42 = _v41.translation
+          _x = _v42
           buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-          _x = _v29
+          _x = _v41
           buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
-          _v31 = val2.elbow_joint
-          _v32 = _v31.translation
-          _x = _v32
+          _v43 = val2.elbow_joint
+          _v44 = _v43.translation
+          _x = _v44
           buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-          _x = _v31
+          _x = _v43
           buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
-          _v33 = val2.wrist_joint
-          _v34 = _v33.translation
-          _x = _v34
+          _v45 = val2.wrist_joint
+          _v46 = _v45.translation
+          _x = _v46
           buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-          _x = _v33
+          _x = _v45
           buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
-          _v35 = val2.eff_joint
-          _v36 = _v35.translation
-          _x = _v36
+          _v47 = val2.eff_joint
+          _v48 = _v47.translation
+          _x = _v48
           buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-          _x = _v35
+          _x = _v47
           buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
-          _x = val2
-          buff.write(_get_struct_2B().pack(_x.right_gripper_joint, _x.left_gripper_joint))
+          _v49 = val2.gripper_offset_joint
+          _v50 = _v49.translation
+          _x = _v50
+          buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+          _x = _v49
+          buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
+          _v51 = val2.right_gripper_joint
+          _v52 = _v51.translation
+          _x = _v52
+          buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+          _x = _v51
+          buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
+          _v53 = val2.left_gripper_joint
+          _v54 = _v53.translation
+          _x = _v54
+          buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+          _x = _v53
+          buff.write(_get_struct_3fi().pack(_x.angle, _x.upper_bound, _x.lower_bound, _x.axis))
+        _x = val1.id
+        buff.write(_get_struct_i().pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -478,73 +545,100 @@ float64 z
         val1.poses = []
         for i in range(0, length):
           val2 = roborex.msg.ArmPose()
-          _v37 = val2.world_joint
-          _v38 = _v37.translation
-          _x = _v38
+          _v55 = val2.world_joint
+          _v56 = _v55.translation
+          _x = _v56
           start = end
           end += 24
           (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v37
+          _x = _v55
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v39 = val2.base_joint
-          _v40 = _v39.translation
-          _x = _v40
+          _v57 = val2.base_joint
+          _v58 = _v57.translation
+          _x = _v58
           start = end
           end += 24
           (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v39
+          _x = _v57
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v41 = val2.shoulder_joint
-          _v42 = _v41.translation
-          _x = _v42
+          _v59 = val2.shoulder_joint
+          _v60 = _v59.translation
+          _x = _v60
           start = end
           end += 24
           (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v41
+          _x = _v59
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v43 = val2.elbow_joint
-          _v44 = _v43.translation
-          _x = _v44
+          _v61 = val2.elbow_joint
+          _v62 = _v61.translation
+          _x = _v62
           start = end
           end += 24
           (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v43
+          _x = _v61
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v45 = val2.wrist_joint
-          _v46 = _v45.translation
-          _x = _v46
+          _v63 = val2.wrist_joint
+          _v64 = _v63.translation
+          _x = _v64
           start = end
           end += 24
           (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v45
+          _x = _v63
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _v47 = val2.eff_joint
-          _v48 = _v47.translation
-          _x = _v48
+          _v65 = val2.eff_joint
+          _v66 = _v65.translation
+          _x = _v66
           start = end
           end += 24
           (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-          _x = _v47
+          _x = _v65
           start = end
           end += 16
           (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
-          _x = val2
+          _v67 = val2.gripper_offset_joint
+          _v68 = _v67.translation
+          _x = _v68
           start = end
-          end += 2
-          (_x.right_gripper_joint, _x.left_gripper_joint,) = _get_struct_2B().unpack(str[start:end])
-          val2.right_gripper_joint = bool(val2.right_gripper_joint)
-          val2.left_gripper_joint = bool(val2.left_gripper_joint)
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v67
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
+          _v69 = val2.right_gripper_joint
+          _v70 = _v69.translation
+          _x = _v70
+          start = end
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v69
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
+          _v71 = val2.left_gripper_joint
+          _v72 = _v71.translation
+          _x = _v72
+          start = end
+          end += 24
+          (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+          _x = _v71
+          start = end
+          end += 16
+          (_x.angle, _x.upper_bound, _x.lower_bound, _x.axis,) = _get_struct_3fi().unpack(str[start:end])
           val1.poses.append(val2)
+        start = end
+        end += 4
+        (val1.id,) = _get_struct_i().unpack(str[start:end])
         self.trajectories.append(val1)
       return self
     except struct.error as e:
@@ -554,12 +648,6 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_2B = None
-def _get_struct_2B():
-    global _struct_2B
-    if _struct_2B is None:
-        _struct_2B = struct.Struct("<2B")
-    return _struct_2B
 _struct_3d = None
 def _get_struct_3d():
     global _struct_3d
@@ -572,8 +660,14 @@ def _get_struct_3fi():
     if _struct_3fi is None:
         _struct_3fi = struct.Struct("<3fi")
     return _struct_3fi
+_struct_i = None
+def _get_struct_i():
+    global _struct_i
+    if _struct_i is None:
+        _struct_i = struct.Struct("<i")
+    return _struct_i
 class TrajectoryPlanner(object):
   _type          = 'roborex/TrajectoryPlanner'
-  _md5sum = '4aa618f0a078989468a6ecb720f101da'
+  _md5sum = '367c998270ed8c4c22d2346f6cade297'
   _request_class  = TrajectoryPlannerRequest
   _response_class = TrajectoryPlannerResponse

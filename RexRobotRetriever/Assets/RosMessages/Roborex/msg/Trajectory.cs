@@ -12,15 +12,18 @@ namespace RosMessageTypes.Roborex
         public const string RosMessageName = "roborex/Trajectory";
 
         public ArmPose[] poses;
+        public int id;
 
         public Trajectory()
         {
             this.poses = new ArmPose[0];
+            this.id = 0;
         }
 
-        public Trajectory(ArmPose[] poses)
+        public Trajectory(ArmPose[] poses, int id)
         {
             this.poses = poses;
+            this.id = id;
         }
         public override List<byte[]> SerializationStatements()
         {
@@ -29,6 +32,7 @@ namespace RosMessageTypes.Roborex
             listOfSerializations.Add(BitConverter.GetBytes(poses.Length));
             foreach(var entry in poses)
                 listOfSerializations.Add(entry.Serialize());
+            listOfSerializations.Add(BitConverter.GetBytes(this.id));
 
             return listOfSerializations;
         }
@@ -44,6 +48,8 @@ namespace RosMessageTypes.Roborex
                 this.poses[i] = new ArmPose();
                 offset = this.poses[i].Deserialize(data, offset);
             }
+            this.id = BitConverter.ToInt32(data, offset);
+            offset += 4;
 
             return offset;
         }
@@ -51,7 +57,8 @@ namespace RosMessageTypes.Roborex
         public override string ToString()
         {
             return "Trajectory: " +
-            "\nposes: " + System.String.Join(", ", poses.ToList());
+            "\nposes: " + System.String.Join(", ", poses.ToList()) +
+            "\nid: " + id.ToString();
         }
     }
 }

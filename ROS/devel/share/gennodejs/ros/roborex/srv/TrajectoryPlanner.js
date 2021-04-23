@@ -26,8 +26,8 @@ class TrajectoryPlannerRequest {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.arm_pose = null;
       this.target = null;
-      this.gripper_offset = null;
-      this.eff_offset = null;
+      this.grasp_trajectory = null;
+      this.release_trajectory = null;
     }
     else {
       if (initObj.hasOwnProperty('arm_pose')) {
@@ -42,17 +42,17 @@ class TrajectoryPlannerRequest {
       else {
         this.target = new geometry_msgs.msg.Pose();
       }
-      if (initObj.hasOwnProperty('gripper_offset')) {
-        this.gripper_offset = initObj.gripper_offset
+      if (initObj.hasOwnProperty('grasp_trajectory')) {
+        this.grasp_trajectory = initObj.grasp_trajectory
       }
       else {
-        this.gripper_offset = 0.0;
+        this.grasp_trajectory = false;
       }
-      if (initObj.hasOwnProperty('eff_offset')) {
-        this.eff_offset = initObj.eff_offset
+      if (initObj.hasOwnProperty('release_trajectory')) {
+        this.release_trajectory = initObj.release_trajectory
       }
       else {
-        this.eff_offset = 0.0;
+        this.release_trajectory = false;
       }
     }
   }
@@ -63,10 +63,10 @@ class TrajectoryPlannerRequest {
     bufferOffset = ArmPose.serialize(obj.arm_pose, buffer, bufferOffset);
     // Serialize message field [target]
     bufferOffset = geometry_msgs.msg.Pose.serialize(obj.target, buffer, bufferOffset);
-    // Serialize message field [gripper_offset]
-    bufferOffset = _serializer.float32(obj.gripper_offset, buffer, bufferOffset);
-    // Serialize message field [eff_offset]
-    bufferOffset = _serializer.float32(obj.eff_offset, buffer, bufferOffset);
+    // Serialize message field [grasp_trajectory]
+    bufferOffset = _serializer.bool(obj.grasp_trajectory, buffer, bufferOffset);
+    // Serialize message field [release_trajectory]
+    bufferOffset = _serializer.bool(obj.release_trajectory, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -78,15 +78,15 @@ class TrajectoryPlannerRequest {
     data.arm_pose = ArmPose.deserialize(buffer, bufferOffset);
     // Deserialize message field [target]
     data.target = geometry_msgs.msg.Pose.deserialize(buffer, bufferOffset);
-    // Deserialize message field [gripper_offset]
-    data.gripper_offset = _deserializer.float32(buffer, bufferOffset);
-    // Deserialize message field [eff_offset]
-    data.eff_offset = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [grasp_trajectory]
+    data.grasp_trajectory = _deserializer.bool(buffer, bufferOffset);
+    // Deserialize message field [release_trajectory]
+    data.release_trajectory = _deserializer.bool(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 306;
+    return 418;
   }
 
   static datatype() {
@@ -96,7 +96,7 @@ class TrajectoryPlannerRequest {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '11abd7ff07e1b32ddf4046f6d912966a';
+    return '2bac259c1bc1ea5c349be865d7f376a1';
   }
 
   static messageDefinition() {
@@ -104,8 +104,8 @@ class TrajectoryPlannerRequest {
     return `
     ArmPose arm_pose
     geometry_msgs/Pose target
-    float32 gripper_offset
-    float32 eff_offset
+    bool grasp_trajectory
+    bool release_trajectory
     
     ================================================================================
     MSG: roborex/ArmPose
@@ -115,8 +115,9 @@ class TrajectoryPlannerRequest {
     JointState elbow_joint
     JointState wrist_joint
     JointState eff_joint
-    bool right_gripper_joint
-    bool left_gripper_joint
+    JointState gripper_offset_joint
+    JointState right_gripper_joint
+    JointState left_gripper_joint
     ================================================================================
     MSG: roborex/JointState
     geometry_msgs/Point translation
@@ -170,18 +171,18 @@ class TrajectoryPlannerRequest {
       resolved.target = new geometry_msgs.msg.Pose()
     }
 
-    if (msg.gripper_offset !== undefined) {
-      resolved.gripper_offset = msg.gripper_offset;
+    if (msg.grasp_trajectory !== undefined) {
+      resolved.grasp_trajectory = msg.grasp_trajectory;
     }
     else {
-      resolved.gripper_offset = 0.0
+      resolved.grasp_trajectory = false
     }
 
-    if (msg.eff_offset !== undefined) {
-      resolved.eff_offset = msg.eff_offset;
+    if (msg.release_trajectory !== undefined) {
+      resolved.release_trajectory = msg.release_trajectory;
     }
     else {
-      resolved.eff_offset = 0.0
+      resolved.release_trajectory = false
     }
 
     return resolved;
@@ -244,7 +245,7 @@ class TrajectoryPlannerResponse {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '6925e298eddcfe19023891d0737531cc';
+    return '8815e9c3c7e5428d6d83e942eb0b7216';
   }
 
   static messageDefinition() {
@@ -255,6 +256,8 @@ class TrajectoryPlannerResponse {
     ================================================================================
     MSG: roborex/Trajectory
     ArmPose[] poses
+    int32 id
+    
     ================================================================================
     MSG: roborex/ArmPose
     JointState world_joint
@@ -263,8 +266,9 @@ class TrajectoryPlannerResponse {
     JointState elbow_joint
     JointState wrist_joint
     JointState eff_joint
-    bool right_gripper_joint
-    bool left_gripper_joint
+    JointState gripper_offset_joint
+    JointState right_gripper_joint
+    JointState left_gripper_joint
     ================================================================================
     MSG: roborex/JointState
     geometry_msgs/Point translation
@@ -306,6 +310,6 @@ class TrajectoryPlannerResponse {
 module.exports = {
   Request: TrajectoryPlannerRequest,
   Response: TrajectoryPlannerResponse,
-  md5sum() { return '4aa618f0a078989468a6ecb720f101da'; },
+  md5sum() { return '367c998270ed8c4c22d2346f6cade297'; },
   datatype() { return 'roborex/TrajectoryPlanner'; }
 };

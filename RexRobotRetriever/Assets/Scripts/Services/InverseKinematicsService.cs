@@ -22,7 +22,7 @@ public class InverseKinematicsService : MonoBehaviour
         ArmPose arm_pose = arm.GetArmPose();
         Vector3 wPos = WristTarget.transform.localPosition;
         Quaternion wRot = WristTarget.transform.localRotation;
-        Vector3 ePos = EffTarget.transform.localPosition;
+        Vector3 ePos = arm.worldJoint.transform.InverseTransformPoint(EffTarget.transform.position);
         Quaternion eRot = EffTarget.transform.localRotation;
 
         InverseKinematicsRequest req = new InverseKinematicsRequest(
@@ -43,6 +43,7 @@ public class InverseKinematicsService : MonoBehaviour
 
     public void Callback(InverseKinematicsResponse res)
     {
-        arm.FollowTrajectory(new []{res.arm_pose});
+        Trajectory traj = new Trajectory(new[] {res.arm_pose}, 10000);
+        StartCoroutine(arm.FollowTrajectory(traj));
     }
 }
