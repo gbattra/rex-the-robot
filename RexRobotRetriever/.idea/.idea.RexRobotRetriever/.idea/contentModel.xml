@@ -30,7 +30,6 @@
             </e>
           </e>
         </e>
-        <e p="RangeSensorPublisher.cs" t="Include" />
         <e p="RobotArmJoints.cs" t="Include" />
         <e p="Robotic Arm" t="Include">
           <e p="Document.txt" t="Include" />
@@ -72,6 +71,7 @@
             <e p="BasePosePublisher.cs" t="Include" />
             <e p="DropboxPosePublisher.cs" t="Include" />
             <e p="GripperGoalPosePublisher.cs" t="Include" />
+            <e p="RangeSensorPublisher.cs" t="Include" />
             <e p="ReleasePosePublisher.cs" t="Include" />
             <e p="TargetPosePublisher.cs" t="Include" />
             <e p="TrajectoryStatusPublisher.cs" t="Include" />

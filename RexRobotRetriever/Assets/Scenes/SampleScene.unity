@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 273417059}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: dropbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3425,7 +3425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492309704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.06845864, z: 0}
+  m_LocalPosition: {x: 0, y: 0.06845864, z: 3.147}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1102075796}
@@ -3445,7 +3445,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 492309704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea99d7406bae0404195d20652de48155, type: 3}
+  m_Script: {fileID: 11500000, guid: 4eef69e252fee6848bdd23e5429abac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IgnoreList: []
@@ -3455,38 +3455,30 @@ MonoBehaviour:
   - dropbox
   OnDetected:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2040393835}
-        m_TargetAssemblyTypeName: RangeSensorDetectionPublisher, Assembly-CSharp
-        m_MethodName: Publish
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnLostDetection:
     m_PersistentCalls:
       m_Calls: []
-  DetectionMode: 0
-  RequiresLineOfSight: 0
-  BlocksLineOfSight:
+  Length: 1.5
+  Radius: 0
+  ObstructedByLayers:
     serializedVersion: 2
     m_Bits: 0
-  TestLOSTargetsOnly: 0
-  NumberOfRays: 1
-  MinimumVisibility: 0.5
-  SensorRange: 1.5
   DetectsOnLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
+  DetectionMode: 0
+  Direction: {x: 0, y: 0, z: 1}
+  WorldSpace: 0
   SensorUpdateMode: 0
-  CheckInterval: 1
   InitialBufferSize: 20
   DynamicallyIncreaseBufferSize: 1
+  OnObstruction:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClear:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &499327737
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,7 +4966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695990748}
   m_LocalRotation: {x: 0.2689583, y: -0.43701404, z: 0.13876905, w: 0.84700847}
-  m_LocalPosition: {x: 1.35, y: 1.5384587, z: -0.96}
+  m_LocalPosition: {x: 1.35, y: 1.5384587, z: 2.187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5612,7 +5604,7 @@ GameObject:
   - component: {fileID: 757307810}
   m_Layer: 0
   m_Name: Dock
-  m_TagString: Untagged
+  m_TagString: dropbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7425,7 +7417,7 @@ GameObject:
   - component: {fileID: 998098778}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: dropbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11251,7 +11243,7 @@ GameObject:
   - component: {fileID: 1634358971}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: dropbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12063,7 +12055,7 @@ GameObject:
   - component: {fileID: 1908604868}
   m_Layer: 0
   m_Name: Release
-  m_TagString: Untagged
+  m_TagString: dropbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12816,6 +12808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c93061274d4ae90e9d8e38c97d57c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topicName: range_sensor
 --- !u!1 &2051869498
 GameObject:
   m_ObjectHideFlags: 0
@@ -13312,7 +13305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078647067}
   m_LocalRotation: {x: 0.2689583, y: -0.43701404, z: 0.13876905, w: 0.84700847}
-  m_LocalPosition: {x: 1.35, y: 1.5384587, z: -0.96}
+  m_LocalPosition: {x: 1.35, y: 1.5384587, z: 2.187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 43589752}
