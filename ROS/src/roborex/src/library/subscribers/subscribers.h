@@ -77,6 +77,18 @@ namespace roborex
             geometry_msgs::Pose latest_pose;
             ReleasePoseSubscriber(ros::NodeHandle *nh);
     };
+
+    class RangeSensorSubscriber
+    {
+        private:
+            ros::Subscriber sensor_subscriber;
+            void callback(const std_msgs::Empty::ConstPtr &req);
+            bool detection_made;
+
+        public:
+            RangeSensorSubscriber(ros::NodeHandle *nh);
+            bool detectionMade();
+    }
 }
 
 #endif

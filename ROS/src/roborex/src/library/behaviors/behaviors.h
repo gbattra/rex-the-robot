@@ -116,6 +116,25 @@ namespace roborex
             bool start(roborex::StartSystemRequest &req, roborex::StartSystemResponse &res);
             void execute() override;
     };
+
+    class ExploreBehavior: public Behavior
+    {
+        private:
+            bool avoiding = false;
+            roborex::RangeSensorSubscriber *range_sensor_subscriber;
+            roborex::BasePoseSubscriber *base_pose_subscriber;
+            roborex::CommandPublisher *cmd_publisher;
+            roborex::PID pid;
+
+        public:
+            ExploreBehavior(
+                ros::NodeHandle *nh,
+                roborex::RangeSensorSubscriber *rss,
+                roborex::BasePoseSubscriber *bps,
+                roborex::CommandPublisher *cp);
+
+            void execute() override;
+    };
 }
 
 #endif

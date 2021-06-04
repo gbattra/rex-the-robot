@@ -41,12 +41,14 @@ add_library(${PROJECT_NAME}_lib
   src/library/subscribers/armPoseSubscriber.cpp
   src/library/subscribers/trajectoryStatusSubscriber.cpp
   src/library/subscribers/releasePoseSubscriber.cpp
+  src/library/subscribers/rangeSensorSubscriber.cpp
 
   src/library/publishers/publishers.h
   src/library/publishers/commandPublisher.cpp
   src/library/publishers/trajectoryPublisher.cpp
 
   src/library/behaviors/behaviors.h
+  src/library/behaviors/exploreBehavior.cpp
   src/library/behaviors/systemBehavior.cpp
   src/library/behaviors/goToGoalBehavior.cpp
   src/library/behaviors/graspTargetBehavior.cpp
@@ -98,3 +100,11 @@ target_link_libraries(${PROJECT_NAME}_system_behavior
 add_dependencies(${PROJECT_NAME}_system_behavior ${PROJECT_NAME}_generate_messages_cpp)
 add_dependencies(${PROJECT_NAME}_system_behavior ${PROJECT_NAME}_generate_messages_py)
 
+
+add_executable(${PROJECT_NAME}_explore_behavior src/nodes/exploreBehaviorNode.cpp)
+target_link_libraries(${PROJECT_NAME}_explore_behavior
+  ${catkin_LIBRARIES}
+  ${PROJECT_NAME}_lib
+)
+add_dependencies(${PROJECT_NAME}_explore_behavior ${PROJECT_NAME}_generate_messages_cpp)
+add_dependencies(${PROJECT_NAME}_explore_behavior ${PROJECT_NAME}_generate_messages_py)
