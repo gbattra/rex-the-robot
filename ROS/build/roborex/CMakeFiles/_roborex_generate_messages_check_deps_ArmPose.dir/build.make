@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/gattra/Projects/Unity/rex-the-robot/ROS/build
 include roborex/CMakeFiles/_roborex_generate_messages_check_deps_ArmPose.dir/progress.make
 
 roborex/CMakeFiles/_roborex_generate_messages_check_deps_ArmPose:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py roborex /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg roborex/JointState:geometry_msgs/Point
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py roborex /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg geometry_msgs/Point:roborex/JointState
 
 _roborex_generate_messages_check_deps_ArmPose: roborex/CMakeFiles/_roborex_generate_messages_check_deps_ArmPose
 _roborex_generate_messages_check_deps_ArmPose: roborex/CMakeFiles/_roborex_generate_messages_check_deps_ArmPose.dir/build.make

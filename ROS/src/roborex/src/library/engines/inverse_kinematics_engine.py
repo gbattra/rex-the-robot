@@ -5,7 +5,7 @@ import rospy
 import numpy as np
 import copy
 
-from library.forward_kinematics_engine import ForwardKinematicsEngine
+from library.engines.forward_kinematics_engine import ForwardKinematicsEngine
 from roborex.msg import ArmPose, JointState
 from roborex.srv import (ForwardKinematics, ForwardKinematicsRequest, ForwardKinematicsResponse,
                          InverseKinematics, InverseKinematicsRequest, InverseKinematicsResponse)

@@ -4,10 +4,10 @@
 #ifndef ROBOREX_BEHAVIORS
 #define ROBOREX_BEHAVIORS
 
-#include "subscribers.h"
-#include "publishers.h"
+#include "subscribers/subscribers.h"
+#include "publishers/publishers.h"
 #include "pid.h"
-#include "clients.h"
+#include "clients/clients.h"
 #include "roborex/StartSystem.h"
 #include <ros/ros.h>
 

@@ -7,8 +7,8 @@ import copy
 
 from collections import defaultdict
 from scipy import spatial
-from library.forward_kinematics_engine import ForwardKinematicsEngine
-from library.inverse_kinematics_engine import InverseKinematicsEngine
+from library.engines.forward_kinematics_engine import ForwardKinematicsEngine
+from library.engines.inverse_kinematics_engine import InverseKinematicsEngine
 from roborex.srv import ForwardKinematics, ForwardKinematicsRequest, ForwardKinematicsResponse
 from roborex.msg import ArmPose
 

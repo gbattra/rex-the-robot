@@ -887,167 +887,140 @@ _roborex_generate_messages_check_deps_ForwardKinematics/fast:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_ForwardKinematics.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_ForwardKinematics.dir/build
 .PHONY : _roborex_generate_messages_check_deps_ForwardKinematics/fast
 
-src/library/armPoseSubscriber.o: src/library/armPoseSubscriber.cpp.o
+src/library/behaviors/goToGoalBehavior.o: src/library/behaviors/goToGoalBehavior.cpp.o
 
-.PHONY : src/library/armPoseSubscriber.o
-
-# target to build an object file
-src/library/armPoseSubscriber.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/armPoseSubscriber.cpp.o
-.PHONY : src/library/armPoseSubscriber.cpp.o
-
-src/library/armPoseSubscriber.i: src/library/armPoseSubscriber.cpp.i
-
-.PHONY : src/library/armPoseSubscriber.i
-
-# target to preprocess a source file
-src/library/armPoseSubscriber.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/armPoseSubscriber.cpp.i
-.PHONY : src/library/armPoseSubscriber.cpp.i
-
-src/library/armPoseSubscriber.s: src/library/armPoseSubscriber.cpp.s
-
-.PHONY : src/library/armPoseSubscriber.s
-
-# target to generate assembly for a file
-src/library/armPoseSubscriber.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/armPoseSubscriber.cpp.s
-.PHONY : src/library/armPoseSubscriber.cpp.s
-
-src/library/basePoseSubscriber.o: src/library/basePoseSubscriber.cpp.o
-
-.PHONY : src/library/basePoseSubscriber.o
+.PHONY : src/library/behaviors/goToGoalBehavior.o
 
 # target to build an object file
-src/library/basePoseSubscriber.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/basePoseSubscriber.cpp.o
-.PHONY : src/library/basePoseSubscriber.cpp.o
+src/library/behaviors/goToGoalBehavior.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o
+.PHONY : src/library/behaviors/goToGoalBehavior.cpp.o
 
-src/library/basePoseSubscriber.i: src/library/basePoseSubscriber.cpp.i
+src/library/behaviors/goToGoalBehavior.i: src/library/behaviors/goToGoalBehavior.cpp.i
 
-.PHONY : src/library/basePoseSubscriber.i
+.PHONY : src/library/behaviors/goToGoalBehavior.i
 
 # target to preprocess a source file
-src/library/basePoseSubscriber.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/basePoseSubscriber.cpp.i
-.PHONY : src/library/basePoseSubscriber.cpp.i
+src/library/behaviors/goToGoalBehavior.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.i
+.PHONY : src/library/behaviors/goToGoalBehavior.cpp.i
 
-src/library/basePoseSubscriber.s: src/library/basePoseSubscriber.cpp.s
+src/library/behaviors/goToGoalBehavior.s: src/library/behaviors/goToGoalBehavior.cpp.s
 
-.PHONY : src/library/basePoseSubscriber.s
+.PHONY : src/library/behaviors/goToGoalBehavior.s
 
 # target to generate assembly for a file
-src/library/basePoseSubscriber.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/basePoseSubscriber.cpp.s
-.PHONY : src/library/basePoseSubscriber.cpp.s
+src/library/behaviors/goToGoalBehavior.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.s
+.PHONY : src/library/behaviors/goToGoalBehavior.cpp.s
 
-src/library/commandPublisher.o: src/library/commandPublisher.cpp.o
+src/library/behaviors/graspTargetBehavior.o: src/library/behaviors/graspTargetBehavior.cpp.o
 
-.PHONY : src/library/commandPublisher.o
+.PHONY : src/library/behaviors/graspTargetBehavior.o
 
 # target to build an object file
-src/library/commandPublisher.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/commandPublisher.cpp.o
-.PHONY : src/library/commandPublisher.cpp.o
+src/library/behaviors/graspTargetBehavior.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o
+.PHONY : src/library/behaviors/graspTargetBehavior.cpp.o
 
-src/library/commandPublisher.i: src/library/commandPublisher.cpp.i
+src/library/behaviors/graspTargetBehavior.i: src/library/behaviors/graspTargetBehavior.cpp.i
 
-.PHONY : src/library/commandPublisher.i
+.PHONY : src/library/behaviors/graspTargetBehavior.i
 
 # target to preprocess a source file
-src/library/commandPublisher.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/commandPublisher.cpp.i
-.PHONY : src/library/commandPublisher.cpp.i
+src/library/behaviors/graspTargetBehavior.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.i
+.PHONY : src/library/behaviors/graspTargetBehavior.cpp.i
 
-src/library/commandPublisher.s: src/library/commandPublisher.cpp.s
+src/library/behaviors/graspTargetBehavior.s: src/library/behaviors/graspTargetBehavior.cpp.s
 
-.PHONY : src/library/commandPublisher.s
+.PHONY : src/library/behaviors/graspTargetBehavior.s
 
 # target to generate assembly for a file
-src/library/commandPublisher.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/commandPublisher.cpp.s
-.PHONY : src/library/commandPublisher.cpp.s
+src/library/behaviors/graspTargetBehavior.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.s
+.PHONY : src/library/behaviors/graspTargetBehavior.cpp.s
 
-src/library/goToGoalBehavior.o: src/library/goToGoalBehavior.cpp.o
+src/library/behaviors/releaseTargetBehavior.o: src/library/behaviors/releaseTargetBehavior.cpp.o
 
-.PHONY : src/library/goToGoalBehavior.o
+.PHONY : src/library/behaviors/releaseTargetBehavior.o
 
 # target to build an object file
-src/library/goToGoalBehavior.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/goToGoalBehavior.cpp.o
-.PHONY : src/library/goToGoalBehavior.cpp.o
+src/library/behaviors/releaseTargetBehavior.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.o
+.PHONY : src/library/behaviors/releaseTargetBehavior.cpp.o
 
-src/library/goToGoalBehavior.i: src/library/goToGoalBehavior.cpp.i
+src/library/behaviors/releaseTargetBehavior.i: src/library/behaviors/releaseTargetBehavior.cpp.i
 
-.PHONY : src/library/goToGoalBehavior.i
+.PHONY : src/library/behaviors/releaseTargetBehavior.i
 
 # target to preprocess a source file
-src/library/goToGoalBehavior.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/goToGoalBehavior.cpp.i
-.PHONY : src/library/goToGoalBehavior.cpp.i
+src/library/behaviors/releaseTargetBehavior.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.i
+.PHONY : src/library/behaviors/releaseTargetBehavior.cpp.i
 
-src/library/goToGoalBehavior.s: src/library/goToGoalBehavior.cpp.s
+src/library/behaviors/releaseTargetBehavior.s: src/library/behaviors/releaseTargetBehavior.cpp.s
 
-.PHONY : src/library/goToGoalBehavior.s
+.PHONY : src/library/behaviors/releaseTargetBehavior.s
 
 # target to generate assembly for a file
-src/library/goToGoalBehavior.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/goToGoalBehavior.cpp.s
-.PHONY : src/library/goToGoalBehavior.cpp.s
+src/library/behaviors/releaseTargetBehavior.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.s
+.PHONY : src/library/behaviors/releaseTargetBehavior.cpp.s
 
-src/library/graspTargetBehavior.o: src/library/graspTargetBehavior.cpp.o
+src/library/behaviors/systemBehavior.o: src/library/behaviors/systemBehavior.cpp.o
 
-.PHONY : src/library/graspTargetBehavior.o
+.PHONY : src/library/behaviors/systemBehavior.o
 
 # target to build an object file
-src/library/graspTargetBehavior.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/graspTargetBehavior.cpp.o
-.PHONY : src/library/graspTargetBehavior.cpp.o
+src/library/behaviors/systemBehavior.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o
+.PHONY : src/library/behaviors/systemBehavior.cpp.o
 
-src/library/graspTargetBehavior.i: src/library/graspTargetBehavior.cpp.i
+src/library/behaviors/systemBehavior.i: src/library/behaviors/systemBehavior.cpp.i
 
-.PHONY : src/library/graspTargetBehavior.i
+.PHONY : src/library/behaviors/systemBehavior.i
 
 # target to preprocess a source file
-src/library/graspTargetBehavior.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/graspTargetBehavior.cpp.i
-.PHONY : src/library/graspTargetBehavior.cpp.i
+src/library/behaviors/systemBehavior.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.i
+.PHONY : src/library/behaviors/systemBehavior.cpp.i
 
-src/library/graspTargetBehavior.s: src/library/graspTargetBehavior.cpp.s
+src/library/behaviors/systemBehavior.s: src/library/behaviors/systemBehavior.cpp.s
 
-.PHONY : src/library/graspTargetBehavior.s
+.PHONY : src/library/behaviors/systemBehavior.s
 
 # target to generate assembly for a file
-src/library/graspTargetBehavior.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/graspTargetBehavior.cpp.s
-.PHONY : src/library/graspTargetBehavior.cpp.s
+src/library/behaviors/systemBehavior.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.s
+.PHONY : src/library/behaviors/systemBehavior.cpp.s
 
-src/library/gripperGoalPoseSubscriber.o: src/library/gripperGoalPoseSubscriber.cpp.o
+src/library/clients/trajectoryPlannerClient.o: src/library/clients/trajectoryPlannerClient.cpp.o
 
-.PHONY : src/library/gripperGoalPoseSubscriber.o
+.PHONY : src/library/clients/trajectoryPlannerClient.o
 
 # target to build an object file
-src/library/gripperGoalPoseSubscriber.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/gripperGoalPoseSubscriber.cpp.o
-.PHONY : src/library/gripperGoalPoseSubscriber.cpp.o
+src/library/clients/trajectoryPlannerClient.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.o
+.PHONY : src/library/clients/trajectoryPlannerClient.cpp.o
 
-src/library/gripperGoalPoseSubscriber.i: src/library/gripperGoalPoseSubscriber.cpp.i
+src/library/clients/trajectoryPlannerClient.i: src/library/clients/trajectoryPlannerClient.cpp.i
 
-.PHONY : src/library/gripperGoalPoseSubscriber.i
+.PHONY : src/library/clients/trajectoryPlannerClient.i
 
 # target to preprocess a source file
-src/library/gripperGoalPoseSubscriber.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/gripperGoalPoseSubscriber.cpp.i
-.PHONY : src/library/gripperGoalPoseSubscriber.cpp.i
+src/library/clients/trajectoryPlannerClient.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.i
+.PHONY : src/library/clients/trajectoryPlannerClient.cpp.i
 
-src/library/gripperGoalPoseSubscriber.s: src/library/gripperGoalPoseSubscriber.cpp.s
+src/library/clients/trajectoryPlannerClient.s: src/library/clients/trajectoryPlannerClient.cpp.s
 
-.PHONY : src/library/gripperGoalPoseSubscriber.s
+.PHONY : src/library/clients/trajectoryPlannerClient.s
 
 # target to generate assembly for a file
-src/library/gripperGoalPoseSubscriber.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/gripperGoalPoseSubscriber.cpp.s
-.PHONY : src/library/gripperGoalPoseSubscriber.cpp.s
+src/library/clients/trajectoryPlannerClient.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.s
+.PHONY : src/library/clients/trajectoryPlannerClient.cpp.s
 
 src/library/pid.o: src/library/pid.cpp.o
 
@@ -1076,194 +1049,221 @@ src/library/pid.cpp.s:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.s
 .PHONY : src/library/pid.cpp.s
 
-src/library/releasePoseSubscriber.o: src/library/releasePoseSubscriber.cpp.o
+src/library/publishers/commandPublisher.o: src/library/publishers/commandPublisher.cpp.o
 
-.PHONY : src/library/releasePoseSubscriber.o
-
-# target to build an object file
-src/library/releasePoseSubscriber.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releasePoseSubscriber.cpp.o
-.PHONY : src/library/releasePoseSubscriber.cpp.o
-
-src/library/releasePoseSubscriber.i: src/library/releasePoseSubscriber.cpp.i
-
-.PHONY : src/library/releasePoseSubscriber.i
-
-# target to preprocess a source file
-src/library/releasePoseSubscriber.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releasePoseSubscriber.cpp.i
-.PHONY : src/library/releasePoseSubscriber.cpp.i
-
-src/library/releasePoseSubscriber.s: src/library/releasePoseSubscriber.cpp.s
-
-.PHONY : src/library/releasePoseSubscriber.s
-
-# target to generate assembly for a file
-src/library/releasePoseSubscriber.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releasePoseSubscriber.cpp.s
-.PHONY : src/library/releasePoseSubscriber.cpp.s
-
-src/library/releaseTargetBehavior.o: src/library/releaseTargetBehavior.cpp.o
-
-.PHONY : src/library/releaseTargetBehavior.o
+.PHONY : src/library/publishers/commandPublisher.o
 
 # target to build an object file
-src/library/releaseTargetBehavior.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releaseTargetBehavior.cpp.o
-.PHONY : src/library/releaseTargetBehavior.cpp.o
+src/library/publishers/commandPublisher.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.o
+.PHONY : src/library/publishers/commandPublisher.cpp.o
 
-src/library/releaseTargetBehavior.i: src/library/releaseTargetBehavior.cpp.i
+src/library/publishers/commandPublisher.i: src/library/publishers/commandPublisher.cpp.i
 
-.PHONY : src/library/releaseTargetBehavior.i
+.PHONY : src/library/publishers/commandPublisher.i
 
 # target to preprocess a source file
-src/library/releaseTargetBehavior.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releaseTargetBehavior.cpp.i
-.PHONY : src/library/releaseTargetBehavior.cpp.i
+src/library/publishers/commandPublisher.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.i
+.PHONY : src/library/publishers/commandPublisher.cpp.i
 
-src/library/releaseTargetBehavior.s: src/library/releaseTargetBehavior.cpp.s
+src/library/publishers/commandPublisher.s: src/library/publishers/commandPublisher.cpp.s
 
-.PHONY : src/library/releaseTargetBehavior.s
+.PHONY : src/library/publishers/commandPublisher.s
 
 # target to generate assembly for a file
-src/library/releaseTargetBehavior.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/releaseTargetBehavior.cpp.s
-.PHONY : src/library/releaseTargetBehavior.cpp.s
+src/library/publishers/commandPublisher.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.s
+.PHONY : src/library/publishers/commandPublisher.cpp.s
 
-src/library/systemBehavior.o: src/library/systemBehavior.cpp.o
+src/library/publishers/trajectoryPublisher.o: src/library/publishers/trajectoryPublisher.cpp.o
 
-.PHONY : src/library/systemBehavior.o
+.PHONY : src/library/publishers/trajectoryPublisher.o
 
 # target to build an object file
-src/library/systemBehavior.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/systemBehavior.cpp.o
-.PHONY : src/library/systemBehavior.cpp.o
+src/library/publishers/trajectoryPublisher.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.o
+.PHONY : src/library/publishers/trajectoryPublisher.cpp.o
 
-src/library/systemBehavior.i: src/library/systemBehavior.cpp.i
+src/library/publishers/trajectoryPublisher.i: src/library/publishers/trajectoryPublisher.cpp.i
 
-.PHONY : src/library/systemBehavior.i
+.PHONY : src/library/publishers/trajectoryPublisher.i
 
 # target to preprocess a source file
-src/library/systemBehavior.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/systemBehavior.cpp.i
-.PHONY : src/library/systemBehavior.cpp.i
+src/library/publishers/trajectoryPublisher.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.i
+.PHONY : src/library/publishers/trajectoryPublisher.cpp.i
 
-src/library/systemBehavior.s: src/library/systemBehavior.cpp.s
+src/library/publishers/trajectoryPublisher.s: src/library/publishers/trajectoryPublisher.cpp.s
 
-.PHONY : src/library/systemBehavior.s
+.PHONY : src/library/publishers/trajectoryPublisher.s
 
 # target to generate assembly for a file
-src/library/systemBehavior.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/systemBehavior.cpp.s
-.PHONY : src/library/systemBehavior.cpp.s
+src/library/publishers/trajectoryPublisher.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.s
+.PHONY : src/library/publishers/trajectoryPublisher.cpp.s
 
-src/library/targetPoseSubscriber.o: src/library/targetPoseSubscriber.cpp.o
+src/library/subscribers/armPoseSubscriber.o: src/library/subscribers/armPoseSubscriber.cpp.o
 
-.PHONY : src/library/targetPoseSubscriber.o
+.PHONY : src/library/subscribers/armPoseSubscriber.o
 
 # target to build an object file
-src/library/targetPoseSubscriber.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/targetPoseSubscriber.cpp.o
-.PHONY : src/library/targetPoseSubscriber.cpp.o
+src/library/subscribers/armPoseSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/armPoseSubscriber.cpp.o
+.PHONY : src/library/subscribers/armPoseSubscriber.cpp.o
 
-src/library/targetPoseSubscriber.i: src/library/targetPoseSubscriber.cpp.i
+src/library/subscribers/armPoseSubscriber.i: src/library/subscribers/armPoseSubscriber.cpp.i
 
-.PHONY : src/library/targetPoseSubscriber.i
+.PHONY : src/library/subscribers/armPoseSubscriber.i
 
 # target to preprocess a source file
-src/library/targetPoseSubscriber.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/targetPoseSubscriber.cpp.i
-.PHONY : src/library/targetPoseSubscriber.cpp.i
+src/library/subscribers/armPoseSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/armPoseSubscriber.cpp.i
+.PHONY : src/library/subscribers/armPoseSubscriber.cpp.i
 
-src/library/targetPoseSubscriber.s: src/library/targetPoseSubscriber.cpp.s
+src/library/subscribers/armPoseSubscriber.s: src/library/subscribers/armPoseSubscriber.cpp.s
 
-.PHONY : src/library/targetPoseSubscriber.s
+.PHONY : src/library/subscribers/armPoseSubscriber.s
 
 # target to generate assembly for a file
-src/library/targetPoseSubscriber.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/targetPoseSubscriber.cpp.s
-.PHONY : src/library/targetPoseSubscriber.cpp.s
+src/library/subscribers/armPoseSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/armPoseSubscriber.cpp.s
+.PHONY : src/library/subscribers/armPoseSubscriber.cpp.s
 
-src/library/trajectoryPlannerClient.o: src/library/trajectoryPlannerClient.cpp.o
+src/library/subscribers/basePoseSubscriber.o: src/library/subscribers/basePoseSubscriber.cpp.o
 
-.PHONY : src/library/trajectoryPlannerClient.o
+.PHONY : src/library/subscribers/basePoseSubscriber.o
 
 # target to build an object file
-src/library/trajectoryPlannerClient.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPlannerClient.cpp.o
-.PHONY : src/library/trajectoryPlannerClient.cpp.o
+src/library/subscribers/basePoseSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/basePoseSubscriber.cpp.o
+.PHONY : src/library/subscribers/basePoseSubscriber.cpp.o
 
-src/library/trajectoryPlannerClient.i: src/library/trajectoryPlannerClient.cpp.i
+src/library/subscribers/basePoseSubscriber.i: src/library/subscribers/basePoseSubscriber.cpp.i
 
-.PHONY : src/library/trajectoryPlannerClient.i
+.PHONY : src/library/subscribers/basePoseSubscriber.i
 
 # target to preprocess a source file
-src/library/trajectoryPlannerClient.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPlannerClient.cpp.i
-.PHONY : src/library/trajectoryPlannerClient.cpp.i
+src/library/subscribers/basePoseSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/basePoseSubscriber.cpp.i
+.PHONY : src/library/subscribers/basePoseSubscriber.cpp.i
 
-src/library/trajectoryPlannerClient.s: src/library/trajectoryPlannerClient.cpp.s
+src/library/subscribers/basePoseSubscriber.s: src/library/subscribers/basePoseSubscriber.cpp.s
 
-.PHONY : src/library/trajectoryPlannerClient.s
+.PHONY : src/library/subscribers/basePoseSubscriber.s
 
 # target to generate assembly for a file
-src/library/trajectoryPlannerClient.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPlannerClient.cpp.s
-.PHONY : src/library/trajectoryPlannerClient.cpp.s
+src/library/subscribers/basePoseSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/basePoseSubscriber.cpp.s
+.PHONY : src/library/subscribers/basePoseSubscriber.cpp.s
 
-src/library/trajectoryPublisher.o: src/library/trajectoryPublisher.cpp.o
+src/library/subscribers/gripperGoalPoseSubscriber.o: src/library/subscribers/gripperGoalPoseSubscriber.cpp.o
 
-.PHONY : src/library/trajectoryPublisher.o
+.PHONY : src/library/subscribers/gripperGoalPoseSubscriber.o
 
 # target to build an object file
-src/library/trajectoryPublisher.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPublisher.cpp.o
-.PHONY : src/library/trajectoryPublisher.cpp.o
+src/library/subscribers/gripperGoalPoseSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/gripperGoalPoseSubscriber.cpp.o
+.PHONY : src/library/subscribers/gripperGoalPoseSubscriber.cpp.o
 
-src/library/trajectoryPublisher.i: src/library/trajectoryPublisher.cpp.i
+src/library/subscribers/gripperGoalPoseSubscriber.i: src/library/subscribers/gripperGoalPoseSubscriber.cpp.i
 
-.PHONY : src/library/trajectoryPublisher.i
+.PHONY : src/library/subscribers/gripperGoalPoseSubscriber.i
 
 # target to preprocess a source file
-src/library/trajectoryPublisher.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPublisher.cpp.i
-.PHONY : src/library/trajectoryPublisher.cpp.i
+src/library/subscribers/gripperGoalPoseSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/gripperGoalPoseSubscriber.cpp.i
+.PHONY : src/library/subscribers/gripperGoalPoseSubscriber.cpp.i
 
-src/library/trajectoryPublisher.s: src/library/trajectoryPublisher.cpp.s
+src/library/subscribers/gripperGoalPoseSubscriber.s: src/library/subscribers/gripperGoalPoseSubscriber.cpp.s
 
-.PHONY : src/library/trajectoryPublisher.s
+.PHONY : src/library/subscribers/gripperGoalPoseSubscriber.s
 
 # target to generate assembly for a file
-src/library/trajectoryPublisher.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryPublisher.cpp.s
-.PHONY : src/library/trajectoryPublisher.cpp.s
+src/library/subscribers/gripperGoalPoseSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/gripperGoalPoseSubscriber.cpp.s
+.PHONY : src/library/subscribers/gripperGoalPoseSubscriber.cpp.s
 
-src/library/trajectoryStatusSubscriber.o: src/library/trajectoryStatusSubscriber.cpp.o
+src/library/subscribers/releasePoseSubscriber.o: src/library/subscribers/releasePoseSubscriber.cpp.o
 
-.PHONY : src/library/trajectoryStatusSubscriber.o
+.PHONY : src/library/subscribers/releasePoseSubscriber.o
 
 # target to build an object file
-src/library/trajectoryStatusSubscriber.cpp.o:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryStatusSubscriber.cpp.o
-.PHONY : src/library/trajectoryStatusSubscriber.cpp.o
+src/library/subscribers/releasePoseSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.o
+.PHONY : src/library/subscribers/releasePoseSubscriber.cpp.o
 
-src/library/trajectoryStatusSubscriber.i: src/library/trajectoryStatusSubscriber.cpp.i
+src/library/subscribers/releasePoseSubscriber.i: src/library/subscribers/releasePoseSubscriber.cpp.i
 
-.PHONY : src/library/trajectoryStatusSubscriber.i
+.PHONY : src/library/subscribers/releasePoseSubscriber.i
 
 # target to preprocess a source file
-src/library/trajectoryStatusSubscriber.cpp.i:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryStatusSubscriber.cpp.i
-.PHONY : src/library/trajectoryStatusSubscriber.cpp.i
+src/library/subscribers/releasePoseSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.i
+.PHONY : src/library/subscribers/releasePoseSubscriber.cpp.i
 
-src/library/trajectoryStatusSubscriber.s: src/library/trajectoryStatusSubscriber.cpp.s
+src/library/subscribers/releasePoseSubscriber.s: src/library/subscribers/releasePoseSubscriber.cpp.s
 
-.PHONY : src/library/trajectoryStatusSubscriber.s
+.PHONY : src/library/subscribers/releasePoseSubscriber.s
 
 # target to generate assembly for a file
-src/library/trajectoryStatusSubscriber.cpp.s:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/trajectoryStatusSubscriber.cpp.s
-.PHONY : src/library/trajectoryStatusSubscriber.cpp.s
+src/library/subscribers/releasePoseSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.s
+.PHONY : src/library/subscribers/releasePoseSubscriber.cpp.s
+
+src/library/subscribers/targetPoseSubscriber.o: src/library/subscribers/targetPoseSubscriber.cpp.o
+
+.PHONY : src/library/subscribers/targetPoseSubscriber.o
+
+# target to build an object file
+src/library/subscribers/targetPoseSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/targetPoseSubscriber.cpp.o
+.PHONY : src/library/subscribers/targetPoseSubscriber.cpp.o
+
+src/library/subscribers/targetPoseSubscriber.i: src/library/subscribers/targetPoseSubscriber.cpp.i
+
+.PHONY : src/library/subscribers/targetPoseSubscriber.i
+
+# target to preprocess a source file
+src/library/subscribers/targetPoseSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/targetPoseSubscriber.cpp.i
+.PHONY : src/library/subscribers/targetPoseSubscriber.cpp.i
+
+src/library/subscribers/targetPoseSubscriber.s: src/library/subscribers/targetPoseSubscriber.cpp.s
+
+.PHONY : src/library/subscribers/targetPoseSubscriber.s
+
+# target to generate assembly for a file
+src/library/subscribers/targetPoseSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/targetPoseSubscriber.cpp.s
+.PHONY : src/library/subscribers/targetPoseSubscriber.cpp.s
+
+src/library/subscribers/trajectoryStatusSubscriber.o: src/library/subscribers/trajectoryStatusSubscriber.cpp.o
+
+.PHONY : src/library/subscribers/trajectoryStatusSubscriber.o
+
+# target to build an object file
+src/library/subscribers/trajectoryStatusSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/trajectoryStatusSubscriber.cpp.o
+.PHONY : src/library/subscribers/trajectoryStatusSubscriber.cpp.o
+
+src/library/subscribers/trajectoryStatusSubscriber.i: src/library/subscribers/trajectoryStatusSubscriber.cpp.i
+
+.PHONY : src/library/subscribers/trajectoryStatusSubscriber.i
+
+# target to preprocess a source file
+src/library/subscribers/trajectoryStatusSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/trajectoryStatusSubscriber.cpp.i
+.PHONY : src/library/subscribers/trajectoryStatusSubscriber.cpp.i
+
+src/library/subscribers/trajectoryStatusSubscriber.s: src/library/subscribers/trajectoryStatusSubscriber.cpp.s
+
+.PHONY : src/library/subscribers/trajectoryStatusSubscriber.s
+
+# target to generate assembly for a file
+src/library/subscribers/trajectoryStatusSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/trajectoryStatusSubscriber.cpp.s
+.PHONY : src/library/subscribers/trajectoryStatusSubscriber.cpp.s
 
 src/nodes/basePoseSubscriberNode.o: src/nodes/basePoseSubscriberNode.cpp.o
 
@@ -1461,48 +1461,48 @@ help:
 	@echo "... roborex_target_pose_subscriber"
 	@echo "... _roborex_generate_messages_check_deps_Trajectory"
 	@echo "... _roborex_generate_messages_check_deps_ForwardKinematics"
-	@echo "... src/library/armPoseSubscriber.o"
-	@echo "... src/library/armPoseSubscriber.i"
-	@echo "... src/library/armPoseSubscriber.s"
-	@echo "... src/library/basePoseSubscriber.o"
-	@echo "... src/library/basePoseSubscriber.i"
-	@echo "... src/library/basePoseSubscriber.s"
-	@echo "... src/library/commandPublisher.o"
-	@echo "... src/library/commandPublisher.i"
-	@echo "... src/library/commandPublisher.s"
-	@echo "... src/library/goToGoalBehavior.o"
-	@echo "... src/library/goToGoalBehavior.i"
-	@echo "... src/library/goToGoalBehavior.s"
-	@echo "... src/library/graspTargetBehavior.o"
-	@echo "... src/library/graspTargetBehavior.i"
-	@echo "... src/library/graspTargetBehavior.s"
-	@echo "... src/library/gripperGoalPoseSubscriber.o"
-	@echo "... src/library/gripperGoalPoseSubscriber.i"
-	@echo "... src/library/gripperGoalPoseSubscriber.s"
+	@echo "... src/library/behaviors/goToGoalBehavior.o"
+	@echo "... src/library/behaviors/goToGoalBehavior.i"
+	@echo "... src/library/behaviors/goToGoalBehavior.s"
+	@echo "... src/library/behaviors/graspTargetBehavior.o"
+	@echo "... src/library/behaviors/graspTargetBehavior.i"
+	@echo "... src/library/behaviors/graspTargetBehavior.s"
+	@echo "... src/library/behaviors/releaseTargetBehavior.o"
+	@echo "... src/library/behaviors/releaseTargetBehavior.i"
+	@echo "... src/library/behaviors/releaseTargetBehavior.s"
+	@echo "... src/library/behaviors/systemBehavior.o"
+	@echo "... src/library/behaviors/systemBehavior.i"
+	@echo "... src/library/behaviors/systemBehavior.s"
+	@echo "... src/library/clients/trajectoryPlannerClient.o"
+	@echo "... src/library/clients/trajectoryPlannerClient.i"
+	@echo "... src/library/clients/trajectoryPlannerClient.s"
 	@echo "... src/library/pid.o"
 	@echo "... src/library/pid.i"
 	@echo "... src/library/pid.s"
-	@echo "... src/library/releasePoseSubscriber.o"
-	@echo "... src/library/releasePoseSubscriber.i"
-	@echo "... src/library/releasePoseSubscriber.s"
-	@echo "... src/library/releaseTargetBehavior.o"
-	@echo "... src/library/releaseTargetBehavior.i"
-	@echo "... src/library/releaseTargetBehavior.s"
-	@echo "... src/library/systemBehavior.o"
-	@echo "... src/library/systemBehavior.i"
-	@echo "... src/library/systemBehavior.s"
-	@echo "... src/library/targetPoseSubscriber.o"
-	@echo "... src/library/targetPoseSubscriber.i"
-	@echo "... src/library/targetPoseSubscriber.s"
-	@echo "... src/library/trajectoryPlannerClient.o"
-	@echo "... src/library/trajectoryPlannerClient.i"
-	@echo "... src/library/trajectoryPlannerClient.s"
-	@echo "... src/library/trajectoryPublisher.o"
-	@echo "... src/library/trajectoryPublisher.i"
-	@echo "... src/library/trajectoryPublisher.s"
-	@echo "... src/library/trajectoryStatusSubscriber.o"
-	@echo "... src/library/trajectoryStatusSubscriber.i"
-	@echo "... src/library/trajectoryStatusSubscriber.s"
+	@echo "... src/library/publishers/commandPublisher.o"
+	@echo "... src/library/publishers/commandPublisher.i"
+	@echo "... src/library/publishers/commandPublisher.s"
+	@echo "... src/library/publishers/trajectoryPublisher.o"
+	@echo "... src/library/publishers/trajectoryPublisher.i"
+	@echo "... src/library/publishers/trajectoryPublisher.s"
+	@echo "... src/library/subscribers/armPoseSubscriber.o"
+	@echo "... src/library/subscribers/armPoseSubscriber.i"
+	@echo "... src/library/subscribers/armPoseSubscriber.s"
+	@echo "... src/library/subscribers/basePoseSubscriber.o"
+	@echo "... src/library/subscribers/basePoseSubscriber.i"
+	@echo "... src/library/subscribers/basePoseSubscriber.s"
+	@echo "... src/library/subscribers/gripperGoalPoseSubscriber.o"
+	@echo "... src/library/subscribers/gripperGoalPoseSubscriber.i"
+	@echo "... src/library/subscribers/gripperGoalPoseSubscriber.s"
+	@echo "... src/library/subscribers/releasePoseSubscriber.o"
+	@echo "... src/library/subscribers/releasePoseSubscriber.i"
+	@echo "... src/library/subscribers/releasePoseSubscriber.s"
+	@echo "... src/library/subscribers/targetPoseSubscriber.o"
+	@echo "... src/library/subscribers/targetPoseSubscriber.i"
+	@echo "... src/library/subscribers/targetPoseSubscriber.s"
+	@echo "... src/library/subscribers/trajectoryStatusSubscriber.o"
+	@echo "... src/library/subscribers/trajectoryStatusSubscriber.i"
+	@echo "... src/library/subscribers/trajectoryStatusSubscriber.s"
 	@echo "... src/nodes/basePoseSubscriberNode.o"
 	@echo "... src/nodes/basePoseSubscriberNode.i"
 	@echo "... src/nodes/basePoseSubscriberNode.s"

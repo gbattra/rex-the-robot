@@ -15,11 +15,11 @@ roborex/CMakeFiles/roborex_grasp_behavior.dir/src/nodes/graspTargetBehaviorNode.
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlannerRequest.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlannerResponse.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryStatus.h
- /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors.h
- /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/behaviors.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients/clients.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.h
- /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers.h
- /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers/publishers.h
+ /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/subscribers.h
  /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/graspTargetBehaviorNode.cpp
  /opt/ros/noetic/include/geometry_msgs/Point.h
  /opt/ros/noetic/include/geometry_msgs/Pose.h

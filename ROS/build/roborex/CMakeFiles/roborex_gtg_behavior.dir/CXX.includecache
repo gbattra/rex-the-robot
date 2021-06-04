@@ -228,29 +228,29 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors.h
-subscribers.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
-publishers.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/behaviors.h
+subscribers/subscribers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/subscribers/subscribers.h
+publishers/publishers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/publishers/publishers.h
 pid.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.h
-clients.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/pid.h
+clients/clients.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/clients/clients.h
 roborex/StartSystem.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/StartSystem.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/roborex/StartSystem.h
 ros/ros.h
 -
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients/clients.h
 ros/ros.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/ros/ros.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients/ros/ros.h
 roborex/TrajectoryPlanner.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/TrajectoryPlanner.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients/roborex/TrajectoryPlanner.h
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.h
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers/publishers.h
 ros/ros.h
 -
 roborex/Command.h
@@ -258,25 +258,25 @@ roborex/Command.h
 roborex/Trajectories.h
 -
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/subscribers.h
 ros/ros.h
 -
 roborex/BasePose.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/BasePose.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/roborex/BasePose.h
 roborex/ArmPose.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/ArmPose.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/roborex/ArmPose.h
 roborex/TrajectoryStatus.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/TrajectoryStatus.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/roborex/TrajectoryStatus.h
 geometry_msgs/Pose.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/geometry_msgs/Pose.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/geometry_msgs/Pose.h
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/goToGoalBehaviorNode.cpp
-behaviors.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/behaviors.h
-subscribers.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/subscribers.h
-publishers.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/publishers.h
+behaviors/behaviors.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/behaviors/behaviors.h
+subscribers/subscribers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/subscribers/subscribers.h
+publishers/publishers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/publishers/publishers.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

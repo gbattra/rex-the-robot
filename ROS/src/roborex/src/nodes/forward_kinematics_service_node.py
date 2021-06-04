@@ -6,7 +6,7 @@
 import rospy
 
 from roborex.msg import ArmPose
-from library.forward_kinematics_service import ForwardKinematicsService
+from library.services.forward_kinematics_service import ForwardKinematicsService
 
 
 def main():

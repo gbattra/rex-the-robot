@@ -14,11 +14,11 @@ roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o
 roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlannerRequest.h
 roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryPlannerResponse.h
 roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryStatus.h
-roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors.h
-roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients.h
+roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/behaviors.h
+roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients/clients.h
 roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.h
-roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers.h
-roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
+roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers/publishers.h
+roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/subscribers.h
 roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/goToGoalBehaviorNode.cpp
 roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
 roborex/CMakeFiles/roborex_gtg_behavior.dir/src/nodes/goToGoalBehaviorNode.cpp.o: /opt/ros/noetic/include/geometry_msgs/Pose.h

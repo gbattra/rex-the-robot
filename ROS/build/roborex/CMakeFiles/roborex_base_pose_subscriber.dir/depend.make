@@ -5,7 +5,7 @@ roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriber
 roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/BasePose.h
 roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/JointState.h
 roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/include/roborex/TrajectoryStatus.h
-roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
+roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/subscribers.h
 roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/basePoseSubscriberNode.cpp
 roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
 roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.o: /opt/ros/noetic/include/geometry_msgs/Pose.h

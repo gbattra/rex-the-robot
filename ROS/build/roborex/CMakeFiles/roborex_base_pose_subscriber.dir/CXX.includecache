@@ -90,21 +90,21 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/subscribers.h
 ros/ros.h
 -
 roborex/BasePose.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/BasePose.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/roborex/BasePose.h
 roborex/ArmPose.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/ArmPose.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/roborex/ArmPose.h
 roborex/TrajectoryStatus.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/roborex/TrajectoryStatus.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/roborex/TrajectoryStatus.h
 geometry_msgs/Pose.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/geometry_msgs/Pose.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/geometry_msgs/Pose.h
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/basePoseSubscriberNode.cpp
-subscribers.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/subscribers.h
+subscribers/subscribers.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/nodes/subscribers/subscribers.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

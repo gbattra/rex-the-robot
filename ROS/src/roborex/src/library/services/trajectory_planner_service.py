@@ -3,9 +3,9 @@
 
 import rospy
 
-from library.probabilistic_roadmap import ProbabilisticRoadmap
-from library.grasp_trajectory_planner import GraspTrajectoryPlanner
-from library.release_trajectory_planner import ReleaseTrajectoryPlanner
+from library.planners.probabilistic_roadmap import ProbabilisticRoadmap
+from library.planners.grasp_trajectory_planner import GraspTrajectoryPlanner
+from library.planners.release_trajectory_planner import ReleaseTrajectoryPlanner
 from roborex.srv import TrajectoryPlanner, TrajectoryPlannerRequest, TrajectoryPlannerResponse
 
 

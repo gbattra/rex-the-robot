@@ -69,8 +69,8 @@ roborex/CMakeFiles/roborex_generate_messages_eus: /home/gattra/Projects/Unity/re
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/ArmPose.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/ArmPose.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/ArmPose.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/ArmPose.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/ArmPose.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from roborex/ArmPose.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg
 
@@ -92,18 +92,18 @@ roborex/CMakeFiles/roborex_generate_messages_eus: /home/gattra/Projects/Unity/re
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectories.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectories.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectories.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectories.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectories.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectories.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectories.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectories.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from roborex/Trajectories.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectory.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectory.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectory.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectory.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectory.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectory.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg/Trajectory.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from roborex/Trajectory.msg"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/msg
 
@@ -114,19 +114,19 @@ roborex/CMakeFiles/roborex_generate_messages_eus: /home/gattra/Projects/Unity/re
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/ForwardKinematics.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/ForwardKinematics.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/ForwardKinematics.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/ForwardKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/ForwardKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/ForwardKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/ForwardKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/ForwardKinematics.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from roborex/ForwardKinematics.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/InverseKinematics.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from roborex/InverseKinematics.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv
@@ -138,11 +138,11 @@ roborex/CMakeFiles/roborex_generate_messages_eus: /home/gattra/Projects/Unity/re
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv/TrajectoryPlanner.l: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating EusLisp code from roborex/TrajectoryPlanner.srv"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/share/roseus/ros/roborex/srv

@@ -2,7 +2,7 @@
 // 03/26/2021
 
 #include "behaviors.h"
-#include "publishers.h"
+#include "publishers/publishers.h"
 
 roborex::GoToGoalBehavior::GoToGoalBehavior(
     ros::NodeHandle *nh,

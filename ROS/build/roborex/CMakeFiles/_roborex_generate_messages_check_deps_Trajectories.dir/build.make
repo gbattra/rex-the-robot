@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/gattra/Projects/Unity/rex-the-robot/ROS/build
 include roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/progress.make
 
 roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories:
-	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py roborex /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg roborex/JointState:roborex/ArmPose:roborex/Trajectory:geometry_msgs/Point
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py roborex /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg roborex/Trajectory:roborex/ArmPose:geometry_msgs/Point:roborex/JointState
 
 _roborex_generate_messages_check_deps_Trajectories: roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories
 _roborex_generate_messages_check_deps_Trajectories: roborex/CMakeFiles/_roborex_generate_messages_check_deps_Trajectories.dir/build.make

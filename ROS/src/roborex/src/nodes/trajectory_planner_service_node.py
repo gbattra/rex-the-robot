@@ -6,7 +6,7 @@
 import rospy
 
 from roborex.msg import ArmPose
-from library.trajectory_planner_service import TrajectoryPlannerService
+from library.services.trajectory_planner_service import TrajectoryPlannerService
 
 
 def main():

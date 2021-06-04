@@ -1,16 +1,16 @@
 # Greg Attra
-# 04/07/2021
+# 04/09/2021
 
 import rospy
 import copy
 import numpy as np
 
-from library.probabilistic_roadmap import ProbabilisticRoadmap
-from library.inverse_kinematics_engine import InverseKinematicsEngine
+from library.planners.probabilistic_roadmap import ProbabilisticRoadmap
+from library.engines.inverse_kinematics_engine import InverseKinematicsEngine
 from roborex.msg import ArmPose, Trajectory
 
 
-class GraspTrajectoryPlanner:
+class ReleaseTrajectoryPlanner:
 
     def __init__(self):
         self.prm = ProbabilisticRoadmap()
@@ -20,30 +20,24 @@ class GraspTrajectoryPlanner:
     def plan_trajectory(self, arm_pose, target):
         target = np.array([target.position.x, target.position.y, target.position.z])
         
-        pose_open = copy.deepcopy(arm_pose)
+        if not self.prm.built:
+            self.prm.build_graph(1500, 5, arm_pose)
+        approx_pose = self.prm.plan(arm_pose, target)[-1]
+        pose_offset = self.ikine.compute_ik(arm_pose, target)
+
+        pose_open = copy.deepcopy(pose_offset)
         pose_open.left_gripper_joint.angle = pose_open.left_gripper_joint.upper_bound
         pose_open.right_gripper_joint.angle = pose_open.right_gripper_joint.upper_bound
 
-        if not self.prm.built:
-            self.prm.build_graph(1500, 5, arm_pose)
-        approx_pose = self.prm.plan(pose_open, target)[-1]
-        pose_offset = self.ikine.compute_ik(approx_pose, target)
-
-        pose_close = copy.deepcopy(pose_offset)
+        pose_close = copy.deepcopy(pose_open)
         pose_close.left_gripper_joint.angle = pose_close.left_gripper_joint.lower_bound
         pose_close.right_gripper_joint.angle = pose_close.right_gripper_joint.lower_bound
 
-        pose_raise = copy.deepcopy(pose_close)
-        pose_raise.shoulder_joint.angle = 0.0
-        pose_raise.elbow_joint.angle = np.pi / 4.0
-        pose_raise.wrist_joint.angle = 0.0
-
         linespace_paths = []
 
-        linespace_paths.append(self.traj_to_linespace(arm_pose, pose_open, 20))
-        linespace_paths.append(self.traj_to_linespace(pose_open, pose_offset, 40))
-        linespace_paths.append(self.traj_to_linespace(pose_offset, pose_close, 20))
-        linespace_paths.append(self.traj_to_linespace(pose_close, pose_raise, 40))
+        linespace_paths.append(self.traj_to_linespace(arm_pose, pose_offset, 40))
+        linespace_paths.append(self.traj_to_linespace(pose_offset, pose_open, 20))
+        linespace_paths.append(self.traj_to_linespace(pose_open, pose_close, 20))
 
         return linespace_paths
 

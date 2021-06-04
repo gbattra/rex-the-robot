@@ -1,9 +1,9 @@
 // Greg Attra
 // 03/25/2021
 
-#include "behaviors.h"
-#include "subscribers.h"
-#include "publishers.h"
+#include "behaviors/behaviors.h"
+#include "subscribers/subscribers.h"
+#include "publishers/publishers.h"
 
 int main(int argc, char **argv)
 {

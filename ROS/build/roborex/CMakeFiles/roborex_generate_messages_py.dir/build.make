@@ -70,8 +70,8 @@ roborex/CMakeFiles/roborex_generate_messages_py: /home/gattra/Projects/Unity/rex
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_ArmPose.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_ArmPose.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_ArmPose.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_ArmPose.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_ArmPose.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG roborex/ArmPose"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg
 
@@ -93,18 +93,18 @@ roborex/CMakeFiles/roborex_generate_messages_py: /home/gattra/Projects/Unity/rex
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectories.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectories.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectories.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectories.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectories.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectories.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectories.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectories.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG roborex/Trajectories"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectories.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectory.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectory.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectory.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectory.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectory.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectory.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg/_Trajectory.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG roborex/Trajectory"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/msg
 
@@ -115,19 +115,19 @@ roborex/CMakeFiles/roborex_generate_messages_py: /home/gattra/Projects/Unity/rex
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_ForwardKinematics.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_ForwardKinematics.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_ForwardKinematics.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_ForwardKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_ForwardKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_ForwardKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_ForwardKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_ForwardKinematics.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python code from SRV roborex/ForwardKinematics"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/ForwardKinematics.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_InverseKinematics.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python code from SRV roborex/InverseKinematics"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/InverseKinematics.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv
@@ -139,11 +139,11 @@ roborex/CMakeFiles/roborex_generate_messages_py: /home/gattra/Projects/Unity/rex
 
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/Trajectory.msg
-/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/JointState.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv/_TrajectoryPlanner.py: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg/ArmPose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python code from SRV roborex/TrajectoryPlanner"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/srv/TrajectoryPlanner.srv -Iroborex:/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p roborex -o /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/python3/dist-packages/roborex/srv

@@ -32,24 +32,29 @@ include_directories(
 )
 
 add_library(${PROJECT_NAME}_lib
-  src/library/subscribers.h
-  src/library/behaviors.h
   src/library/pid.h
-  src/library/publishers.h
-  src/library/clients.h
-  src/library/basePoseSubscriber.cpp
-  src/library/targetPoseSubscriber.cpp
-  src/library/gripperGoalPoseSubscriber.cpp
-  src/library/armPoseSubscriber.cpp
-  src/library/trajectoryStatusSubscriber.cpp
-  src/library/releasePoseSubscriber.cpp
-  src/library/commandPublisher.cpp
-  src/library/trajectoryPublisher.cpp
-  src/library/systemBehavior.cpp
-  src/library/goToGoalBehavior.cpp
-  src/library/graspTargetBehavior.cpp
-  src/library/releaseTargetBehavior.cpp
-  src/library/trajectoryPlannerClient.cpp
+
+  src/library/subscribers/subscribers.h
+  src/library/subscribers/basePoseSubscriber.cpp
+  src/library/subscribers/targetPoseSubscriber.cpp
+  src/library/subscribers/gripperGoalPoseSubscriber.cpp
+  src/library/subscribers/armPoseSubscriber.cpp
+  src/library/subscribers/trajectoryStatusSubscriber.cpp
+  src/library/subscribers/releasePoseSubscriber.cpp
+
+  src/library/publishers/publishers.h
+  src/library/publishers/commandPublisher.cpp
+  src/library/publishers/trajectoryPublisher.cpp
+
+  src/library/behaviors/behaviors.h
+  src/library/behaviors/systemBehavior.cpp
+  src/library/behaviors/goToGoalBehavior.cpp
+  src/library/behaviors/graspTargetBehavior.cpp
+  src/library/behaviors/releaseTargetBehavior.cpp
+
+  src/library/clients/clients.h
+  src/library/clients/trajectoryPlannerClient.cpp
+
   src/library/pid.cpp
 )
 
