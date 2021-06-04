@@ -8,7 +8,7 @@ roborex::RangeSensorSubscriber::RangeSensorSubscriber(ros::NodeHandle *nh)
     sensor_subscriber = nh->subscribe("/range_sensor", 1, &roborex::RangeSensorSubscriber::callback, this);
 }
 
-void roborex::RangeSensorSubscriber::callback(const std_msgs::Empty::ConstPtr &req)
+void roborex::RangeSensorSubscriber::callback(const std_msgs::Bool::ConstPtr &req)
 {
     detection_made = true;
 }

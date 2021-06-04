@@ -80,7 +80,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o
@@ -162,7 +162,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o
@@ -244,7 +244,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.o
@@ -326,7 +326,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.c
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o
@@ -408,7 +408,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.o
@@ -684,7 +684,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/armPoseSubscriber.cpp
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/basePoseSubscriber.cpp.o
@@ -753,7 +753,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/basePoseSubscriber.cp
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/gripperGoalPoseSubscriber.cpp.o
@@ -822,7 +822,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/gripperGoalPoseSubscr
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o
@@ -891,7 +891,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.o
@@ -960,7 +960,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/targetPoseSubscriber.cpp.o
@@ -1029,7 +1029,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/targetPoseSubscriber.
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/trajectoryStatusSubscriber.cpp.o
@@ -1098,6 +1098,6 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/trajectoryStatusSubsc
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
- /opt/ros/noetic/include/std_msgs/Empty.h
+ /opt/ros/noetic/include/std_msgs/Bool.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h

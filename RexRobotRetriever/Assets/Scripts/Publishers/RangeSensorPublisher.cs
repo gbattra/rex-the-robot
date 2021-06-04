@@ -18,7 +18,7 @@ public class RangeSensorPublisher : MonoBehaviour
     public void Publish()
     {
         Debug.Log("Detection made!");
-        var msg = new RosMessageTypes.Std.Empty();
+        var msg = new RosMessageTypes.Std.Bool(true);
         ros.Send(topicName, msg);
     }
 }

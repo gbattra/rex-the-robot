@@ -20,6 +20,7 @@ void roborex::ExploreBehavior::execute()
 {
     if (!avoiding && range_sensor_subscriber->detectionMade())
     {
+        std::cout << "detection made" << std::endl;
         float target_angle = (rand() / RAND_MAX) * (3.14 / 2) + (3.14 / 4);
         target_pose = roborex::BasePose();
         target_pose.angle = target_angle;
@@ -30,6 +31,8 @@ void roborex::ExploreBehavior::execute()
     roborex::Command cmd;
     if (avoiding)
     {
+
+        std::cout << "avoiding" << std::endl;
         cmd.linear = 5;
         float e = target_pose.angle - base_pose.angle;
         float e_norm = atan2(sin(e), cos(e));
@@ -37,6 +40,8 @@ void roborex::ExploreBehavior::execute()
 
         if (w <= threshold)
         {
+
+        std::cout << "done avoiding" << std::endl;
             avoiding = false;
         }
     }

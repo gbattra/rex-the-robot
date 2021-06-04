@@ -9,7 +9,7 @@ from geometry_msgs.msg import Pose
 from ros_tcp_endpoint import TcpServer, RosPublisher, RosSubscriber, RosService
 from roborex.msg import BasePose, Command, ArmPose, Trajectories, TrajectoryStatus
 from roborex.srv import TrajectoryPlanner, ForwardKinematics, InverseKinematics, StartSystem
-from std_msgs.msg import Empty
+from std_msgs.msg import Bool
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
         "dropbox_pose": RosPublisher("dropbox_pose", BasePose, queue_size=1),
         "trajectory_status": RosPublisher("trajectory_status", TrajectoryStatus, queue_size=10),
         "release_pose": RosPublisher("release_pose", Pose, queue_size=1),
-        "range_sensor": RosPublisher("range_sensor", Empty, queue_size=1),
+        "range_sensor": RosPublisher("range_sensor", Bool, queue_size=1),
 
         #publishers
         "command": RosSubscriber("command", Command, tcp_server),

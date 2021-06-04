@@ -9,7 +9,7 @@
 #include "roborex/ArmPose.h"
 #include "roborex/TrajectoryStatus.h"
 #include "geometry_msgs/Pose.h"
-#include "std_msgs/Empty.h"
+#include "std_msgs/Bool.h"
 
 namespace roborex
 {
@@ -83,7 +83,7 @@ namespace roborex
     {
         private:
             ros::Subscriber sensor_subscriber;
-            void callback(const std_msgs::Empty::ConstPtr &req);
+            void callback(const std_msgs::Bool::ConstPtr &req);
             bool detection_made;
 
         public:
