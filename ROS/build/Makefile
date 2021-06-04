@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named roborex_explore_behavior
+
+# Build rule for target.
+roborex_explore_behavior: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roborex_explore_behavior
+.PHONY : roborex_explore_behavior
+
+# fast build rule for target.
+roborex_explore_behavior/fast:
+	$(MAKE) -f roborex/CMakeFiles/roborex_explore_behavior.dir/build.make roborex/CMakeFiles/roborex_explore_behavior.dir/build
+.PHONY : roborex_explore_behavior/fast
+
+#=============================================================================
 # Target rules for targets named roborex_grasp_behavior
 
 # Build rule for target.
@@ -1775,6 +1788,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... roborex_explore_behavior"
 	@echo "... roborex_grasp_behavior"
 	@echo "... roborex_lib"
 	@echo "... roborex_genpy"

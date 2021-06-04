@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.pdb"
   "/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so"
+  "CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o"
   "CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o"
   "CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o"
   "CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.o"
@@ -12,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/roborex_lib.dir/src/library/subscribers/armPoseSubscriber.cpp.o"
   "CMakeFiles/roborex_lib.dir/src/library/subscribers/basePoseSubscriber.cpp.o"
   "CMakeFiles/roborex_lib.dir/src/library/subscribers/gripperGoalPoseSubscriber.cpp.o"
+  "CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o"
   "CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.o"
   "CMakeFiles/roborex_lib.dir/src/library/subscribers/targetPoseSubscriber.cpp.o"
   "CMakeFiles/roborex_lib.dir/src/library/subscribers/trajectoryStatusSubscriber.cpp.o"

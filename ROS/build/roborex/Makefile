@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+roborex/CMakeFiles/roborex_explore_behavior.dir/rule:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_explore_behavior.dir/rule
+.PHONY : roborex/CMakeFiles/roborex_explore_behavior.dir/rule
+
+# Convenience name for target.
+roborex_explore_behavior: roborex/CMakeFiles/roborex_explore_behavior.dir/rule
+
+.PHONY : roborex_explore_behavior
+
+# fast build rule for target.
+roborex_explore_behavior/fast:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_explore_behavior.dir/build.make roborex/CMakeFiles/roborex_explore_behavior.dir/build
+.PHONY : roborex_explore_behavior/fast
+
+# Convenience name for target.
 roborex/CMakeFiles/roborex_grasp_behavior.dir/rule:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 roborex/CMakeFiles/roborex_grasp_behavior.dir/rule
 .PHONY : roborex/CMakeFiles/roborex_grasp_behavior.dir/rule
@@ -887,6 +902,33 @@ _roborex_generate_messages_check_deps_ForwardKinematics/fast:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/_roborex_generate_messages_check_deps_ForwardKinematics.dir/build.make roborex/CMakeFiles/_roborex_generate_messages_check_deps_ForwardKinematics.dir/build
 .PHONY : _roborex_generate_messages_check_deps_ForwardKinematics/fast
 
+src/library/behaviors/exploreBehavior.o: src/library/behaviors/exploreBehavior.cpp.o
+
+.PHONY : src/library/behaviors/exploreBehavior.o
+
+# target to build an object file
+src/library/behaviors/exploreBehavior.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o
+.PHONY : src/library/behaviors/exploreBehavior.cpp.o
+
+src/library/behaviors/exploreBehavior.i: src/library/behaviors/exploreBehavior.cpp.i
+
+.PHONY : src/library/behaviors/exploreBehavior.i
+
+# target to preprocess a source file
+src/library/behaviors/exploreBehavior.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.i
+.PHONY : src/library/behaviors/exploreBehavior.cpp.i
+
+src/library/behaviors/exploreBehavior.s: src/library/behaviors/exploreBehavior.cpp.s
+
+.PHONY : src/library/behaviors/exploreBehavior.s
+
+# target to generate assembly for a file
+src/library/behaviors/exploreBehavior.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.s
+.PHONY : src/library/behaviors/exploreBehavior.cpp.s
+
 src/library/behaviors/goToGoalBehavior.o: src/library/behaviors/goToGoalBehavior.cpp.o
 
 .PHONY : src/library/behaviors/goToGoalBehavior.o
@@ -1184,6 +1226,33 @@ src/library/subscribers/gripperGoalPoseSubscriber.cpp.s:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/gripperGoalPoseSubscriber.cpp.s
 .PHONY : src/library/subscribers/gripperGoalPoseSubscriber.cpp.s
 
+src/library/subscribers/rangeSensorSubscriber.o: src/library/subscribers/rangeSensorSubscriber.cpp.o
+
+.PHONY : src/library/subscribers/rangeSensorSubscriber.o
+
+# target to build an object file
+src/library/subscribers/rangeSensorSubscriber.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o
+.PHONY : src/library/subscribers/rangeSensorSubscriber.cpp.o
+
+src/library/subscribers/rangeSensorSubscriber.i: src/library/subscribers/rangeSensorSubscriber.cpp.i
+
+.PHONY : src/library/subscribers/rangeSensorSubscriber.i
+
+# target to preprocess a source file
+src/library/subscribers/rangeSensorSubscriber.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.i
+.PHONY : src/library/subscribers/rangeSensorSubscriber.cpp.i
+
+src/library/subscribers/rangeSensorSubscriber.s: src/library/subscribers/rangeSensorSubscriber.cpp.s
+
+.PHONY : src/library/subscribers/rangeSensorSubscriber.s
+
+# target to generate assembly for a file
+src/library/subscribers/rangeSensorSubscriber.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_lib.dir/build.make roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.s
+.PHONY : src/library/subscribers/rangeSensorSubscriber.cpp.s
+
 src/library/subscribers/releasePoseSubscriber.o: src/library/subscribers/releasePoseSubscriber.cpp.o
 
 .PHONY : src/library/subscribers/releasePoseSubscriber.o
@@ -1291,6 +1360,33 @@ src/nodes/basePoseSubscriberNode.s: src/nodes/basePoseSubscriberNode.cpp.s
 src/nodes/basePoseSubscriberNode.cpp.s:
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_base_pose_subscriber.dir/build.make roborex/CMakeFiles/roborex_base_pose_subscriber.dir/src/nodes/basePoseSubscriberNode.cpp.s
 .PHONY : src/nodes/basePoseSubscriberNode.cpp.s
+
+src/nodes/exploreBehaviorNode.o: src/nodes/exploreBehaviorNode.cpp.o
+
+.PHONY : src/nodes/exploreBehaviorNode.o
+
+# target to build an object file
+src/nodes/exploreBehaviorNode.cpp.o:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_explore_behavior.dir/build.make roborex/CMakeFiles/roborex_explore_behavior.dir/src/nodes/exploreBehaviorNode.cpp.o
+.PHONY : src/nodes/exploreBehaviorNode.cpp.o
+
+src/nodes/exploreBehaviorNode.i: src/nodes/exploreBehaviorNode.cpp.i
+
+.PHONY : src/nodes/exploreBehaviorNode.i
+
+# target to preprocess a source file
+src/nodes/exploreBehaviorNode.cpp.i:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_explore_behavior.dir/build.make roborex/CMakeFiles/roborex_explore_behavior.dir/src/nodes/exploreBehaviorNode.cpp.i
+.PHONY : src/nodes/exploreBehaviorNode.cpp.i
+
+src/nodes/exploreBehaviorNode.s: src/nodes/exploreBehaviorNode.cpp.s
+
+.PHONY : src/nodes/exploreBehaviorNode.s
+
+# target to generate assembly for a file
+src/nodes/exploreBehaviorNode.cpp.s:
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build && $(MAKE) -f roborex/CMakeFiles/roborex_explore_behavior.dir/build.make roborex/CMakeFiles/roborex_explore_behavior.dir/src/nodes/exploreBehaviorNode.cpp.s
+.PHONY : src/nodes/exploreBehaviorNode.cpp.s
 
 src/nodes/goToGoalBehaviorNode.o: src/nodes/goToGoalBehaviorNode.cpp.o
 
@@ -1410,6 +1506,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... roborex_explore_behavior"
 	@echo "... roborex_grasp_behavior"
 	@echo "... roborex_lib"
 	@echo "... roborex_genpy"
@@ -1461,6 +1558,9 @@ help:
 	@echo "... roborex_target_pose_subscriber"
 	@echo "... _roborex_generate_messages_check_deps_Trajectory"
 	@echo "... _roborex_generate_messages_check_deps_ForwardKinematics"
+	@echo "... src/library/behaviors/exploreBehavior.o"
+	@echo "... src/library/behaviors/exploreBehavior.i"
+	@echo "... src/library/behaviors/exploreBehavior.s"
 	@echo "... src/library/behaviors/goToGoalBehavior.o"
 	@echo "... src/library/behaviors/goToGoalBehavior.i"
 	@echo "... src/library/behaviors/goToGoalBehavior.s"
@@ -1494,6 +1594,9 @@ help:
 	@echo "... src/library/subscribers/gripperGoalPoseSubscriber.o"
 	@echo "... src/library/subscribers/gripperGoalPoseSubscriber.i"
 	@echo "... src/library/subscribers/gripperGoalPoseSubscriber.s"
+	@echo "... src/library/subscribers/rangeSensorSubscriber.o"
+	@echo "... src/library/subscribers/rangeSensorSubscriber.i"
+	@echo "... src/library/subscribers/rangeSensorSubscriber.s"
 	@echo "... src/library/subscribers/releasePoseSubscriber.o"
 	@echo "... src/library/subscribers/releasePoseSubscriber.i"
 	@echo "... src/library/subscribers/releasePoseSubscriber.s"
@@ -1506,6 +1609,9 @@ help:
 	@echo "... src/nodes/basePoseSubscriberNode.o"
 	@echo "... src/nodes/basePoseSubscriberNode.i"
 	@echo "... src/nodes/basePoseSubscriberNode.s"
+	@echo "... src/nodes/exploreBehaviorNode.o"
+	@echo "... src/nodes/exploreBehaviorNode.i"
+	@echo "... src/nodes/exploreBehaviorNode.s"
 	@echo "... src/nodes/goToGoalBehaviorNode.o"
 	@echo "... src/nodes/goToGoalBehaviorNode.i"
 	@echo "... src/nodes/goToGoalBehaviorNode.s"

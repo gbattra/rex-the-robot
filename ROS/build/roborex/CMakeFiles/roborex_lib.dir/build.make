@@ -135,9 +135,22 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.s"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/releasePoseSubscriber.cpp -o CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.s
 
+roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
+roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/rangeSensorSubscriber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/rangeSensorSubscriber.cpp
+
+roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.i"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/rangeSensorSubscriber.cpp > CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.i
+
+roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.s"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/rangeSensorSubscriber.cpp -o CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.s
+
 roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
 roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers/commandPublisher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.o"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers/commandPublisher.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.i: cmake_force
@@ -150,7 +163,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.s
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
 roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers/trajectoryPublisher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.o"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers/trajectoryPublisher.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.i: cmake_force
@@ -161,9 +174,22 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.s"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/publishers/trajectoryPublisher.cpp -o CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.s
 
+roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
+roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/exploreBehavior.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/exploreBehavior.cpp
+
+roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.i"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/exploreBehavior.cpp > CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.i
+
+roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.s"
+	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/exploreBehavior.cpp -o CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.s
+
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/systemBehavior.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/systemBehavior.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.i: cmake_force
@@ -176,7 +202,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.s: c
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/goToGoalBehavior.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/goToGoalBehavior.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.i: cmake_force
@@ -189,7 +215,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.s:
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/graspTargetBehavior.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/graspTargetBehavior.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.i: cmake_force
@@ -202,7 +228,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/releaseTargetBehavior.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.o"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/releaseTargetBehavior.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.cpp.i: cmake_force
@@ -215,7 +241,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/releaseTargetBehavior.c
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
 roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients/trajectoryPlannerClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.o"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/clients/trajectoryPlannerClient.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.cpp.i: cmake_force
@@ -228,7 +254,7 @@ roborex/CMakeFiles/roborex_lib.dir/src/library/clients/trajectoryPlannerClient.c
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.o: roborex/CMakeFiles/roborex_lib.dir/flags.make
 roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.o: /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.o"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roborex_lib.dir/src/library/pid.cpp.o -c /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/pid.cpp
 
 roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.i: cmake_force
@@ -247,8 +273,10 @@ roborex_lib_OBJECTS = \
 "CMakeFiles/roborex_lib.dir/src/library/subscribers/armPoseSubscriber.cpp.o" \
 "CMakeFiles/roborex_lib.dir/src/library/subscribers/trajectoryStatusSubscriber.cpp.o" \
 "CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.o" \
+"CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o" \
 "CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.o" \
 "CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.o" \
+"CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o" \
 "CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o" \
 "CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o" \
 "CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o" \
@@ -265,8 +293,10 @@ roborex_lib_EXTERNAL_OBJECTS =
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/armPoseSubscriber.cpp.o
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/trajectoryStatusSubscriber.cpp.o
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/releasePoseSubscriber.cpp.o
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/subscribers/rangeSensorSubscriber.cpp.o
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/commandPublisher.cpp.o
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/publishers/trajectoryPublisher.cpp.o
+/home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/exploreBehavior.cpp.o
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/systemBehavior.cpp.o
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/goToGoalBehavior.cpp.o
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/behaviors/graspTargetBehavior.cpp.o
@@ -275,7 +305,7 @@ roborex_lib_EXTERNAL_OBJECTS =
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/src/library/pid.cpp.o
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/build.make
 /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so: roborex/CMakeFiles/roborex_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gattra/Projects/Unity/rex-the-robot/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library /home/gattra/Projects/Unity/rex-the-robot/ROS/devel/lib/libroborex_lib.so"
 	cd /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/roborex_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

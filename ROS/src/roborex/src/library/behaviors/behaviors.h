@@ -121,6 +121,8 @@ namespace roborex
     {
         private:
             bool avoiding = false;
+            float threshold = 0.1;
+            roborex::BasePose target_pose;
             roborex::RangeSensorSubscriber *range_sensor_subscriber;
             roborex::BasePoseSubscriber *base_pose_subscriber;
             roborex::CommandPublisher *cmd_publisher;

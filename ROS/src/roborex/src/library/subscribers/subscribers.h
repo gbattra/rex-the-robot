@@ -9,6 +9,7 @@
 #include "roborex/ArmPose.h"
 #include "roborex/TrajectoryStatus.h"
 #include "geometry_msgs/Pose.h"
+#include "std_msgs/Empty.h"
 
 namespace roborex
 {
@@ -88,7 +89,7 @@ namespace roborex
         public:
             RangeSensorSubscriber(ros::NodeHandle *nh);
             bool detectionMade();
-    }
+    };
 }
 
 #endif

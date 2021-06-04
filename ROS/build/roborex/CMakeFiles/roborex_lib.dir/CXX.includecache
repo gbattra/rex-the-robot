@@ -242,6 +242,12 @@ roborex/StartSystem.h
 ros/ros.h
 -
 
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/exploreBehavior.cpp
+behaviors.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/behaviors.h
+geometry_msgs/Pose.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/geometry_msgs/Pose.h
+
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/goToGoalBehavior.cpp
 behaviors.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/behaviors/behaviors.h
@@ -299,6 +305,8 @@ roborex/TrajectoryStatus.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/roborex/TrajectoryStatus.h
 geometry_msgs/Pose.h
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/geometry_msgs/Pose.h
+std_msgs/Empty.h
+/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/std_msgs/Empty.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string
@@ -999,6 +1007,22 @@ ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
+
+/opt/ros/noetic/include/std_msgs/Empty.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h

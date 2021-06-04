@@ -39,6 +39,7 @@
 /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/install.dir
 /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/list_install_components.dir
 /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/edit_cache.dir
+/home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_explore_behavior.dir
 /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_grasp_behavior.dir
 /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_lib.dir
 /home/gattra/Projects/Unity/rex-the-robot/ROS/build/roborex/CMakeFiles/roborex_genpy.dir
