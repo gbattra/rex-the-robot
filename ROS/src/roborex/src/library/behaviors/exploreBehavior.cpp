@@ -16,7 +16,7 @@ roborex::ExploreBehavior::ExploreBehavior(
 
 void roborex::ExploreBehavior::execute()
 {
-    if (!avoiding && range_sensor_subscriber->detectionMade())
+    if (range_sensor_subscriber->detectionMade())
     {
         timeToTurn = ros::Duration(5.0);
         turnStartTime = ros::Time::now();
