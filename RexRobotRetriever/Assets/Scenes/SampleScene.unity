@@ -960,7 +960,7 @@ ArticulationBody:
   m_GameObject: {fileID: 165872402}
   m_Enabled: 1
   m_Mass: 1
-  m_ParentAnchorPosition: {x: 0.04039999, y: 0, z: 0}
+  m_ParentAnchorPosition: {x: 0.04039999, y: -0.000000015181525, z: 0}
   m_ParentAnchorRotation: {x: 0.70710677, y: -0.00000003090862, z: 0.70710677, w: -0.00000003090862}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0.70710677, y: -0.00000003090862, z: 0.70710677, w: -0.00000003090862}
@@ -3455,11 +3455,23 @@ MonoBehaviour:
   - dropbox
   OnDetected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040393835}
+        m_TargetAssemblyTypeName: RangeSensorPublisher, Assembly-CSharp
+        m_MethodName: Publish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnLostDetection:
     m_PersistentCalls:
       m_Calls: []
-  Length: 1.5
+  Length: 2.5
   Radius: 0
   ObstructedByLayers:
     serializedVersion: 2
@@ -3572,7 +3584,7 @@ ArticulationBody:
   m_GameObject: {fileID: 499327737}
   m_Enabled: 1
   m_Mass: 1
-  m_ParentAnchorPosition: {x: 0.2077, y: 0, z: 0}
+  m_ParentAnchorPosition: {x: 0.2077, y: -0.000000015181525, z: 0}
   m_ParentAnchorRotation: {x: 0.70710677, y: -0.00000003090862, z: 0.70710677, w: -0.00000003090862}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0.70710677, y: -0.00000003090862, z: 0.70710677, w: -0.00000003090862}
@@ -4965,7 +4977,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695990748}
-  m_LocalRotation: {x: 0.2689583, y: -0.43701404, z: 0.13876905, w: 0.84700847}
+  m_LocalRotation: {x: 0.2689583, y: -0.437014, z: 0.13876905, w: 0.84700847}
   m_LocalPosition: {x: 1.35, y: 1.5384587, z: 2.187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -11021,7 +11033,7 @@ ArticulationBody:
   m_GameObject: {fileID: 1616554375}
   m_Enabled: 1
   m_Mass: 1
-  m_ParentAnchorPosition: {x: -0.000000014901165, y: 0, z: 0}
+  m_ParentAnchorPosition: {x: -0.000000014901165, y: -0.000000014901161, z: 0}
   m_ParentAnchorRotation: {x: 0.70710677, y: 0, z: 0, w: -0.70710677}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0.70710677, y: 0, z: 0, w: -0.70710677}
@@ -13304,7 +13316,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078647067}
-  m_LocalRotation: {x: 0.2689583, y: -0.43701404, z: 0.13876905, w: 0.84700847}
+  m_LocalRotation: {x: 0.2689583, y: -0.437014, z: 0.13876905, w: 0.84700847}
   m_LocalPosition: {x: 1.35, y: 1.5384587, z: 2.187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

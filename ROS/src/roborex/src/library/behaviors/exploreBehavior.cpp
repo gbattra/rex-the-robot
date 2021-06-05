@@ -7,11 +7,9 @@
 roborex::ExploreBehavior::ExploreBehavior(
     ros::NodeHandle *nh,
     roborex::RangeSensorSubscriber *rss,
-    roborex::BasePoseSubscriber *bps,
     roborex::CommandPublisher *cp)
 {
     range_sensor_subscriber = rss;
-    base_pose_subscriber = bps;
     cmd_publisher = cp;
     pid = roborex::PID(0.7, 0.001, 0.01, 0.1);
 }
@@ -20,30 +18,29 @@ void roborex::ExploreBehavior::execute()
 {
     if (!avoiding && range_sensor_subscriber->detectionMade())
     {
-        std::cout << "detection made" << std::endl;
-        float target_angle = (rand() / RAND_MAX) * (3.14 / 2) + (3.14 / 4);
-        target_pose = roborex::BasePose();
-        target_pose.angle = target_angle;
+        timeToTurn = ros::Duration(5.0);
+        turnStartTime = ros::Time::now();
         avoiding = true;
+        pid.reset();
     }
 
-    roborex::BasePose base_pose = base_pose_subscriber->latest_pose;
     roborex::Command cmd;
     if (avoiding)
     {
+        ros::Time currentTime = ros::Time::now();
+        ros::Duration timeLeft = (turnStartTime + timeToTurn) - currentTime;
 
-        std::cout << "avoiding" << std::endl;
-        cmd.linear = 5;
-        float e = target_pose.angle - base_pose.angle;
-        float e_norm = atan2(sin(e), cos(e));
-        float w = pid.regulate(e_norm);
-
-        if (w <= threshold)
+        if (timeLeft.toSec() <= 0)
         {
-
-        std::cout << "done avoiding" << std::endl;
             avoiding = false;
+            return;
         }
+
+        cmd.linear = 5;
+        float e = 1 - (currentTime - turnStartTime).toSec() / timeToTurn.toSec();
+        std::cout << e << std::endl;
+        float w = pid.regulate(e);
+        cmd.angular = w;
     }
     else
     {

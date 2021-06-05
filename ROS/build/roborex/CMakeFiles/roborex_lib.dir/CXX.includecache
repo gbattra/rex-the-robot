@@ -264,10 +264,6 @@ roborex/Command.h
 roborex/Trajectories.h
 -
 
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/rangeSensorSubscriber.cpp
-subscribers.h
-/home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/subscribers.h
-
 /home/gattra/Projects/Unity/rex-the-robot/ROS/src/roborex/src/library/subscribers/subscribers.h
 ros/ros.h
 -

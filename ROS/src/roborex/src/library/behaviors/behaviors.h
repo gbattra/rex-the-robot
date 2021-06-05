@@ -121,10 +121,9 @@ namespace roborex
     {
         private:
             bool avoiding = false;
-            float threshold = 0.1;
-            roborex::BasePose target_pose;
+            ros::Duration timeToTurn;
+            ros::Time turnStartTime;
             roborex::RangeSensorSubscriber *range_sensor_subscriber;
-            roborex::BasePoseSubscriber *base_pose_subscriber;
             roborex::CommandPublisher *cmd_publisher;
             roborex::PID pid;
 
@@ -132,7 +131,6 @@ namespace roborex
             ExploreBehavior(
                 ros::NodeHandle *nh,
                 roborex::RangeSensorSubscriber *rss,
-                roborex::BasePoseSubscriber *bps,
                 roborex::CommandPublisher *cp);
 
             void execute() override;
