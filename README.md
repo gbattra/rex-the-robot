@@ -1,11 +1,10 @@
 Greg Attra
-CS 5335 Prof. Platt
 04/16/2021
 
 # Final Report
 
 ## Summary
-For the final project, I built a four-wheeled robot arm which picks up items and returns them to a dropbox location. [Here](https://github.com/gbattra/rex-the-robot) is a link to the code repository. [Here](https://youtu.be/ImJX1mifpsY) is a short video of the robot in action.
+For this  project, I built a four-wheeled robot arm which picks up items and returns them to a dropbox location. [Here](https://github.com/gbattra/rex-the-robot) is a link to the code repository. [Here](https://youtu.be/ImJX1mifpsY) is a short video of the robot in action.
 
 [<img src="images/ik_pose.png" width="350px"/>](https://youtu.be/ImJX1mifpsY)
 
